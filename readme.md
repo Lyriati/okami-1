@@ -9,8 +9,8 @@ Everything in this repo is a work in progress!
 
 ## Resources
 
-https://www.speedrun.com/Okami  
-https://discord.gg/AQNKmMu
+[Okami Leaderboard](https://www.speedrun.com/Okami)  
+[Okami Speedrunning Discord](https://discord.gg/AQNKmMu)
 
 ## Contributers
 
