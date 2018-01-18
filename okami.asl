@@ -16,6 +16,7 @@ startup {
   
   settings.CurrentDefaultParent = "yamato";
   
+  // Will split after defeating the boss given
   settings.Add("blight2", true, "Blight 2");
   settings.Add("spiderqueen2", true, "Spider Queen 2");
   settings.Add("orochi3", true, "True Orochi 2");
