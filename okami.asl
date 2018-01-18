@@ -9,9 +9,12 @@ state("okami") {
   int orochi3 : "main.dll", 0xB35448;
   int ninetails2 : "main.dll", 0xB35610;
   int crimsonhelm2 : "main.dll", 0xB356F4;
+  
+  // Endgame
+  int final_results : "main.dll", 0xB5262C;
 }
 
-startup {  
+startup {
   // Ark of Yamato
   settings.Add("yamato", true, "Ark of Yamato");
   
@@ -22,6 +25,13 @@ startup {
   settings.Add("orochi3", true, "True Orochi 2");
   settings.Add("ninetails2", true, "Ninetails 2");
   settings.Add("crimsonhelm2", true, "Crimson Helm 2");
+  
+  // Endgame
+  settings.Add("endgame", true, "End Game");
+  
+  settings.CurrentDefaultParent = "endgame";
+  
+  settings.Add("final", true, "Final Results");
 }
 
 update {
@@ -48,7 +58,8 @@ split {
   (settings["spiderqueen2"] && current.spiderqueen2 > old.spiderqueen2) ||
   (settings["orochi3"] && current.orochi3 > old.orochi3) ||
   (settings["ninetails2"] && current.ninetails2 > old.ninetails2) ||
-  (settings["crimsonhelm2"] && current.crimsonhelm2 > old.crimsonhelm2);
+  (settings["crimsonhelm2"] && current.crimsonhelm2 > old.crimsonhelm2) ||
+  (settings["final"] && current.final_results > old.final_results);
 }
 
 gameTime {
