@@ -1,5 +1,10 @@
 state("okami") {
   // In Game Time
+  // IGT is measured by frames in game. Time will start if you started a new
+  // game from the title menu, or by loading a NG+ file. 
+  // There is, for whatever reason, a small delay to starting RTA when loading
+  // from a NG+ file. This probably varies depending on your PC, and you may
+  // need to adjust your start time accordingly.
   int time : "main.dll", 0xB217FC;
   int in_game : "main.dll", 0xB33D1C;
   
@@ -11,6 +16,8 @@ state("okami") {
   int crimsonhelm2 : "main.dll", 0xB356F4;
   
   // Endgame
+  // Timing ends on the "Final Results" screen for IGT.
+  // Other possible final result values: https://my.mixtape.moe/aeoxal.png
   int final_results : "main.dll", 0xB5262C;
 }
 
