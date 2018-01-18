@@ -1,6 +1,7 @@
 state("okami") {
   // In Game Time
   int time : "main.dll", 0xB217FC;
+  int in_game : "main.dll", 0xB33D1C;
   
   // Ark of Yamato
   int blight2 : "main.dll", 0xB3552C;
@@ -10,7 +11,7 @@ state("okami") {
   int crimsonhelm2 : "main.dll", 0xB356F4;
 }
 
-startup {
+startup {  
   // Ark of Yamato
   settings.Add("yamato", true, "Ark of Yamato");
   
@@ -23,16 +24,23 @@ startup {
   settings.Add("crimsonhelm2", true, "Crimson Helm 2");
 }
 
+update {
+}
+
 start {
   // IGT is measured by frames, 60fps. This starts counting when the game
   // starts for the first time, and resets when a new game is loaded.
   // The previous frame count is loaded when a file is loaded as well.
-  return current.time < old.time;
+  return current.in_game == 1;
 }
 
 reset {
   // Resets if you quit to title or start a new game.
-  return current.time < old.time;
+  return current.in_game == 0;
+}
+
+isLoading {
+  return current.in_game == 0;
 }
 
 split {
