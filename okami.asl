@@ -41,14 +41,11 @@ startup {
   settings.Add("final", true, "Final Results");
 }
 
-update {
-}
-
 start {
   // IGT is measured by frames, 60fps. This starts counting when the game
   // starts for the first time, and resets when a new game is loaded.
   // The previous frame count is loaded when a file is loaded as well.
-  return current.in_game == 1;
+  return current.in_game == 1 && current.time < old.time;
 }
 
 reset {
@@ -66,7 +63,7 @@ split {
   (settings["orochi3"] && current.orochi3 > old.orochi3) ||
   (settings["ninetails2"] && current.ninetails2 > old.ninetails2) ||
   (settings["crimsonhelm2"] && current.crimsonhelm2 > old.crimsonhelm2) ||
-  (settings["final"] && current.final_results > old.final_results);
+  (settings["final"] && current.final_results > old.final_results && current.final_results == 65536);
 }
 
 gameTime {
