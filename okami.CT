@@ -18,14 +18,12 @@
             <CheatEntry>
               <ID>4</ID>
               <Description>"Current Health"</Description>
-              <LastState Value="5400" RealAddress="7FFE7180DF90"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B4DF90</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>5</ID>
               <Description>"Maximum Health"</Description>
-              <LastState Value="5400" RealAddress="7FFE7180DF92"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B4DF92</Address>
             </CheatEntry>
@@ -41,14 +39,12 @@
             <CheatEntry>
               <ID>11</ID>
               <Description>"Current Ink"</Description>
-              <LastState Value="138240" RealAddress="7FFE717E05D8"/>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B205D8</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>12</ID>
               <Description>"Maximum Ink"</Description>
-              <LastState Value="138240" RealAddress="7FFE717E05DC"/>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B205DC</Address>
             </CheatEntry>
@@ -57,7 +53,6 @@
         <CheatEntry>
           <ID>9</ID>
           <Description>"Godhood"</Description>
-          <LastState Value="375" RealAddress="7FFE7180DFAC"/>
           <VariableType>2 Bytes</VariableType>
           <Address>main.dll+B4DFAC</Address>
         </CheatEntry>
@@ -71,14 +66,12 @@
             <CheatEntry>
               <ID>13</ID>
               <Description>"Current Pouch"</Description>
-              <LastState Value="200" RealAddress="7FFE7180DF94"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B4DF94</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>15</ID>
               <Description>"Maximum Pouch"</Description>
-              <LastState Value="200" RealAddress="7FFE7180DF96"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B4DF96</Address>
             </CheatEntry>
@@ -94,14 +87,12 @@
             <CheatEntry>
               <ID>17</ID>
               <Description>"Current Praise"</Description>
-              <LastState Value="39" RealAddress="7FFE7180DF9A"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B4DF9A</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>18</ID>
               <Description>"Total Praise Earned"</Description>
-              <LastState Value="3959" RealAddress="7FFE7180DF9C"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B4DF9C</Address>
             </CheatEntry>
@@ -117,14 +108,12 @@
             <CheatEntry>
               <ID>0</ID>
               <Description>"Current Yen"</Description>
-              <LastState Value="759229" RealAddress="7FFE717E05E0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B205E0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>122</ID>
               <Description>"Total Yen Earned"</Description>
-              <LastState Value="3388322" RealAddress="7FFE717E1758"/>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B21758</Address>
             </CheatEntry>
@@ -133,7 +122,6 @@
         <CheatEntry>
           <ID>3</ID>
           <Description>"Demon Fangs"</Description>
-          <LastState Value="70" RealAddress="7FFE717E066E"/>
           <VariableType>2 Bytes</VariableType>
           <Address>main.dll+B2066E</Address>
         </CheatEntry>
@@ -154,21 +142,18 @@
                 <CheatEntry>
                   <ID>25</ID>
                   <Description>"Holy Bone S"</Description>
-                  <LastState Value="4" RealAddress="7FFE717E074E"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2074E</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>26</ID>
                   <Description>"Holy Bone M"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E074C"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2074C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>27</ID>
                   <Description>"Holy Bone L"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0638"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20638</Address>
                 </CheatEntry>
@@ -184,14 +169,12 @@
                 <CheatEntry>
                   <ID>39</ID>
                   <Description>"Traveler's Charm"</Description>
-                  <LastState Value="4" RealAddress="7FFE717E0710"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20710</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>40</ID>
                   <Description>"Godly Charm"</Description>
-                  <LastState Value="4" RealAddress="7FFE717E0766"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20766</Address>
                 </CheatEntry>
@@ -207,28 +190,24 @@
                 <CheatEntry>
                   <ID>31</ID>
                   <Description>"Feedbag (Seeds)"</Description>
-                  <LastState Value="5" RealAddress="7FFE717E0754"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20754</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>30</ID>
                   <Description>"Feedbag (Herbs)"</Description>
-                  <LastState Value="6" RealAddress="7FFE717E0752"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20752</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>29</ID>
                   <Description>"Feedbag (Meat)"</Description>
-                  <LastState Value="7" RealAddress="7FFE717E0750"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20750</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>32</ID>
                   <Description>"Feedbag (Fish)"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E0756"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20756</Address>
                 </CheatEntry>
@@ -244,35 +223,30 @@
                 <CheatEntry>
                   <ID>86</ID>
                   <Description>"Karmic Returner"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E07C0"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B207C0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>82</ID>
                   <Description>"Karmic Transformer 3"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0722"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20722</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>84</ID>
                   <Description>"Karmic Transformer 7"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0726"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20726</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>83</ID>
                   <Description>"Karmic Transformer 8"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0724"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20724</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>85</ID>
                   <Description>"Karmic Transformer 9"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0728"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20728</Address>
                 </CheatEntry>
@@ -288,14 +262,12 @@
                 <CheatEntry>
                   <ID>33</ID>
                   <Description>"Steel Fist Sake"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E0762"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20762</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>35</ID>
                   <Description>"Steel Soul Sake"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0764"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20764</Address>
                 </CheatEntry>
@@ -311,28 +283,24 @@
                 <CheatEntry>
                   <ID>20</ID>
                   <Description>"Exorcism Slip S"</Description>
-                  <LastState Value="2" RealAddress="7FFE717E0644"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20644</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>22</ID>
                   <Description>"Exorcism Slip M"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0642"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20642</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>1</ID>
                   <Description>"Exorcism Slip L"</Description>
-                  <LastState Value="48" RealAddress="7FFE717E0640"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20640</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>23</ID>
                   <Description>"Vengeance Slip"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0648"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20648</Address>
                 </CheatEntry>
@@ -348,175 +316,150 @@
                 <CheatEntry>
                   <ID>56</ID>
                   <Description>"Canine Tracker"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E06B4"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206B4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>57</ID>
                   <Description>"Lucky Mallet"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E06B6"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206B6</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>58</ID>
                   <Description>"Border Key"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E06B8"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206B8</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>59</ID>
                   <Description>"Dragon Orb"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06BA"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206BA</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>60</ID>
                   <Description>"Fox Rods"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06BC"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206BC</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>61</ID>
                   <Description>"Thunder Brew"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06BE"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206BE</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>62</ID>
                   <Description>"Shell Amulet"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E06C0"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206C0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>63</ID>
                   <Description>"Mask"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06C2"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206C2</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>64</ID>
                   <Description>"Ogre Liver"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06C4"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206C4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>65</ID>
                   <Description>"Lips of Ice"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06C6"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206C6</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>66</ID>
                   <Description>"Eyeball of Fire"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06C8"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206C8</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>67</ID>
                   <Description>"Black Demon Horn"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06CA"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206CA</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>68</ID>
                   <Description>"Loyalty Orb"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06CC"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206CC</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>69</ID>
                   <Description>"Justice Orb"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06CE"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206CE</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>70</ID>
                   <Description>"Duty Orb"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06D0"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206D0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>71</ID>
                   <Description>"Golden Mushroom"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06EE"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206EE</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>72</ID>
                   <Description>"Gimmick Gear"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06F0"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206F0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>73</ID>
                   <Description>"8 Purification Sake"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E06F4"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206F4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>74</ID>
                   <Description>"Sewaprolo"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E06F6"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B206F6</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>75</ID>
                   <Description>"Charcoal"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0712"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20712</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>76</ID>
                   <Description>"Blinding Snow"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0714"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20714</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>77</ID>
                   <Description>"Treasure Box"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E0716"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20716</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>78</ID>
                   <Description>"Herbal Medicine"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E071A"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2071A</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>79</ID>
                   <Description>"Pinwheel"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E071C"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2071C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>80</ID>
                   <Description>"Marlin Rod"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E071E"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2071E</Address>
                 </CheatEntry>
@@ -525,28 +468,24 @@
             <CheatEntry>
               <ID>42</ID>
               <Description>"Gold Dust"</Description>
-              <LastState Value="0" RealAddress="7FFE717E076C"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B2076C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>38</ID>
               <Description>"Golden Peach"</Description>
-              <LastState Value="6" RealAddress="7FFE717E064E"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B2064E</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>36</ID>
               <Description>"Inkfinity Stone"</Description>
-              <LastState Value="1" RealAddress="7FFE717E064A"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B2064A</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>37</ID>
               <Description>"Mermaid Coin"</Description>
-              <LastState Value="0" RealAddress="7FFE717E064C"/>
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B2064C</Address>
             </CheatEntry>
@@ -587,49 +526,42 @@
                 <CheatEntry>
                   <ID>48</ID>
                   <Description>"Golden Lucky Cat"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E075A"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2075A</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>49</ID>
                   <Description>"Thief's Glove"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E075C"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2075C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>50</ID>
                   <Description>"Wood Mat"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E075E"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2075E</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>51</ID>
                   <Description>"Golden Ink Pot"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E0760"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20760</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>52</ID>
                   <Description>"Water Tablet"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E0768"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B20768</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>53</ID>
                   <Description>"Fire Tablet"</Description>
-                  <LastState Value="1" RealAddress="7FFE717E076A"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B2076A</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>54</ID>
                   <Description>"String of Beads"</Description>
-                  <LastState Value="0" RealAddress="7FFE717E07CA"/>
                   <VariableType>2 Bytes</VariableType>
                   <Address>main.dll+B207CA</Address>
                 </CheatEntry>
@@ -647,7 +579,6 @@
             <CheatEntry>
               <ID>89</ID>
               <Description>"X Position"</Description>
-              <LastState Value="-16.39793777" RealAddress="23E80349B10"/>
               <VariableType>Float</VariableType>
               <Address>"main.dll"+00B6B2D0</Address>
               <Offsets>
@@ -658,7 +589,6 @@
             <CheatEntry>
               <ID>131</ID>
               <Description>"Y Position"</Description>
-              <LastState Value="-82.5" RealAddress="23E80349B14"/>
               <VariableType>Float</VariableType>
               <Address>"main.dll"+00B6B2D0</Address>
               <Offsets>
@@ -669,7 +599,6 @@
             <CheatEntry>
               <ID>90</ID>
               <Description>"Z Position"</Description>
-              <LastState Value="-80.24771118" RealAddress="23E80349B18"/>
               <VariableType>Float</VariableType>
               <Address>"main.dll"+00B6B2D0</Address>
               <Offsets>
@@ -682,7 +611,6 @@
         <CheatEntry>
           <ID>2</ID>
           <Description>"In Game Time"</Description>
-          <LastState Value="7857750" RealAddress="7FFE717E17FC"/>
           <VariableType>4 Bytes</VariableType>
           <Address>main.dll+B217FC</Address>
         </CheatEntry>
@@ -711,7 +639,6 @@
             <CheatEntry>
               <ID>105</ID>
               <Description>"Blight 2 Exit Active"</Description>
-              <LastState Value="60000000" RealAddress="7FFE717E102C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B2102C</Address>
@@ -719,7 +646,6 @@
             <CheatEntry>
               <ID>106</ID>
               <Description>"Blight 2 Defeated"</Description>
-              <LastState Value="06DDD000" RealAddress="7FFE717F552C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B3552C</Address>
@@ -727,7 +653,6 @@
             <CheatEntry>
               <ID>117</ID>
               <Description>"Spider Queen 2 Exit Active"</Description>
-              <LastState Value="60000000" RealAddress="7FFE717E0FEC"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B20FEC</Address>
@@ -735,7 +660,6 @@
             <CheatEntry>
               <ID>110</ID>
               <Description>"Spider Queen 2 Defeated"</Description>
-              <LastState Value="06DDD000" RealAddress="7FFE717F5364"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B35364</Address>
@@ -743,7 +667,6 @@
             <CheatEntry>
               <ID>111</ID>
               <Description>"Orochi 3 Defeated"</Description>
-              <LastState Value="06DDD000" RealAddress="7FFE717F5448"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B35448</Address>
@@ -751,7 +674,6 @@
             <CheatEntry>
               <ID>112</ID>
               <Description>"Ninetails 2 Exit Active"</Description>
-              <LastState Value="60000000" RealAddress="7FFE717E104C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B2104C</Address>
@@ -759,7 +681,6 @@
             <CheatEntry>
               <ID>108</ID>
               <Description>"Nintetails 2 Defeated"</Description>
-              <LastState Value="06DDD000" RealAddress="7FFE717F5610"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B35610</Address>
@@ -767,7 +688,6 @@
             <CheatEntry>
               <ID>118</ID>
               <Description>"Crimson Helm 2 Exit Active"</Description>
-              <LastState Value="60000000" RealAddress="7FFE717E106C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B2106C</Address>
@@ -775,7 +695,6 @@
             <CheatEntry>
               <ID>107</ID>
               <Description>"Crimson Helm 2 Defeated"</Description>
-              <LastState Value="06DDD000" RealAddress="7FFE717F56F4"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B356F4</Address>
@@ -788,21 +707,19 @@
       <ID>94</ID>
       <Description>"Dojo"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>120</ID>
           <Description>"Taunts [0000 / A000 / E000]"</Description>
-          <LastState Value="0000" RealAddress="7FFE7180DFA0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>2 Bytes</VariableType>
           <Address>main.dll+B4DFA0</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>119</ID>
-          <Description>"Reflector Hits [0000 / 5095 / 7095]"</Description>
-          <LastState Value="5095" RealAddress="7FFE7180DFA2"/>
+          <Description>"Reflector Hits [5080 / 5095 / 7095]"</Description>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>2 Bytes</VariableType>
           <Address>main.dll+B4DFA2</Address>
@@ -813,20 +730,24 @@
       <ID>93</ID>
       <Description>"Flags"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
+          <ID>145</ID>
+          <Description>"Area ID"</Description>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B6B2C8</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>132</ID>
           <Description>"In-Game Indicator"</Description>
-          <LastState Value="1" RealAddress="7FFE717F3D1C"/>
           <VariableType>4 Bytes</VariableType>
           <Address>main.dll+B33D1C</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>139</ID>
           <Description>"Final Results Indicator"</Description>
-          <LastState Value="0" RealAddress="7FFE7181262C"/>
           <VariableType>4 Bytes</VariableType>
           <Address>main.dll+B5262C</Address>
         </CheatEntry>
@@ -842,16 +763,50 @@
         <CheatEntry>
           <ID>127</ID>
           <Description>"Money"</Description>
-          <LastState Value="0" RealAddress="7FFE717DDBB8"/>
           <VariableType>4 Bytes</VariableType>
           <Address>main.dll+B1DBB8</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>129</ID>
           <Description>"Bonus"</Description>
-          <LastState Value="0" RealAddress="7FFE717DDBA0"/>
           <VariableType>4 Bytes</VariableType>
           <Address>main.dll+B1DBA0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>140</ID>
+      <Description>"Settings"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>141</ID>
+          <Description>"Sound"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" Activated="1" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>142</ID>
+              <Description>"BGM Volume"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+B57A2A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>143</ID>
+              <Description>"SE Volume"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+B57A2C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>144</ID>
+              <Description>"Voice Volume"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+B57A36</Address>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -859,40 +814,8 @@
       <ID>97</ID>
       <Description>"Unknown"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" RealAddress="00000000"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>137</ID>
-          <Description>"Area Identifiers"</Description>
-          <Options moHideChildren="1"/>
-          <LastState Value="" Activated="1" RealAddress="00000000"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>124</ID>
-              <Description>"Area Identifier 1"</Description>
-              <LastState Value="512" RealAddress="7FFE71459CE8"/>
-              <VariableType>4 Bytes</VariableType>
-              <Address>main.dll+799CE8</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>125</ID>
-              <Description>"Area Identifier 2"</Description>
-              <LastState Value="2634527872" RealAddress="7FFE71459CF0"/>
-              <VariableType>4 Bytes</VariableType>
-              <Address>main.dll+799CF0</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>126</ID>
-              <Description>"Area Identifier 3"</Description>
-              <LastState Value="2634527744" RealAddress="7FFE71459CF8"/>
-              <VariableType>4 Bytes</VariableType>
-              <Address>main.dll+799CF8</Address>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols>
