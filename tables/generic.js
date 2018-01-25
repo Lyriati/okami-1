@@ -17,32 +17,32 @@ bingoList[2] = [
   { name: "Catch the WHOPPER", types: ["fishing"] },
   { name: "Defeat Spider Queen", types: ["dungeon","boss","story"] },
   { name: "Complete Turnip-digging minigame in Kamiki", types: ["minigame","sidequest"] },
-  { name: "Is dog", types: ["free"] },
+  { name: "Free Space", types: ["free"] },
 ];
-bingoList[3] = [
+bingoList[5] = [
   { name: "Feed all animals in Agata Forest", types: ["feeding"] },
   { name: "Bloom the clover near Madam Fawn's hut", types: ["clover"] },
   { name: "Obtain Galestorm", types: ["brush","story"] },
   { name: "Defeat Orochi", types: ["story","boss"] },
   { name: "Obtain the Mother Tree travel guide", types: ["item"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
-  { name: "Defeat Blight", types: ["boss","story"] },
+  { name: "", types: [""] },
   { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
   { name: "Obtain Inferno", types: ["brush"] },
 ];
-bingoList[4] = [
+bingoList[6] = [
  { name: "Learn Digging Champ", types: ["dojo"] },
  { name: "Enter Sei\'an City", types: ["story"] },
- { name: "", types: ["boss"] },
+ { name: "Obtain the Stray Bead behind Mr. Flower\'s house", types: ["straybead"] },
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
-bingoList[5] = [
+bingoList[3] = [
  { name: "", types: [""] },
  { name: "", types: [""] },
  { name: "", types: [""] },
  { name: "", types: [""] }
 ];
-bingoList[6] = [
+bingoList[4] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
  { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
  { name: "Defeat 3 Blue Demon Scrolls", types: ["fight"] },
@@ -75,7 +75,7 @@ bingoList[10] = [
 ];
 bingoList[11] = [
  { name: "", types: ["ability"] },
- { name: "", types: ["weapon"] },
+ { name: "Defeat Blight", types: ["boss","story"] },
  { name: "Beat a boss", types: ["boss"] },
  { name: "", types: ["ability"] }
 ];
@@ -101,7 +101,7 @@ bingoList[15] = [
  { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
  ];
 bingoList[16] = [
- { name: "Defeat Ninetails", types: ["boss"] },
+ { name: "Defeat Ninetails", types: ["boss","story"] },
  { name: "", types: ["ice"] },
  { name: "", types: ["area"] },
  { name: "", types: ["save"] }
