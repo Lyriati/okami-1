@@ -5,6 +5,7 @@ Okami Bingo stuffs
 Everything in this repo is a work in progress!
 
 `okami/tables/generic.js` Goals sheet 
+
 `bingo-popout.html` fixed popouts - rekyuus
 
 ## Resources
