@@ -1,20 +1,30 @@
 var bingoList = [];
 bingoList[1] = [
- { name: "No saving", types: ["save"] },
- { name: "Buy 3 items from a shop", types: ["money"] },
- { name: "Defeat an enemy using only punches", types: ["fighting"] },
- { name: "Obtain 3 extra lives", types: ["life"] }
+  { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
+  { name: "Tsuta Ruins Key", types: ["dungeon"] },
+  { name: "Bloom Taka Pass", types: ["bloom"] },
+  { name: "Buy Infinity Judge", types: ["weapon"] },
+  { name: "Complete a Wanted List", types: ["fight","sidequest"] },
+  { name: "Obtain Cherrybomb", types: ["brush"] }
 ];
 bingoList[2] = [
- { name: "Kill a knight", types: ["future"] },
- { name: "Defeat an enemy using only kicks", types: ["fighting"] },
- { name: "Obtain a potion", types: ["money","heal"] }
+  { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
+  { name: "Rescue Chun", types: ["story"] },
+  { name: "Complete Komuso's Challenge in Kamiki", types: ["sidequest","fight"] },
+  { name: "Catch the WHOPPER", types: ["fishing"] },
+  { name: "Defeat Spider Queen", types: ["dungeon","boss","story"] },
+  { name: "Complete Turnip-digging minigame in Kamiki", types: ["minigame","sidequest"] },
+  { name: "Is dog", types: ["free"] }
 ];
 bingoList[3] = [
- { name: "Touch a cloud", types: ["air"] },
- { name: "Kill a zombie/mummy", types: ["ghost"] },
- { name: "Complete an autoscroll section", types: ["level"] },
- { name: "Complete a prologue/tutorial", types: ["cutscene"] }
+  { name: "Feed all animals in Agata Forest", types: ["feeding"] },
+  { name: "Bloom the clover near Madam Fawn's hut", types: ["clover"] },
+  { name: "Obtain Galestorm", types: ["brush","story"] },
+  { name: "Defeat Orochi", types: ["story","boss"] },
+  { name: "Obtain the Mother Tree travel guide", types: ["item"] },
+  { name: "Learn Holy Eagle", types: ["dojo"] },
+  { name: "Defeat Blight", types: ["boss","story"] }
+  { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] }
 ];
 bingoList[4] = [
  { name: "Collect 100 yellow/golden items", types: ["money"] },
