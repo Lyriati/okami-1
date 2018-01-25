@@ -108,7 +108,7 @@ bingoList[16] = [
 ];
 bingoList[17] = [
  { name: "Obtain the Stray Bead from the Imperial Palace", types: ["straybead"] },
- { name: "Obtain the Lucky Mallet", types: ["item"] },
+ { name: "Obtain the Lucky Mallet 2", types: ["item"] },
  { name: "Obtain all the Stray Beads from the Sunken Ship", types: ["straybead"] },
  { name: "Obtain all the Stray Beads from Sei\'an City\'s Aristocratic Quarters", types: ["straybead"] }
 ];
