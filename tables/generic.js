@@ -92,13 +92,14 @@ bingoList[13] = [
 bingoList[14] = [
  { name: "Obtain Fountain", types: ["Brush"] },
  { name: "Obtain 50 Demon Fangs", types: ["demonfangs"] },
- { name: "Fish a Marlin", types: ["fishing","Whirlwind"] }
+ { name: "Fish a Marlin", types: ["fishing"] }
+ { name: "Bloom all the clovers in Sei\'an City' ", types: ["clover"] },
 ];
 bingoList[15] = [
- { name: "Increase Solar Energy", types: ["hp"] },
+ { name: "Increase Solar Energy to the max", types: ["solarenergy"] },
  { name: "Fish a Striped Snapper", types: ["fishing"] },
  { name: "Obtain a dungeon map", types: ["dungeon"] },
- { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
+ { name: "Obtain Whirlwind", types: ["brush"] }
  ];
 bingoList[16] = [
  { name: "Defeat Ninetails", types: ["story"] },
@@ -146,11 +147,21 @@ bingoList[23] = [
 bingoList[24] = [
  { name: "", types: ["boss"] },
  { name: "Clear the Kamui Devil Gate Trial Cave", types: ["deviltrial"] },
+ { name: "Bloom all the clovers in the Wawku Shrine", types: ["clover"] },
+ { name: "Fish a Yellowtail", types: ["fishing"] },
+ { name: "Fish an Oarfish", types: ["fishing"] },
  { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
-  { name: "Obtain Cherrybomb 3", types: ["brush","cherrybomb"] },
-  { name: "Beat the game", types: ["boss"] }
+  { name: "Obtain Cherrybomb 3", types: ["brush"] },
+  { name: "Enter the Ark of Yamato", types: ["story"] },
+  { name: "Defeat Orochi (100 years ago)", types: ["story"] },
+  { name: "Obtain Blizzard", types: ["brush"] },
+  { name: "Obtain all the Stray Beads in Kamui", types: ["straybead"] },
+  { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] },
+  { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] },
+  { name: "Obtain all the Stray Beads in Catcall Tower", types: ["straybead"] },
+  { name: "Defeat Yami", types: ["story"] }
 ];
 
 $(function() { srl.bingo(bingoList, 5); });
