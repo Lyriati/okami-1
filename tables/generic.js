@@ -37,10 +37,10 @@ bingoList[4] = [
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
 bingoList[5] = [
- { name: "Obtain Whirlwind", types: ["fishing","brush","Whirlwind"] },
- { name: "Fish a Marlin", types: ["fishing","Whirlwind"] },
- { name: "Fish a Manta", types: ["fishing"] },
- { name: "Fish a Striped Snapper", types: ["fishing"] }
+ { name: "", types: [""] },
+ { name: "", types: [""] },
+ { name: "", types: [""] },
+ { name: "", types: [""] }
 ];
 bingoList[6] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
@@ -68,8 +68,8 @@ bingoList[9] = [
  { name: "", types: ["wind"] }
 ];
 bingoList[10] = [
- { name: "Enter Oni Island", types: ["story"] },
- { name: "", types: ["fire","area"] },
+ { name: "Bloom Ryoshima Coast", types: ["story"] },
+ { name: "Fish a Manta", types: ["fishing"] },
  { name: "", types: ["save","ability","weapon"] },
  { name: "", types: ["hp"] }
 ];
@@ -92,13 +92,13 @@ bingoList[13] = [
 bingoList[14] = [
  { name: "", types: ["weapon"] },
  { name: "", types: ["level"] },
- { name: "", types: ["guard"] }
+ { name: "Fish a Marlin", types: ["fishing","Whirlwind"] }
 ];
 bingoList[15] = [
  { name: "Increase Solar Energy", types: ["hp"] },
- { name: "", types: ["ghost"] },
+ { name: "Fish a Striped Snapper", types: ["fishing"] },
  { name: "Obtain a dungeon map", types: ["dungeon"] },
- { name: "", types: ["guard"] }
+ { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
  ];
 bingoList[16] = [
  { name: "", types: ["ability"] },
