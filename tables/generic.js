@@ -23,7 +23,7 @@ bingoList[5] = [
   { name: "Feed all animals in Agata Forest", types: ["feeding"] },
   { name: "Bloom the clover near Madam Fawn's hut", types: ["clover"] },
   { name: "Obtain Galestorm", types: ["brush","story"] },
-  { name: "Defeat Orochi", types: ["story","boss"] },
+  { name: "Defeat Orochi", types: ["story"] },
   { name: "Obtain the Mother Tree travel guide", types: ["item"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
   { name: "Buy Infinity Judge", types: ["weapon"] },
