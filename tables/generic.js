@@ -30,7 +30,7 @@ bingoList[3] = [
 ];
 bingoList[4] = [
  { name: "Learn Digging Champ", types: ["dojo"] },
- { name: "Enter Oni Island", types: ["story"] },
+ { name: "Enter Sei'an City", types: ["story"] },
  { name: "Defeat Ninetails", types: ["boss"] },
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
@@ -43,7 +43,7 @@ bingoList[5] = [
 bingoList[6] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
  { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
- { name: "Talk to a King or Princess", types: ["castle"] },
+ { name: "Defeat 3 Blue Demon Scrolls", types: ["fight"] },
  { name: "Talk to a scientist", types: ["sci"] },
  { name: "New character/partner", types: ["char"] }
 ];
@@ -66,7 +66,7 @@ bingoList[9] = [
  { name: "Enter strong wind currents", types: ["wind"] }
 ];
 bingoList[10] = [
- { name: "Obtain an explosive", types: ["weapon"] },
+ { name: "Enter Oni Island", types: ["story" },
  { name: "Enter a volcano", types: ["fire","area"] },
  { name: "Don't shoot", types: ["save","ability","weapon"] },
  { name: "Armor/Defense upgrade", types: ["hp"] }
