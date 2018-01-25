@@ -6,7 +6,7 @@ bingoList[1] = [
   { name: "Buy Infinity Judge", types: ["weapon"] },
   { name: "Complete a Wanted List", types: ["fight","sidequest"] },
   { name: "Obtain Cherrybomb", types: ["brush"] },
-  {name:  "Bark 50 times", types: ["bork"] },
+  { name:  "Bark 50 times", types: ["bork"] },
 ];
 bingoList[2] = [
   { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
