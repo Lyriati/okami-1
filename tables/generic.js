@@ -55,101 +55,101 @@ bingoList[7] = [
  { name: "Obtain 20 Stray Beads", types: ["straybead"] }
 ];
 bingoList[8] = [
- { name: "Restore air with a bubble", types: ["water"] },
- { name: "Weapon upgrade", types: ["weapon"] },
- { name: "Win a race", types: ["race"] },
- { name: "Enter an inn/hotel", types: ["castle","area"] }
+ { name: "", types: ["water"] },
+ { name: "", types: ["weapon"] },
+ { name: "", types: ["race"] },
+ { name: "", types: ["castle","area"] }
 ];
 bingoList[9] = [
  { name: "Use a key to open a Lockjaw", types: ["key"] },
- { name: "Escape from prison", types: ["guard"] },
- { name: "Destroy an enemy vehicle", types: ["vehicle"] },
- { name: "Enter strong wind currents", types: ["wind"] }
+ { name: "", types: ["guard"] },
+ { name: "", types: ["vehicle"] },
+ { name: "", types: ["wind"] }
 ];
 bingoList[10] = [
  { name: "Enter Oni Island", types: ["story"] },
- { name: "Enter a volcano", types: ["fire","area"] },
- { name: "Don't shoot", types: ["save","ability","weapon"] },
- { name: "Armor/Defense upgrade", types: ["hp"] }
+ { name: "", types: ["fire","area"] },
+ { name: "", types: ["save","ability","weapon"] },
+ { name: "", types: ["hp"] }
 ];
 bingoList[11] = [
- { name: "Learn an ability involving magic", types: ["ability"] },
- { name: "Obtain a hammer", types: ["weapon"] },
+ { name: "", types: ["ability"] },
+ { name: "", types: ["weapon"] },
  { name: "Beat a boss", types: ["boss"] },
- { name: "Play an instrument/song", types: ["ability"] }
+ { name: "", types: ["ability"] }
 ];
 bingoList[12] = [
- { name: "Boots/shoes upgrade", types: ["clothes"] },
- { name: "Enter outer space", types: ["area"] },
- { name: "Ride an electric elevator", types: ["vehicle"] }
+ { name: "", types: ["clothes"] },
+ { name: "", types: ["area"] },
+ { name: "", types: ["vehicle"] }
 ];
 bingoList[13] = [
- { name: "Catch a thief/criminal", types: ["guard"] },
- { name: "Read a book", types: ["lerning"] },
- { name: "Learn an ability involving water", types: ["ability","water"] }
+ { name: "", types: ["guard"] },
+ { name: "", types: ["lerning"] },
+ { name: "", types: ["ability","water"] }
 ];
 bingoList[14] = [
- { name: "Ammo upgrade", types: ["weapon"] },
- { name: "100k points", types: ["level"] },
- { name: "Learn a password", types: ["guard"] }
+ { name: "", types: ["weapon"] },
+ { name: "", types: ["level"] },
+ { name: "", types: ["guard"] }
 ];
 bingoList[15] = [
- { name: "Increase max health", types: ["hp"] },
- { name: "Kill a floating hand", types: ["ghost"] },
- { name: "Obtain an area map", types: ["boss"] },
- { name: "Complete a stealth section", types: ["guard"] }
+ { name: "Increase Solar Energy", types: ["hp"] },
+ { name: "", types: ["ghost"] },
+ { name: "Obtain a dungeon map", types: ["dungeon"] },
+ { name: "", types: ["guard"] }
  ];
 bingoList[16] = [
- { name: "Learn an ability involving fire", types: ["ability"] },
- { name: "Ride a snowboard", types: ["ice"] },
- { name: "Complete a rollercoaster/minecart ride", types: ["area"] },
- { name: "Rescue an NPC", types: ["save"] }
+ { name: "", types: ["ability"] },
+ { name: "", types: ["ice"] },
+ { name: "", types: ["area"] },
+ { name: "", types: ["save"] }
 ];
 bingoList[17] = [
- { name: "Ride a boat/raft", types: ["vehicle"] },
- { name: "Defeat an insect boss", types: ["boss","bug"] },
- { name: "Kill a ghost", types: ["ghost"] },
- { name: "Kill a King", types: ["castle"] }
+ { name: "", types: ["vehicle"] },
+ { name: "", types: ["boss","bug"] },
+ { name: "", types: ["ghost"] },
+ { name: "", types: ["castle"] }
 ];
 bingoList[18] = [
- { name: "Complete a world", types: ["boss"] },
- { name: "Learn how to shrink", types: ["ability"] },
- { name: "Stun an enemy", types: ["ability"] }
+ { name: "", types: ["boss"] },
+ { name: "", types: ["ability"] },
+ { name: "", types: ["ability"] }
 ];
 bingoList[19] = [
- { name: "Put on a disguise", types: ["guard"] },
- { name: "Kill a shapeshifter", types: ["ghost"] },
- { name: "Defeat your rival/dark-side", types: ["cutscene"] },
- { name: "Glitch out of bounds", types: ["glitch"] }
+ { name: "", types: ["guard"] },
+ { name: "", types: ["ghost"] },
+ { name: "", types: ["cutscene"] },
+ { name: "", types: ["glitch"] }
 ];
 bingoList[20] = [
- { name: "Ride a train", types: ["vehicle"] },
- { name: "Obtain ability to warp", types: ["ability"] },
- { name: "Learn how to dig", types: ["ability"] },
- { name: "Transform into an animal", types: ["ability"] }
+ { name: "", types: ["vehicle"] },
+ { name: "", types: ["ability"] },
+ { name: "", types: ["ability"] },
+ { name: "", types: ["ability"] }
 ];
 bingoList[21] = [
- { name: "Manipulate time", types: ["puzzle"] },
- { name: "Change the water level", types: ["water"] },
- { name: "Turn invisible", types: ["ability"] }
+ { name: "", types: ["puzzle"] },
+ { name: "", types: ["water"] },
+ { name: "", types: ["ability"] }
 ];
 bingoList[22] = [
- { name: "Flip gravity", types: ["puzzle"] },
- { name: "Kill a vampire", types: ["ghost","boss"] },
+ { name: "", types: ["puzzle"] },
+ { name: "", types: ["ghost","boss"] },
  { name: "Defeat three bosses", types: ["boss"] }
 ];
 bingoList[23] = [
- { name: "Obtain the ability to walk underwater", types: ["ability"] },
- { name: "Turn the lights on", types: ["puzzle"] }
+ { name: "", types: ["ability"] },
+ { name: "", types: ["puzzle"] }
 ];
 bingoList[24] = [
- { name: "Defeat an enemy dragon", types: ["boss"] },
- { name: "Pass through a fake wall/floor", types: ["ghost"] },
- { name: "No jumping", types: ["boss","save","air","ability"] }
+ { name: "", types: ["boss"] },
+ { name: "", types: ["ghost"] },
+ { name: "", types: ["boss","save","air","ability"] }
 ];
 bingoList[25] = [
   { name: "Obtain Cherrybomb 3", types: ["brush"] },
-  { name: "Beat a game", types: ["boss"] }
+  { name: "Beat the game", types: ["boss"] }
 ];
 
 $(function() { srl.bingo(bingoList, 5); });
