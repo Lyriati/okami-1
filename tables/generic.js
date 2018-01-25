@@ -7,7 +7,7 @@ bingoList[1] = [
   { name: "Bloom Taka Pass", types: ["bloom"] },
   { name: "Obtain Sunrise", types: ["free","brush"] },
   { name: "Complete the Shinshu Field Monster List", types: ["fight"] },
-  { name: "Obtain Cherrybomb", types: ["brush"] },
+  { name: "Obtain Cherrybomb", types: ["brush","cherrybomb"] },
   { name:  "Bark 50 times", types: ["bork","free"] },
 ];
 bingoList[2] = [
@@ -52,7 +52,7 @@ bingoList[4] = [
 bingoList[8] = [
  { name: "Sunken Ship Stray Bead", types: ["straybead"] },
  { name: "Feed all the animals in Ryoshima Coast ", types: ["feeding"] },
- { name: "Obtain Cherrybomb 2", types: ["brush"] },
+ { name: "Obtain Cherrybomb 2", types: ["brush","cherrybomb"] },
  { name: "Obtain 20 Stray Beads", types: ["straybead"] }
 ];
 bingoList[7] = [
@@ -149,7 +149,7 @@ bingoList[24] = [
  { name: "", types: ["boss","save","air","ability"] }
 ];
 bingoList[25] = [
-  { name: "Obtain Cherrybomb 3", types: ["brush"] },
+  { name: "Obtain Cherrybomb 3", types: ["brush","cherrybomb"] },
   { name: "Beat the game", types: ["boss"] }
 ];
 
