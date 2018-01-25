@@ -1,6 +1,7 @@
 var bingoList = [];
 bingoList[1] = [
 //Focused on NG, restricting Cutscene skipping
+//Using " \' " for apostrophes as I feel more comfortable with them being there.
   { name: "Rejuveinate Mrs. Orange\'s Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
   { name: "Bloom Taka Pass", types: ["bloom"] },
