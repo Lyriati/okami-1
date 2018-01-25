@@ -1,5 +1,6 @@
 var bingoList = [];
 bingoList[1] = [
+//Focused on NG, restricting Cutscene skipping
   { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
   { name: "Bloom Taka Pass", types: ["bloom"] },
@@ -66,7 +67,7 @@ bingoList[9] = [
  { name: "Enter strong wind currents", types: ["wind"] }
 ];
 bingoList[10] = [
- { name: "Enter Oni Island", types: ["story" },
+ { name: "Enter Oni Island", types: ["story"] },
  { name: "Enter a volcano", types: ["fire","area"] },
  { name: "Don't shoot", types: ["save","ability","weapon"] },
  { name: "Armor/Defense upgrade", types: ["hp"] }
