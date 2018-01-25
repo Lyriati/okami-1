@@ -75,7 +75,7 @@ bingoList[10] = [
 ];
 bingoList[11] = [
  { name: "Help Mr. Flower preform his Gura Shuffle", types: ["sidequest"] },
- { name: "Defeat Blight", types: ["story"] },
+ { name: "Defeat Blight", types: ["story","boss"] },
  { name: "Beat a boss", types: ["boss"] },
  { name: "Complete Masu\'s Monster Manifest", types: ["fight"] }
 ];
