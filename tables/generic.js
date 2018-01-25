@@ -62,10 +62,10 @@ bingoList[7] = [
  { name: "Obtain all Stray Beads from Sasa Sanctuary", types: ["straybead"] }
 ];
 bingoList[9] = [
- { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["item","sunfragment"] },
+ { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["item"] },
  { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
  { name: "Complete the Kusa Village Monster List", types: ["fight"] },
- { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["fight","sunfragment"] }
+ { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["fight",] }
 ];
 bingoList[10] = [
  { name: "Bloom Ryoshima Coast", types: ["story"] },
@@ -127,10 +127,10 @@ bingoList[20] = [
  { name: "Complete Wali\'s Record of Penance", types: ["fight"] },
  { name: "Have the boy wearing an Otter mask give you praise", types: ["praise"] },
  { name: "Obtain Power Slash 3", types: ["brush"] },
- { name: "Obtain the Sun Fragment from Kamui (Ezofuji)", types: ["item","sunfragment"] }
+ { name: "Obtain the Sun Fragment from Kamui (Ezofuji)", types: ["item"] }
 ];
 bingoList[21] = [
- { name: "Obtain the buried Sun Fragment from Inner Yoshpet", types: ["item","sunfragment"] },
+ { name: "Obtain the buried Sun Fragment from Inner Yoshpet", types: ["item"] },
  { name: "Compelte the Wawku Shrine", types: ["Story"] },
  { name: "Obtain 50 Stray Beads", types: ["straybead"] }
 ];
@@ -140,7 +140,7 @@ bingoList[22] = [
  { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] }
 ];
 bingoList[23] = [
- { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["sunfragment","item"] },
+ { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["item"] },
  { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] }
 ];
 bingoList[24] = [
