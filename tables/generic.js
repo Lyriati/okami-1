@@ -1,4 +1,6 @@
 var bingoList = [];
+//Skipping cutscenes is restricted
+//This bingo board is focused on the NG aspect, will not include anything for NG+ including KT Jumping
 bingoList[1] = [
   { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
@@ -44,7 +46,7 @@ bingoList[6] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
  { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
  { name: "Defeat 3 Blue Demon Scrolls", types: ["fight"] },
- { name: "Talk to a scientist", types: ["sci"] },
+ { name: "Obtain the Stray Bread from Kamiki Village Waterfall", types: ["straybead"] },
  { name: "New character/partner", types: ["char"] }
 ];
 bingoList[7] = [
