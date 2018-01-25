@@ -50,9 +50,9 @@ bingoList[6] = [
 ];
 bingoList[7] = [
  { name: "Sunken Ship Stray Bead", types: ["straybead"] },
- { name: "Ride an animal", types: ["vehicle"] },
- { name: "New vehicle", types: ["vehicle"] },
- { name: "Heal an ally", types: ["heal"] }
+ { name: "Feed all Ryoshima Coast Animals", types: ["feeding"] },
+ { name: "Obtain Cherrybomb 2", types: ["brush"] },
+ { name: "Obtain 20 Stray Beads", types: ["straybead"] }
 ];
 bingoList[8] = [
  { name: "Restore air with a bubble", types: ["water"] },
@@ -61,7 +61,7 @@ bingoList[8] = [
  { name: "Enter an inn/hotel", types: ["castle","area"] }
 ];
 bingoList[9] = [
- { name: "Use a key", types: ["boss"] },
+ { name: "Use a key to open a Lockjaw", types: ["key"] },
  { name: "Escape from prison", types: ["guard"] },
  { name: "Destroy an enemy vehicle", types: ["vehicle"] },
  { name: "Enter strong wind currents", types: ["wind"] }
