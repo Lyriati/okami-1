@@ -104,13 +104,13 @@ bingoList[16] = [
  { name: "Defeat Ninetails", types: ["story"] },
  { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["fight"] },
  { name: "Obtain Thunderbolt", types: ["brush"] },
- { name: "", types: ["save"] }
+ { name: "Obtain all the Stray Beads from North Ryoshima Coast", types: ["straybead"] }
 ];
 bingoList[17] = [
- { name: "", types: ["vehicle"] },
- { name: "", types: ["boss","bug"] },
- { name: "", types: ["ghost"] },
- { name: "", types: ["castle"] }
+ { name: "Obtain the Stray Bead from the Imperial Palace", types: ["straybead"] },
+ { name: "Obtain the Lucky Mallet" types: ["item"] },
+ { name: "Obtain all the Stray Beads from the Sunken Ship", types: ["straybead"] },
+ { name: "Obtain all the Stray Beads from Sei\'an City\'s Aristocratic Quarters", types: ["straybead"] }
 ];
 bingoList[18] = [
  { name: "", types: ["boss"] },
@@ -132,7 +132,7 @@ bingoList[20] = [
 bingoList[21] = [
  { name: "", types: ["puzzle"] },
  { name: "", types: ["water"] },
- { name: "", types: ["ability"] }
+ { name: "Obtain 50 Stray Beads", types: ["straybead"] }
 ];
 bingoList[22] = [
  { name: "", types: ["puzzle"] },
