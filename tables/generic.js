@@ -65,19 +65,19 @@ bingoList[9] = [
  { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["treasure"] },
  { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
  { name: "Complete the Kusa Village Monster List", types: ["fight","sidequest"] },
- { name: "", types: ["wind"] }
+ { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["sidequest","fight"] }
 ];
 bingoList[10] = [
  { name: "Bloom Ryoshima Coast", types: ["story"] },
  { name: "Fish a Manta", types: ["fishing"] },
- { name: "", types: ["save","ability","weapon"] },
- { name: "", types: ["hp"] }
+ { name: "Have the Tea Customer in Taka Pass give you praise", types: ["sidequest"] },
+ { name: "Draw five designs for the Sei\'an City girl and obtain a Stray Bead", types: ["straybead"] }
 ];
 bingoList[11] = [
- { name: "", types: ["ability"] },
+ { name: "Help Mr. Flower preform his Gura Shuffle", types: ["sidequest"] },
  { name: "Defeat Blight", types: ["boss","story"] },
  { name: "Beat a boss", types: ["boss"] },
- { name: "", types: ["ability"] }
+ { name: "Complete Masu\'s Monster Manifest", types: ["fight","sidequest"] }
 ];
 bingoList[12] = [
  { name: "", types: ["clothes"] },
