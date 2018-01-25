@@ -5,7 +5,7 @@ bingoList[1] = [
   { name: "Bloom Taka Pass", types: ["bloom"] },
   { name: "Buy Infinity Judge", types: ["weapon"] },
   { name: "Complete a Wanted List", types: ["fight","sidequest"] },
-  { name: "Obtain Cherrybomb", types: ["brush"] }
+  { name: "Obtain Cherrybomb", types: ["brush"] },
 ];
 bingoList[2] = [
   { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
@@ -14,7 +14,7 @@ bingoList[2] = [
   { name: "Catch the WHOPPER", types: ["fishing"] },
   { name: "Defeat Spider Queen", types: ["dungeon","boss","story"] },
   { name: "Complete Turnip-digging minigame in Kamiki", types: ["minigame","sidequest"] },
-  { name: "Is dog", types: ["free"] }
+  { name: "Is dog", types: ["free"] },
 ];
 bingoList[3] = [
   { name: "Feed all animals in Agata Forest", types: ["feeding"] },
