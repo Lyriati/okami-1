@@ -23,8 +23,8 @@ bingoList[3] = [
   { name: "Defeat Orochi", types: ["story","boss"] },
   { name: "Obtain the Mother Tree travel guide", types: ["item"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
-  { name: "Defeat Blight", types: ["boss","story"] }
-  { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] }
+  { name: "Defeat Blight", types: ["boss","story"] },
+  { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
 ];
 bingoList[4] = [
  { name: "Collect 100 yellow/golden items", types: ["money"] },
