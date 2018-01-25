@@ -6,7 +6,7 @@ bingoList[1] = [
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
   { name: "Bloom Taka Pass", types: ["bloom"] },
   { name: "Obtain Sunrise", types: ["free","brush"] },
-  { name: "Complete the Shinshu Field Monster List", types: ["fight"] },
+  { name: "Complete the Shinshu Field Monster List", types: ["monsterlist"] },
   { name: "Obtain Cherrybomb", types: ["brush","cherrybomb"] },
   { name:  "Bark 50 times", types: ["bork","free"] },
 ];
@@ -24,7 +24,7 @@ bingoList[5] = [
   { name: "Bloom the clover near Madam Fawn's hut", types: ["clover"] },
   { name: "Obtain Galestorm", types: ["brush","story"] },
   { name: "Defeat Orochi", types: ["story"] },
-  { name: "Obtain the Mother Tree travel guide", types: ["item"] },
+  { name: "Obtain the Mother Tree travel guide", types: ["travelguide"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
   { name: "Buy Infinity Judge", types: ["weapon"] },
   { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
@@ -64,7 +64,7 @@ bingoList[7] = [
 bingoList[9] = [
  { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["item"] },
  { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
- { name: "Complete the Kusa Village Monster List", types: ["fight"] },
+ { name: "Complete the Kusa Village Monster List", types: ["monsterlist"] },
  { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["fight",] }
 ];
 bingoList[10] = [
@@ -77,21 +77,21 @@ bingoList[11] = [
  { name: "Help Mr. Flower preform his Gura Shuffle", types: ["sidequest"] },
  { name: "Defeat Blight", types: ["story","boss"] },
  { name: "Beat a boss", types: ["boss"] },
- { name: "Complete Masu\'s Monster Manifest", types: ["fight"] }
+ { name: "Complete Masu\'s Monster Manifest", types: ["monsterlist"] }
 ];
 bingoList[12] = [
  { name: "Bloom the clover in Sasa Sanctuary", types: ["clover"] },
  { name: "Learn Mist Warp", types: ["brush"] },
- { name: "Obtain the Northern Land travel guide", types: ["item"] }
+ { name: "Obtain the Northern Land travel guide", types: ["travelguide"] }
 ];
 bingoList[13] = [
- { name: "Obtain the Mark of Kabegami travel guide", types: ["item"] },
+ { name: "Obtain the Mark of Kabegami travel guide", types: ["travelguide"] },
  { name: "Obtain Power Slash 2", types: ["brush"] },
  { name: "Obtain Deluge", types: ["brush"] }
 ];
 bingoList[14] = [
  { name: "Obtain Fountain", types: ["Brush"] },
- { name: "Obtain 50 Demon Fangs", types: ["fight"] },
+ { name: "Obtain 50 Demon Fangs", types: ["demonfangs"] },
  { name: "Fish a Marlin", types: ["fishing","Whirlwind"] }
 ];
 bingoList[15] = [
@@ -102,7 +102,7 @@ bingoList[15] = [
  ];
 bingoList[16] = [
  { name: "Defeat Ninetails", types: ["story"] },
- { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["fight","deviltrial"] },
+ { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["deviltrial"] },
  { name: "Obtain Thunderbolt", types: ["brush"] },
  { name: "Obtain all the Stray Beads from North Ryoshima Coast", types: ["straybead"] }
 ];
@@ -114,7 +114,7 @@ bingoList[17] = [
 ];
 bingoList[18] = [
  { name: "Obtain all the Stray Beads from the Dragon Palace", types: ["straybead"] },
- { name: "Clear the North Ryoshima Coast Devil Game Trial Cave", types: ["fight","deviltrial"] },
+ { name: "Clear the North Ryoshima Coast Devil Game Trial Cave", types: ["deviltrial"] },
  { name: "Bloom all the clovers in Ryoshima Coast", types: ["clover"] }
 ];
 bingoList[19] = [
@@ -124,7 +124,7 @@ bingoList[19] = [
  { name: "Defeat the Final Bandit Spider in Kamui", types: ["fight"] }
 ];
 bingoList[20] = [
- { name: "Complete Wali\'s Record of Penance", types: ["fight"] },
+ { name: "Complete Wali\'s Record of Penance", types: ["monsterlist"] },
  { name: "Have the boy wearing an Otter mask give you praise", types: ["praise"] },
  { name: "Obtain Power Slash 3", types: ["brush"] },
  { name: "Obtain the Sun Fragment from Kamui (Ezofuji)", types: ["item"] }
@@ -145,7 +145,7 @@ bingoList[23] = [
 ];
 bingoList[24] = [
  { name: "", types: ["boss"] },
- { name: "Clear the Kamui Devil Gate Trial Cave", types: ["fight","deviltrial"] },
+ { name: "Clear the Kamui Devil Gate Trial Cave", types: ["deviltrial"] },
  { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
