@@ -92,7 +92,7 @@ bingoList[13] = [
 bingoList[14] = [
  { name: "Obtain Fountain", types: ["Brush"] },
  { name: "Obtain 50 Demon Fangs", types: ["demonfangs"] },
- { name: "Fish a Marlin", types: ["fishing","Whirlwind"] }
+ { name: "Fish a Marlin", types: ["fishing"] }
 ];
 bingoList[15] = [
  { name: "Increase Solar Energy", types: ["hp"] },
