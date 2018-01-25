@@ -17,7 +17,7 @@ bingoList[2] = [
   { name: "Catch the WHOPPER", types: ["fishing"] },
   { name: "Defeat Spider Queen", types: ["dungeon","boss","story"] },
   { name: "Complete Turnip-digging minigame in Kamiki", types: ["minigame","sidequest"] },
-  { name: "Free Space", types: ["free"] },
+  { name: "Bloom the clover on the island in Kamiki Village", types: ["clover"] },
 ];
 bingoList[5] = [
   { name: "Feed all animals in Agata Forest", types: ["feeding"] },
@@ -80,7 +80,7 @@ bingoList[11] = [
  { name: "Complete Masu\'s Monster Manifest", types: ["fight"] }
 ];
 bingoList[12] = [
- { name: "", types: ["clothes"] },
+ { name: "Bloom the clover in Sasa Sanctuary", types: ["clover"] },
  { name: "", types: ["area"] },
  { name: "", types: ["vehicle"] }
 ];
