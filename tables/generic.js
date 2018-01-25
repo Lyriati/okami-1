@@ -5,7 +5,7 @@ bingoList[1] = [
   { name: "Bloom Taka Pass", types: ["bloom"] },
   { name: "Buy Infinity Judge", types: ["weapon"] },
   { name: "Complete a Wanted List", types: ["fight","sidequest"] },
-  { name: "Obtain Cherrybomb 1", types: ["brush"] }
+  { name: "Obtain Cherrybomb", types: ["brush"] }
 ];
 bingoList[2] = [
   { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
