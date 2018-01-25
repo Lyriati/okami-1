@@ -49,7 +49,7 @@ bingoList[6] = [
  { name: "Obtain 10 Stray Beads", types: ["straybead"] }
 ];
 bingoList[7] = [
- { name: "Enter a snowy/icy area", types: ["snow", "ice","area"] },
+ { name: "Sunken Ship Stray Bead", types: ["straybead"] },
  { name: "Ride an animal", types: ["vehicle"] },
  { name: "New vehicle", types: ["vehicle"] },
  { name: "Heal an ally", types: ["heal"] }
@@ -148,7 +148,7 @@ bingoList[24] = [
  { name: "No jumping", types: ["boss","save","air","ability"] }
 ];
 bingoList[25] = [
-  { name: "Win a tournament", types: ["water"] },
+  { name: "Obtain Cherrybomb 3", types: ["brush"] },
   { name: "Beat a game", types: ["boss"] }
 ];
 
