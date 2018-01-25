@@ -1,39 +1,52 @@
 var bingoList = [];
 bingoList[1] = [
- { name: "No saving", types: ["save"] },
- { name: "Buy 3 items from a shop", types: ["money"] },
- { name: "Defeat an enemy using only punches", types: ["fighting"] },
- { name: "Obtain 3 extra lives", types: ["life"] }
+//Focused on NG, restricting Cutscene skipping
+  { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
+  { name: "Tsuta Ruins Key", types: ["dungeon"] },
+  { name: "Bloom Taka Pass", types: ["bloom"] },
+  { name: "Buy Infinity Judge", types: ["weapon"] },
+  { name: "Complete a Wanted List", types: ["fight","sidequest"] },
+  { name: "Obtain Cherrybomb", types: ["brush"] },
+  { name:  "Bark 50 times", types: ["bork"] },
 ];
 bingoList[2] = [
- { name: "Kill a knight", types: ["future"] },
- { name: "Defeat an enemy using only kicks", types: ["fighting"] },
- { name: "Obtain a potion", types: ["money","heal"] }
+  { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
+  { name: "Rescue Chun", types: ["story"] },
+  { name: "Complete Komuso's Challenge in Kamiki", types: ["sidequest","fight"] },
+  { name: "Catch the WHOPPER", types: ["fishing"] },
+  { name: "Defeat Spider Queen", types: ["dungeon","boss","story"] },
+  { name: "Complete Turnip-digging minigame in Kamiki", types: ["minigame","sidequest"] },
+  { name: "Is dog", types: ["free"] },
 ];
 bingoList[3] = [
- { name: "Touch a cloud", types: ["air"] },
- { name: "Kill a zombie/mummy", types: ["ghost"] },
- { name: "Complete an autoscroll section", types: ["level"] },
- { name: "Complete a prologue/tutorial", types: ["cutscene"] }
+  { name: "Feed all animals in Agata Forest", types: ["feeding"] },
+  { name: "Bloom the clover near Madam Fawn's hut", types: ["clover"] },
+  { name: "Obtain Galestorm", types: ["brush","story"] },
+  { name: "Defeat Orochi", types: ["story","boss"] },
+  { name: "Obtain the Mother Tree travel guide", types: ["item"] },
+  { name: "Learn Holy Eagle", types: ["dojo"] },
+  { name: "Defeat Blight", types: ["boss","story"] },
+  { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
+  { name: "Obtain Inferno", types: ["brush"] },
 ];
 bingoList[4] = [
- { name: "Collect 100 yellow/golden items", types: ["money"] },
- { name: "Obtain a card", types: ["obtain"] },
- { name: "Drain an enemy bar", types: ["boss"] },
- { name: "Complete a bonus/special stage", types: ["level"] }
+ { name: "Learn Digging Champ", types: ["dojo"] },
+ { name: "Enter Sei'an City", types: ["story"] },
+ { name: "Defeat Ninetails", types: ["boss"] },
+ { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
 bingoList[5] = [
- { name: "Kill a spider", types: ["bug"] },
- { name: "Obtain a fruit", types: ["shop"] },
- { name: "Level up to 4", types: ["hp"] },
- { name: "Enter a forest/jungle", types: ["weapon","area"] }
+ { name: "Obtain Whirlwind", types: ["fishing","brush","Whirlwind"] },
+ { name: "Fish a Marlin", types: ["fishing","Whirlwind"] },
+ { name: "Fish a Manta", types: ["fishing"] },
+ { name: "Fish a Striped Snapper", types: ["fishing"] }
 ];
 bingoList[6] = [
- { name: "Enter a castle", types: ["castle","area"] },
- { name: "Enter a desert", types: ["fire","area"] },
- { name: "Talk to a King or Princess", types: ["castle"] },
- { name: "Talk to a scientist", types: ["sci"] },
- { name: "New character/partner", types: ["char"] }
+ { name: "Find 5 Incense Burners", types: ["treasure"] },
+ { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
+ { name: "Defeat 3 Blue Demon Scrolls", types: ["fight"] },
+ { name: "Obtain the Stray Bread from Kamiki Village Waterfall", types: ["straybead"] },
+ { name: "Obtain 10 Stray Beads", types: ["straybead"] }
 ];
 bingoList[7] = [
  { name: "Enter a snowy/icy area", types: ["snow", "ice","area"] },
@@ -54,7 +67,7 @@ bingoList[9] = [
  { name: "Enter strong wind currents", types: ["wind"] }
 ];
 bingoList[10] = [
- { name: "Obtain an explosive", types: ["weapon"] },
+ { name: "Enter Oni Island", types: ["story"] },
  { name: "Enter a volcano", types: ["fire","area"] },
  { name: "Don't shoot", types: ["save","ability","weapon"] },
  { name: "Armor/Defense upgrade", types: ["hp"] }
