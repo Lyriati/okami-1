@@ -5,10 +5,10 @@ bingoList[1] = [
   { name: "Rejuveinate Mrs. Orange\'s Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
   { name: "Bloom Taka Pass", types: ["bloom"] },
-  { name: "Buy Infinity Judge", types: ["weapon"] },
-  { name: "Complete a Wanted List", types: ["fight","sidequest"] },
+  { name: "Obtain Sunrise", types: ["free","brush"] },
+  { name: "Complete the Shinshu Field Monster List", types: ["fight","sidequest"] },
   { name: "Obtain Cherrybomb", types: ["brush"] },
-  { name:  "Bark 50 times", types: ["bork"] },
+  { name:  "Bark 50 times", types: ["bork","free"] },
 ];
 bingoList[2] = [
   { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
@@ -26,7 +26,7 @@ bingoList[5] = [
   { name: "Defeat Orochi", types: ["story","boss"] },
   { name: "Obtain the Mother Tree travel guide", types: ["item"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
-  { name: "", types: [""] },
+  { name: "Buy Infinity Judge", types: ["weapon"] },
   { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
   { name: "Obtain Inferno", types: ["brush"] },
 ];
@@ -37,10 +37,10 @@ bingoList[6] = [
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
 bingoList[3] = [
- { name: "", types: [""] },
- { name: "", types: [""] },
- { name: "", types: [""] },
- { name: "", types: [""] }
+ { name: "Feed all the animals in Hana Valley", types: ["feeding"] },
+ { name: "Have Camille reward you with praise", types: ["sidequest"] },
+ { name: "Have Sleepy reward you with praise", types: ["sidequest"] },
+ { name: "Bring the teacup to the Tea Master in Taka Pass", types: ["sidequest"] }
 ];
 bingoList[4] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
@@ -49,22 +49,22 @@ bingoList[4] = [
  { name: "Obtain the Stray Bread from Kamiki Village Waterfall", types: ["straybead"] },
  { name: "Obtain 10 Stray Beads", types: ["straybead"] }
 ];
-bingoList[7] = [
+bingoList[8] = [
  { name: "Sunken Ship Stray Bead", types: ["straybead"] },
  { name: "Feed all the animals in Ryoshima Coast ", types: ["feeding"] },
  { name: "Obtain Cherrybomb 2", types: ["brush"] },
  { name: "Obtain 20 Stray Beads", types: ["straybead"] }
 ];
-bingoList[8] = [
+bingoList[7] = [
  { name: "Obtain all Stray Beads from Tsuta Ruins", types: ["straybead"] },
  { name: "Obtain all Stray Beads from Kamiki Village", types: ["straybead"] },
  { name: "Obtain the Stray Bead from Hayate", types: ["straybead"] },
- { name: "Bully Hayate", types: ["sidequest"] }
+ { name: "Obtain all Stray Beads from Sasa Sanctuary", types: ["straybead"] }
 ];
 bingoList[9] = [
- { name: "Use a key to open a Lockjaw", types: ["key"] },
+ { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["treasure"] },
  { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
- { name: "", types: ["vehicle"] },
+ { name: "Complete the Kusa Village Monster List", types: ["fight","sidequest"] },
  { name: "", types: ["wind"] }
 ];
 bingoList[10] = [
