@@ -50,12 +50,12 @@ bingoList[6] = [
 ];
 bingoList[7] = [
  { name: "Sunken Ship Stray Bead", types: ["straybead"] },
- { name: "Feed all Ryoshima Coast Animals", types: ["feeding"] },
+ { name: "Feed all the animals in Ryoshima Coast ", types: ["feeding"] },
  { name: "Obtain Cherrybomb 2", types: ["brush"] },
  { name: "Obtain 20 Stray Beads", types: ["straybead"] }
 ];
 bingoList[8] = [
- { name: "", types: ["water"] },
+ { name: "Obtain all Stray Beads from Tsuta Ruins", types: ["straybead"] },
  { name: "", types: ["weapon"] },
  { name: "", types: ["race"] },
  { name: "", types: ["castle","area"] }
