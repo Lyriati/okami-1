@@ -26,12 +26,13 @@ bingoList[3] = [
   { name: "Learn Holy Eagle", types: ["dojo"] },
   { name: "Defeat Blight", types: ["boss","story"] },
   { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
+  { name: "Obtain Inferno", types: ["brush"] },
 ];
 bingoList[4] = [
- { name: "Collect 100 yellow/golden items", types: ["money"] },
- { name: "Obtain a card", types: ["obtain"] },
- { name: "Drain an enemy bar", types: ["boss"] },
- { name: "Complete a bonus/special stage", types: ["level"] }
+ { name: "Learn Digging Champ", types: ["dojo"] },
+ { name: "Enter Oni Island", types: ["story"] },
+ { name: "Defeat Ninetails", types: ["boss"] },
+ { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
 bingoList[5] = [
  { name: "Kill a spider", types: ["bug"] },
