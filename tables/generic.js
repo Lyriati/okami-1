@@ -35,14 +35,14 @@ bingoList[4] = [
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
 bingoList[5] = [
- { name: "Kill a spider", types: ["bug"] },
- { name: "Obtain a fruit", types: ["shop"] },
- { name: "Level up to 4", types: ["hp"] },
- { name: "Enter a forest/jungle", types: ["weapon","area"] }
+ { name: "Obtain Whirlwind", types: ["fishing","brush","Whirlwind"] },
+ { name: "Fish a Marlin", types: ["fishing","Whirlwind"] },
+ { name: "Fish a Manta", types: ["fishing"] },
+ { name: "Fish a Striped Snapper", types: ["fishing"] }
 ];
 bingoList[6] = [
- { name: "Enter a castle", types: ["castle","area"] },
- { name: "Enter a desert", types: ["fire","area"] },
+ { name: "Find 5 Incense Burners", types: ["treasure"] },
+ { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
  { name: "Talk to a King or Princess", types: ["castle"] },
  { name: "Talk to a scientist", types: ["sci"] },
  { name: "New character/partner", types: ["char"] }
