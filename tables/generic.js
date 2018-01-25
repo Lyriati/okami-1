@@ -146,6 +146,9 @@ bingoList[23] = [
 bingoList[24] = [
  { name: "", types: ["boss"] },
  { name: "Clear the Kamui Devil Gate Trial Cave", types: ["deviltrial"] },
+ { name: "Bloom all the clovers in the Wawku Shrine", types: ["clover"] },
+ { name: "Fish a Yellowtail", types: ["fishing"] },
+ { name: "Fish an Oarfish", types: ["fishing"] },
  { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
