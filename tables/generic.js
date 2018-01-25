@@ -93,12 +93,13 @@ bingoList[14] = [
  { name: "Obtain Fountain", types: ["Brush"] },
  { name: "Obtain 50 Demon Fangs", types: ["demonfangs"] },
  { name: "Fish a Marlin", types: ["fishing"] }
+ { name: "Bloom all the clovers in Sei\'an City' ", types: ["clover"] },
 ];
 bingoList[15] = [
- { name: "Increase Solar Energy", types: ["hp"] },
+ { name: "Increase Solar Energy to the max", types: ["solarenergy"] },
  { name: "Fish a Striped Snapper", types: ["fishing"] },
  { name: "Obtain a dungeon map", types: ["dungeon"] },
- { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
+ { name: "Obtain Whirlwind", types: ["brush"] }
  ];
 bingoList[16] = [
  { name: "Defeat Ninetails", types: ["story"] },
