@@ -1,13 +1,14 @@
 var bingoList = [];
 bingoList[1] = [
 //Focused on NG, restricting Cutscene skipping
-  { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
+//Using " \' " for apostrophes as I feel more comfortable with them being there.
+  { name: "Rejuveinate Mrs. Orange\'s Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
   { name: "Bloom Taka Pass", types: ["bloom"] },
-  { name: "Buy Infinity Judge", types: ["weapon"] },
-  { name: "Complete a Wanted List", types: ["fight","sidequest"] },
-  { name: "Obtain Cherrybomb", types: ["brush"] },
-  { name:  "Bark 50 times", types: ["bork"] },
+  { name: "Obtain Sunrise", types: ["free","brush"] },
+  { name: "Complete the Shinshu Field Monster List", types: ["monsterlist"] },
+  { name: "Obtain Cherrybomb", types: ["brush","cherrybomb"] },
+  { name:  "Bark 50 times", types: ["bork","free"] },
 ];
 bingoList[2] = [
   { name: "Defeat Ida 3 times and obtain the Gimmick Gear", types: ["secret"] },
@@ -16,140 +17,140 @@ bingoList[2] = [
   { name: "Catch the WHOPPER", types: ["fishing"] },
   { name: "Defeat Spider Queen", types: ["dungeon","boss","story"] },
   { name: "Complete Turnip-digging minigame in Kamiki", types: ["minigame","sidequest"] },
-  { name: "Is dog", types: ["free"] },
+  { name: "Bloom the clover on the island in Kamiki Village", types: ["clover"] },
 ];
-bingoList[3] = [
+bingoList[5] = [
   { name: "Feed all animals in Agata Forest", types: ["feeding"] },
   { name: "Bloom the clover near Madam Fawn's hut", types: ["clover"] },
   { name: "Obtain Galestorm", types: ["brush","story"] },
-  { name: "Defeat Orochi", types: ["story","boss"] },
-  { name: "Obtain the Mother Tree travel guide", types: ["item"] },
+  { name: "Defeat Orochi", types: ["story"] },
+  { name: "Obtain the Mother Tree travel guide", types: ["travelguide"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
-  { name: "Defeat Blight", types: ["boss","story"] },
+  { name: "Buy Infinity Judge", types: ["weapon"] },
   { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
   { name: "Obtain Inferno", types: ["brush"] },
 ];
-bingoList[4] = [
- { name: "Learn Digging Champ", types: ["dojo"] },
- { name: "Enter Sei'an City", types: ["story"] },
- { name: "Defeat Ninetails", types: ["boss"] },
+bingoList[6] = [
+ { name: "Learn Digging Champ", types: ["dojo","digging"] },
+ { name: "Enter Sei\'an City", types: ["story"] },
+ { name: "Obtain the Stray Bead behind Mr. Flower\'s house", types: ["straybead"] },
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
-bingoList[5] = [
- { name: "Obtain Whirlwind", types: ["fishing","brush","Whirlwind"] },
- { name: "Fish a Marlin", types: ["fishing","Whirlwind"] },
- { name: "Fish a Manta", types: ["fishing"] },
- { name: "Fish a Striped Snapper", types: ["fishing"] }
+bingoList[3] = [
+ { name: "Feed all the animals in Hana Valley", types: ["feeding"] },
+ { name: "Have Camille reward you with praise", types: ["praise"] },
+ { name: "Have Sleepy reward you with praise", types: ["praise"] },
+ { name: "Bring the teacup to the Tea Master in Taka Pass", types: ["teacup"] }
 ];
-bingoList[6] = [
+bingoList[4] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
- { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
+ { name: "Offer the vase to the Orochi Guardian Statue", types: ["guardianstatue"] },
  { name: "Defeat 3 Blue Demon Scrolls", types: ["fight"] },
  { name: "Obtain the Stray Bread from Kamiki Village Waterfall", types: ["straybead"] },
  { name: "Obtain 10 Stray Beads", types: ["straybead"] }
 ];
-bingoList[7] = [
- { name: "Sunken Ship Stray Bead", types: ["straybead"] },
- { name: "Ride an animal", types: ["vehicle"] },
- { name: "New vehicle", types: ["vehicle"] },
- { name: "Heal an ally", types: ["heal"] }
-];
 bingoList[8] = [
- { name: "Restore air with a bubble", types: ["water"] },
- { name: "Weapon upgrade", types: ["weapon"] },
- { name: "Win a race", types: ["race"] },
- { name: "Enter an inn/hotel", types: ["castle","area"] }
+ { name: "Sunken Ship Stray Bead", types: ["straybead"] },
+ { name: "Feed all the animals in Ryoshima Coast ", types: ["feeding"] },
+ { name: "Obtain Cherrybomb 2", types: ["brush","cherrybomb"] },
+ { name: "Obtain 20 Stray Beads", types: ["straybead"] }
+];
+bingoList[7] = [
+ { name: "Obtain all Stray Beads from Tsuta Ruins", types: ["straybead"] },
+ { name: "Obtain all Stray Beads from Kamiki Village", types: ["straybead"] },
+ { name: "Obtain the Stray Bead from Hayate", types: ["straybead"] },
+ { name: "Obtain all Stray Beads from Sasa Sanctuary", types: ["straybead"] }
 ];
 bingoList[9] = [
- { name: "Use a key", types: ["boss"] },
- { name: "Escape from prison", types: ["guard"] },
- { name: "Destroy an enemy vehicle", types: ["vehicle"] },
- { name: "Enter strong wind currents", types: ["wind"] }
+ { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["item"] },
+ { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
+ { name: "Complete the Kusa Village Monster List", types: ["monsterlist"] },
+ { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["fight",] }
 ];
 bingoList[10] = [
- { name: "Enter Oni Island", types: ["story"] },
- { name: "Enter a volcano", types: ["fire","area"] },
- { name: "Don't shoot", types: ["save","ability","weapon"] },
- { name: "Armor/Defense upgrade", types: ["hp"] }
+ { name: "Bloom Ryoshima Coast", types: ["story"] },
+ { name: "Fish a Manta", types: ["fishing"] },
+ { name: "Have the Tea Customer in Taka Pass give you praise", types: ["praise"] },
+ { name: "Draw five designs for the Sei\'an City girl and obtain a Stray Bead", types: ["straybead"] }
 ];
 bingoList[11] = [
- { name: "Learn an ability involving magic", types: ["ability"] },
- { name: "Obtain a hammer", types: ["weapon"] },
+ { name: "Help Mr. Flower preform his Gura Shuffle", types: ["sidequest"] },
+ { name: "Defeat Blight", types: ["story","boss"] },
  { name: "Beat a boss", types: ["boss"] },
- { name: "Play an instrument/song", types: ["ability"] }
+ { name: "Complete Masu\'s Monster Manifest", types: ["monsterlist"] }
 ];
 bingoList[12] = [
- { name: "Boots/shoes upgrade", types: ["clothes"] },
- { name: "Enter outer space", types: ["area"] },
- { name: "Ride an electric elevator", types: ["vehicle"] }
+ { name: "Bloom the clover in Sasa Sanctuary", types: ["clover"] },
+ { name: "Learn Mist Warp", types: ["brush"] },
+ { name: "Obtain the Northern Land travel guide", types: ["travelguide"] }
 ];
 bingoList[13] = [
- { name: "Catch a thief/criminal", types: ["guard"] },
- { name: "Read a book", types: ["lerning"] },
- { name: "Learn an ability involving water", types: ["ability","water"] }
+ { name: "Obtain the Mark of Kabegami travel guide", types: ["travelguide"] },
+ { name: "Obtain Power Slash 2", types: ["brush"] },
+ { name: "Obtain Deluge", types: ["brush"] }
 ];
 bingoList[14] = [
- { name: "Ammo upgrade", types: ["weapon"] },
- { name: "100k points", types: ["level"] },
- { name: "Learn a password", types: ["guard"] }
+ { name: "Obtain Fountain", types: ["Brush"] },
+ { name: "Obtain 50 Demon Fangs", types: ["demonfangs"] },
+ { name: "Fish a Marlin", types: ["fishing","Whirlwind"] }
 ];
 bingoList[15] = [
- { name: "Increase max health", types: ["hp"] },
- { name: "Kill a floating hand", types: ["ghost"] },
- { name: "Obtain an area map", types: ["boss"] },
- { name: "Complete a stealth section", types: ["guard"] }
+ { name: "Increase Solar Energy", types: ["hp"] },
+ { name: "Fish a Striped Snapper", types: ["fishing"] },
+ { name: "Obtain a dungeon map", types: ["dungeon"] },
+ { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
  ];
 bingoList[16] = [
- { name: "Learn an ability involving fire", types: ["ability"] },
- { name: "Ride a snowboard", types: ["ice"] },
- { name: "Complete a rollercoaster/minecart ride", types: ["area"] },
- { name: "Rescue an NPC", types: ["save"] }
+ { name: "Defeat Ninetails", types: ["story"] },
+ { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["deviltrial"] },
+ { name: "Obtain Thunderbolt", types: ["brush"] },
+ { name: "Obtain all the Stray Beads from North Ryoshima Coast", types: ["straybead"] }
 ];
 bingoList[17] = [
- { name: "Ride a boat/raft", types: ["vehicle"] },
- { name: "Defeat an insect boss", types: ["boss","bug"] },
- { name: "Kill a ghost", types: ["ghost"] },
- { name: "Kill a King", types: ["castle"] }
+ { name: "Obtain the Stray Bead from the Imperial Palace", types: ["straybead"] },
+ { name: "Obtain the Lucky Mallet", types: ["item"] },
+ { name: "Obtain all the Stray Beads from the Sunken Ship", types: ["straybead"] },
+ { name: "Obtain all the Stray Beads from Sei\'an City\'s Aristocratic Quarters", types: ["straybead"] }
 ];
 bingoList[18] = [
- { name: "Complete a world", types: ["boss"] },
- { name: "Learn how to shrink", types: ["ability"] },
- { name: "Stun an enemy", types: ["ability"] }
+ { name: "Obtain all the Stray Beads from the Dragon Palace", types: ["straybead"] },
+ { name: "Clear the North Ryoshima Coast Devil Game Trial Cave", types: ["deviltrial"] },
+ { name: "Bloom all the clovers in Ryoshima Coast", types: ["clover"] }
 ];
 bingoList[19] = [
- { name: "Put on a disguise", types: ["guard"] },
- { name: "Kill a shapeshifter", types: ["ghost"] },
- { name: "Defeat your rival/dark-side", types: ["cutscene"] },
- { name: "Glitch out of bounds", types: ["glitch"] }
+ { name: "Bloom Kamui", types: ["story"] },
+ { name: "Use a Mermaid Spring to teleport from the Dragon Palace to Shinshu Field", types: ["mermaidspring"] },
+ { name: "Bloom all the clovers in Kamui", types: ["clover"] },
+ { name: "Defeat the Final Bandit Spider in Kamui", types: ["fight"] }
 ];
 bingoList[20] = [
- { name: "Ride a train", types: ["vehicle"] },
- { name: "Obtain ability to warp", types: ["ability"] },
- { name: "Learn how to dig", types: ["ability"] },
- { name: "Transform into an animal", types: ["ability"] }
+ { name: "Complete Wali\'s Record of Penance", types: ["monsterlist"] },
+ { name: "Have the boy wearing an Otter mask give you praise", types: ["praise"] },
+ { name: "Obtain Power Slash 3", types: ["brush"] },
+ { name: "Obtain the Sun Fragment from Kamui (Ezofuji)", types: ["item"] }
 ];
 bingoList[21] = [
- { name: "Manipulate time", types: ["puzzle"] },
- { name: "Change the water level", types: ["water"] },
- { name: "Turn invisible", types: ["ability"] }
+ { name: "Obtain the buried Sun Fragment from Inner Yoshpet", types: ["item"] },
+ { name: "Compelte the Wawku Shrine", types: ["Story"] },
+ { name: "Obtain 50 Stray Beads", types: ["straybead"] }
 ];
 bingoList[22] = [
- { name: "Flip gravity", types: ["puzzle"] },
- { name: "Kill a vampire", types: ["ghost","boss"] },
- { name: "Defeat three bosses", types: ["boss"] }
+ { name: "Learn Holy Falcon", types: ["dojo"] },
+ { name: "Learn Bead String", types: ["dojo"] },
+ { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] }
 ];
 bingoList[23] = [
- { name: "Obtain the ability to walk underwater", types: ["ability"] },
- { name: "Turn the lights on", types: ["puzzle"] }
+ { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["item"] },
+ { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] }
 ];
 bingoList[24] = [
- { name: "Defeat an enemy dragon", types: ["boss"] },
- { name: "Pass through a fake wall/floor", types: ["ghost"] },
- { name: "No jumping", types: ["boss","save","air","ability"] }
+ { name: "", types: ["boss"] },
+ { name: "Clear the Kamui Devil Gate Trial Cave", types: ["deviltrial"] },
+ { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
-  { name: "Obtain Cherrybomb 3", types: ["brush"] },
-  { name: "Beat a game", types: ["boss"] }
+  { name: "Obtain Cherrybomb 3", types: ["brush","cherrybomb"] },
+  { name: "Beat the game", types: ["boss"] }
 ];
 
 $(function() { srl.bingo(bingoList, 5); });
