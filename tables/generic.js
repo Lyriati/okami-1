@@ -1,6 +1,4 @@
 var bingoList = [];
-//Skipping cutscenes is restricted
-//This bingo board is focused on the NG aspect, will not include anything for NG+ including KT Jumping
 bingoList[1] = [
   { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
