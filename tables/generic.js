@@ -31,7 +31,7 @@ bingoList[5] = [
   { name: "Obtain Inferno", types: ["brush"] },
 ];
 bingoList[6] = [
- { name: "Learn Digging Champ", types: ["dojo"] },
+ { name: "Learn Digging Champ", types: ["dojo","digging"] },
  { name: "Enter Sei\'an City", types: ["story"] },
  { name: "Obtain the Stray Bead behind Mr. Flower\'s house", types: ["straybead"] },
  { name: "Obtain Veil of Mist", types: ["brush"] }
