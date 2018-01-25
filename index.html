@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Generic Game Bingo</title>
+
+  <!-- Style -->
+  <link href="./css/bingo.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Scripts -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/seedrandom-min.js" type="text/javascript"></script>
+  <script src="./js/bingo.js" type="text/javascript"></script>
+
+  <!-- Bingo Table -->
+  <script src="./tables/generic.js" type="text/javascript"></script>
+</head>
+  
+<body>
+  <div id="wrap"><div id="main"><div class="container">
+    <div id="bingoPage">
+
+      <div id="about_bingo">
+        <h2 style="margin-top:15px; padding-top:0px">Generate a new card</h2>
+
+        <p><span class="note">Please note that if you got linked to this page as your goal, you are not allowed to use a different card.</span></p>
+        <p style="margin-top:20px;" id="sortButtons">
+          <a class="sortButton" href="#" onclick="reseedPage();">Normal Card</a>
+          <a class="sortButton" href="#" onclick="reseedPage('short');">Short Card</a>  
+          <a class="sortButton" href="#" onclick="reseedPage('long');">Long Card</a>
+        </p>
+
+        <h2 style="margin-top:35px; padding-top:0px">About Generic Bingo</h2>
+        <p>This is a bingo board for a non-specific multi-game race.</p>
+        <p>Each square can be completed in any game where such a goal is possible.</p>
+        <p>Any restrictions on the games allowed should be agreed upon before the race starts.</p>
+        <br />
+        <p>Bans / Rules: <a href="http://pastebin.com/kMxRrvBy">http://pastebin.com/kMxRrvBy</a></p>
+        <br />Suggestions:
+        <ul>
+          <li><b>Max 2 Games</b> - Must complete a row using only one or two different games. Recommended.</li>
+          <li><b>5 Games</b> - Must use a different game for each goal.</li>
+          <li><b>Platform</b> - Games must be released on the specified platforms. (Ex. "Console/Steam", "N64", etc.)</li>
+          <li><b>Genre</b> - Games must be of the specified genre(s). </li>
+          <li style="font-size:10px;"><i>Example Goal:</i> "Max 2 Games - Shooter/RPG - Console/Steam"</li>
+        </ul>
+
+        <br /><br />
+        <p><span class="note right">Generic Bingo by RingRush.<br />SRT Bingo v1 by Nmaster64 based on SRL Bingo v5 by Cosmo.</span></p>
+      </div>
+
+      <div id="results">
+        <table id="bingo"><tbody>
+          <tr>
+            <td class="popout" id="tlbr">TL-BR</td>
+            <td class="popout" id="col1">COL1</td>
+            <td class="popout" id="col2">COL2</td>
+            <td class="popout" id="col3">COL3</td>
+            <td class="popout" id="col4">COL4</td>
+            <td class="popout" id="col5">COL5</td>
+          </tr>
+          <tr>
+            <td class="popout" id="row1">ROW1</td>
+            <td class="row1 col1 tlbr" id="slot1"></td> 
+            <td class="row1 col2" id="slot2"></td> 
+            <td class="row1 col3" id="slot3"></td> 
+            <td class="row1 col4" id="slot4"></td> 
+            <td class="row1 col5 bltr" id="slot5"></td> 
+          </tr><tr> 
+            <td class="popout" id="row2">ROW2</td>
+            <td class="row2 col1" id="slot6"></td> 
+            <td class="row2 col2 tlbr" id="slot7"></td> 
+            <td class="row2 col3" id="slot8"></td> 
+            <td class="row2 col4 bltr" id="slot9"></td> 
+            <td class="row2 col5" id="slot10"></td> 
+          </tr><tr> 
+            <td class="popout" id="row3">ROW3</td>
+            <td class="row3 col1" id="slot11"></td> 
+            <td class="row3 col2" id="slot12"></td> 
+            <td class="row3 col3 tlbr bltr" id="slot13"></td> 
+            <td class="row3 col4" id="slot14"></td> 
+            <td class="row3 col5" id="slot15"></td> 
+          </tr><tr> 
+            <td class="popout" id="row4">ROW4</td>
+            <td class="row4 col1" id="slot16"></td> 
+            <td class="row4 col2 bltr" id="slot17"></td> 
+            <td class="row4 col3" id="slot18"></td> 
+            <td class="row4 col4 tlbr" id="slot19"></td> 
+            <td class="row4 col5" id="slot20"></td> 
+          </tr><tr> 
+            <td class="popout" id="row5">ROW5</td>
+            <td class="row5 col1 bltr" id="slot21"></td> 
+            <td class="row5 col2" id="slot22"></td> 
+            <td class="row5 col3" id="slot23"></td> 
+            <td class="row5 col4" id="slot24"></td> 
+            <td class="row5 col5 tlbr" id="slot25"></td> 
+          </tr>
+          <tr>
+            <td class="popout" id="bltr">BL-TR</td>
+            <td colspan="5" style="display:none;"></td>
+          </tr>
+        </tbody></table>
+      </div>
+
+    </div>
+  </div></div></div>
+</body>
+</html>
