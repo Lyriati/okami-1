@@ -81,17 +81,17 @@ bingoList[11] = [
 ];
 bingoList[12] = [
  { name: "Bloom the clover in Sasa Sanctuary", types: ["clover"] },
- { name: "", types: ["area"] },
- { name: "", types: ["vehicle"] }
+ { name: "Learn Mist Warp", types: ["brush"] },
+ { name: "Obtain the Northern Land travel guide", types: ["item"] }
 ];
 bingoList[13] = [
- { name: "", types: ["guard"] },
- { name: "", types: ["lerning"] },
- { name: "", types: ["ability","water"] }
+ { name: "Obtain the Mark of Kabegami travel guide", types: ["item"] },
+ { name: "Obtain Power Slash 2", types: ["brush"] },
+ { name: "Obtain Deluge", types: ["brush"] }
 ];
 bingoList[14] = [
- { name: "", types: ["weapon"] },
- { name: "", types: ["level"] },
+ { name: "Obtain Fountain", types: ["Brush"] },
+ { name: "Obtain 50 Demon Fangs", types: ["fight"] },
  { name: "Fish a Marlin", types: ["fishing","Whirlwind"] }
 ];
 bingoList[15] = [
@@ -101,9 +101,9 @@ bingoList[15] = [
  { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
  ];
 bingoList[16] = [
- { name: "Defeat Ninetails", types: ["boss","story"] },
- { name: "", types: ["ice"] },
- { name: "", types: ["area"] },
+ { name: "Defeat Ninetails", types: ["story"] },
+ { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["fight"] },
+ { name: "Obtain Thunderbolt", types: ["brush"] },
  { name: "", types: ["save"] }
 ];
 bingoList[17] = [
