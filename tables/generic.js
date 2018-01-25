@@ -102,25 +102,25 @@ bingoList[15] = [
  ];
 bingoList[16] = [
  { name: "Defeat Ninetails", types: ["story"] },
- { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["fight"] },
+ { name: "Complete the Ryoshima Coast Devil Gate Trial Cave", types: ["fight","deviltrial"] },
  { name: "Obtain Thunderbolt", types: ["brush"] },
  { name: "Obtain all the Stray Beads from North Ryoshima Coast", types: ["straybead"] }
 ];
 bingoList[17] = [
  { name: "Obtain the Stray Bead from the Imperial Palace", types: ["straybead"] },
- { name: "Obtain the Lucky Mallet 2", types: ["item"] },
+ { name: "Obtain the Lucky Mallet", types: ["item"] },
  { name: "Obtain all the Stray Beads from the Sunken Ship", types: ["straybead"] },
  { name: "Obtain all the Stray Beads from Sei\'an City\'s Aristocratic Quarters", types: ["straybead"] }
 ];
 bingoList[18] = [
- { name: "", types: ["boss"] },
- { name: "", types: ["ability"] },
- { name: "", types: ["ability"] }
+ { name: "Obtain all the Stray Beads from the Dragon Palace", types: ["straybead"] },
+ { name: "Clear the North Ryoshima Coast Devil Game Trial Cave", types: ["fight","deviltrial"] },
+ { name: "Bloom all the clovers in Ryoshima Coast", types: ["clover"] }
 ];
 bingoList[19] = [
- { name: "", types: ["guard"] },
- { name: "", types: ["ghost"] },
- { name: "", types: ["cutscene"] },
+ { name: "Bloom Kamui", types: ["story"] },
+ { name: "Use a Mermaid Spring to teleport from the Dragon Palace to Shinshu Field", types: ["mermaidspring"] },
+ { name: "Bloom all the clovers in Kamui", types: ["clover"] },
  { name: "", types: ["glitch"] }
 ];
 bingoList[20] = [
@@ -131,13 +131,13 @@ bingoList[20] = [
 ];
 bingoList[21] = [
  { name: "", types: ["puzzle"] },
- { name: "", types: ["water"] },
+ { name: "Compelte the Wawku Shrine", types: ["Story"] },
  { name: "Obtain 50 Stray Beads", types: ["straybead"] }
 ];
 bingoList[22] = [
- { name: "", types: ["puzzle"] },
- { name: "", types: ["ghost","boss"] },
- { name: "Defeat three bosses", types: ["boss"] }
+ { name: "Learn Holy Falcon", types: ["dojo"] },
+ { name: "Learn Bead String", types: ["dojo"] },
+ { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] }
 ];
 bingoList[23] = [
  { name: "", types: ["ability"] },
@@ -146,7 +146,7 @@ bingoList[23] = [
 bingoList[24] = [
  { name: "", types: ["boss"] },
  { name: "", types: ["ghost"] },
- { name: "", types: ["boss","save","air","ability"] }
+ { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
   { name: "Obtain Cherrybomb 3", types: ["brush","cherrybomb"] },
