@@ -31,7 +31,7 @@ bingoList[3] = [
 ];
 bingoList[4] = [
  { name: "Learn Digging Champ", types: ["dojo"] },
- { name: "Enter Sei'an City", types: ["story"] },
+ { name: "Enter Sei\'an City", types: ["story"] },
  { name: "Defeat Ninetails", types: ["boss"] },
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
