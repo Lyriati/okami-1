@@ -62,10 +62,10 @@ bingoList[7] = [
  { name: "Obtain all Stray Beads from Sasa Sanctuary", types: ["straybead"] }
 ];
 bingoList[9] = [
- { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["treasure"] },
+ { name: "Retreive the Sun Fragment from the Gale Shrine", types: ["item","sunfragment"] },
  { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
  { name: "Complete the Kusa Village Monster List", types: ["fight"] },
- { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["fight"] }
+ { name: "Defeat the Bandit Spider and obtain the Sun Fragment", types: ["fight","sunfragment"] }
 ];
 bingoList[10] = [
  { name: "Bloom Ryoshima Coast", types: ["story"] },
@@ -121,16 +121,16 @@ bingoList[19] = [
  { name: "Bloom Kamui", types: ["story"] },
  { name: "Use a Mermaid Spring to teleport from the Dragon Palace to Shinshu Field", types: ["mermaidspring"] },
  { name: "Bloom all the clovers in Kamui", types: ["clover"] },
- { name: "", types: ["glitch"] }
+ { name: "Defeat the Final Bandit Spider in Kamui", types: ["fight"] }
 ];
 bingoList[20] = [
- { name: "", types: ["vehicle"] },
- { name: "", types: ["ability"] },
- { name: "", types: ["ability"] },
- { name: "", types: ["ability"] }
+ { name: "Complete Wali\'s Record of Penance", types: ["fight"] },
+ { name: "Have the boy wearing an Otter mask give you praise", types: ["praise"] },
+ { name: "Obtain Power Slash 3", types: ["brush"] },
+ { name: "Obtain the Sun Fragment from Kamui (Ezofuji)", types: ["item","sunfragment"] }
 ];
 bingoList[21] = [
- { name: "", types: ["puzzle"] },
+ { name: "Obtain the buried Sun Fragment from Inner Yoshpet", types: ["item","sunfragment"] },
  { name: "Compelte the Wawku Shrine", types: ["Story"] },
  { name: "Obtain 50 Stray Beads", types: ["straybead"] }
 ];
@@ -140,12 +140,12 @@ bingoList[22] = [
  { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] }
 ];
 bingoList[23] = [
- { name: "", types: ["ability"] },
- { name: "", types: ["puzzle"] }
+ { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["sunfragment","item"] },
+ { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] }
 ];
 bingoList[24] = [
  { name: "", types: ["boss"] },
- { name: "", types: ["ghost"] },
+ { name: "Clear the Kamui Devil Gate Trial Cave", types: ["fight","deviltrial"] },
  { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
