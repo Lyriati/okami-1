@@ -155,7 +155,12 @@ bingoList[25] = [
   { name: "Obtain Cherrybomb 3", types: ["brush"] },
   { name: "Enter the Ark of Yamato", types: ["story"] },
   { name: "Defeat Orochi (100 years ago)", types: ["story"] },
-  { name: "Beat the game", types: ["boss"] }
+  { name: "Obtain Blizzard", types: ["brush"] },
+  { name: "Obtain all the Stray Beads in Kamui", types: ["straybead"] },
+  { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] },
+  { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] },
+  { name: "Obtain all the Stray Beads in Catcall Tower", types: ["straybead"] },
+  { name: "Defeat Yami", types: ["story"] }
 ];
 
 $(function() { srl.bingo(bingoList, 5); });
