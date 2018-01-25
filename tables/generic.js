@@ -45,8 +45,8 @@ bingoList[6] = [
  { name: "Find 5 Incense Burners", types: ["treasure"] },
  { name: "Offer the vase to the Orochi Guardian Statue", types: ["sidequest"] },
  { name: "Defeat 3 Blue Demon Scrolls", types: ["fight"] },
- { name: "Obtain the Stray Bread from Kamiki Village Waterfall", types: ["stray"] },
- { name: "New character/partner", types: ["char"] }
+ { name: "Obtain the Stray Bread from Kamiki Village Waterfall", types: ["straybead"] },
+ { name: "Obtain 10 Stray Beads", types: ["straybead"] }
 ];
 bingoList[7] = [
  { name: "Enter a snowy/icy area", types: ["snow", "ice","area"] },
