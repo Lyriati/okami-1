@@ -33,7 +33,7 @@ bingoList[3] = [
 bingoList[4] = [
  { name: "Learn Digging Champ", types: ["dojo"] },
  { name: "Enter Sei\'an City", types: ["story"] },
- { name: "Defeat Ninetails", types: ["boss"] },
+ { name: "", types: ["boss"] },
  { name: "Obtain Veil of Mist", types: ["brush"] }
 ];
 bingoList[5] = [
@@ -101,7 +101,7 @@ bingoList[15] = [
  { name: "Obtain Whirlwind", types: ["brush","fishing","Whirlwind"] }
  ];
 bingoList[16] = [
- { name: "", types: ["ability"] },
+ { name: "Defeat Ninetails", types: ["boss"] },
  { name: "", types: ["ice"] },
  { name: "", types: ["area"] },
  { name: "", types: ["save"] }
