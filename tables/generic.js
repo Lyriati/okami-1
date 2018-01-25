@@ -1,7 +1,7 @@
 var bingoList = [];
 bingoList[1] = [
 //Focused on NG, restricting Cutscene skipping
-  { name: "Rejuveinate Mrs. Orange's Laundry Poles", types: ["sidequest"] },
+  { name: "Rejuveinate Mrs. Orange\'s Laundry Poles", types: ["sidequest"] },
   { name: "Tsuta Ruins Key", types: ["dungeon"] },
   { name: "Bloom Taka Pass", types: ["bloom"] },
   { name: "Buy Infinity Judge", types: ["weapon"] },
