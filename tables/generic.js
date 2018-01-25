@@ -56,13 +56,13 @@ bingoList[7] = [
 ];
 bingoList[8] = [
  { name: "Obtain all Stray Beads from Tsuta Ruins", types: ["straybead"] },
- { name: "", types: ["weapon"] },
- { name: "", types: ["race"] },
- { name: "", types: ["castle","area"] }
+ { name: "Obtain all Stray Beads from Kamiki Village", types: ["straybead"] },
+ { name: "Obtain the Stray Bead from Hayate", types: ["straybead"] },
+ { name: "Bully Hayate", types: ["sidequest"] }
 ];
 bingoList[9] = [
  { name: "Use a key to open a Lockjaw", types: ["key"] },
- { name: "", types: ["guard"] },
+ { name: "Obtain all Stray Beads from Kusa Village", types: ["straybead"] },
  { name: "", types: ["vehicle"] },
  { name: "", types: ["wind"] }
 ];
