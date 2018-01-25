@@ -152,7 +152,9 @@ bingoList[24] = [
  { name: "Obtain all 13 Brush Techniques (No Hidden Ones)", types: ["brush"] }
 ];
 bingoList[25] = [
-  { name: "Obtain Cherrybomb 3", types: ["brush","cherrybomb"] },
+  { name: "Obtain Cherrybomb 3", types: ["brush"] },
+  { name: "Enter the Ark of Yamato", types: ["story"] },
+  { name: "Defeat Orochi (100 years ago)", types: ["story"] },
   { name: "Beat the game", types: ["boss"] }
 ];
 
