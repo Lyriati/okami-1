@@ -26,15 +26,15 @@ bingoList[5] = [
   { name: "Defeat Orochi", types: ["story"] },
   { name: "Obtain the Mother Tree travel guide", types: ["travelguide"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
-  { name: "Buy Infinity Judge", types: ["weapon"] },
-  { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
-  { name: "Obtain Inferno", types: ["brush"] },
 ];
 bingoList[6] = [
  { name: "Learn Digging Champ", types: ["dojo","digging"] },
  { name: "Enter Sei\'an City", types: ["story"] },
  { name: "Obtain the Stray Bead behind Mr. Flower\'s house", types: ["straybead"] },
- { name: "Obtain Veil of Mist", types: ["brush"] }
+ { name: "Obtain Veil of Mist", types: ["brush"] },
+ { name: "Buy Infinity Judge", types: ["weapon"] },
+ { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
+ { name: "Obtain Inferno", types: ["brush"] }
 ];
 bingoList[3] = [
  { name: "Feed all the animals in Hana Valley", types: ["feeding"] },
@@ -142,7 +142,8 @@ bingoList[22] = [
 ];
 bingoList[23] = [
  { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["item"] },
- { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] }
+ { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] },
+ { name: "Obtain all the Stray Beads in Catcall Tower", types: ["straybead"] }
 ];
 bingoList[24] = [
  { name: "", types: ["boss"] },
@@ -160,7 +161,6 @@ bingoList[25] = [
   { name: "Obtain all the Stray Beads in Kamui", types: ["straybead"] },
   { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] },
   { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] },
-  { name: "Obtain all the Stray Beads in Catcall Tower", types: ["straybead"] },
   { name: "Defeat Yami", types: ["story"] }
 ];
 
