@@ -132,13 +132,15 @@ bingoList[20] = [
 ];
 bingoList[21] = [
  { name: "Obtain the buried Sun Fragment from Inner Yoshpet", types: ["item"] },
- { name: "Compelte the Wawku Shrine", types: ["Story"] },
- { name: "Obtain 50 Stray Beads", types: ["straybead"] }
+ { name: "Complete the Wawku Shrine", types: ["Story"] },
+ { name: "Obtain 50 Stray Beads", types: ["straybead"] },
+ { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] }
 ];
 bingoList[22] = [
  { name: "Learn Holy Falcon", types: ["dojo"] },
  { name: "Learn Bead String", types: ["dojo"] },
- { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] }
+ { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] },
+ { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] }
 ];
 bingoList[23] = [
  { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["item"] },
@@ -159,8 +161,6 @@ bingoList[25] = [
   { name: "Defeat Orochi (100 years ago)", types: ["story"] },
   { name: "Obtain Blizzard", types: ["brush"] },
   { name: "Obtain all the Stray Beads in Kamui", types: ["straybead"] },
-  { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] },
-  { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] },
   { name: "Defeat Yami", types: ["story"] }
 ];
 
