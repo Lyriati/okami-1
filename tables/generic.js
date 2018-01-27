@@ -93,7 +93,7 @@ bingoList[14] = [
  { name: "Obtain Fountain", types: ["Brush"] },
  { name: "Obtain 50 Demon Fangs", types: ["demonfangs"] },
  { name: "Fish a Marlin", types: ["fishing"] },
- { name: "Bloom all the clovers in Sei\'an City' ", types: ["clover"] }
+ { name: "Bloom all the clovers in Sei\'an City' ", types: ["clover"] },
 ];
 bingoList[15] = [
  { name: "Increase Solar Energy to the max", types: ["solarenergy"] },
