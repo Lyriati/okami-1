@@ -26,15 +26,15 @@ bingoList[5] = [
   { name: "Defeat Orochi", types: ["story"] },
   { name: "Obtain the Mother Tree travel guide", types: ["travelguide"] },
   { name: "Learn Holy Eagle", types: ["dojo"] },
-  { name: "Buy Infinity Judge", types: ["weapon"] },
-  { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
-  { name: "Obtain Inferno", types: ["brush"] },
 ];
 bingoList[6] = [
  { name: "Learn Digging Champ", types: ["dojo","digging"] },
  { name: "Enter Sei\'an City", types: ["story"] },
  { name: "Obtain the Stray Bead behind Mr. Flower\'s house", types: ["straybead"] },
- { name: "Obtain Veil of Mist", types: ["brush"] }
+ { name: "Obtain Veil of Mist", types: ["brush"] },
+ { name: "Buy Infinity Judge", types: ["weapon"] },
+ { name: "Bloom the clover behind the City Checkpoint Waterfall", types: ["clover"] },
+ { name: "Obtain Inferno", types: ["brush"] }
 ];
 bingoList[3] = [
  { name: "Feed all the animals in Hana Valley", types: ["feeding"] },
@@ -132,17 +132,20 @@ bingoList[20] = [
 ];
 bingoList[21] = [
  { name: "Obtain the buried Sun Fragment from Inner Yoshpet", types: ["item"] },
- { name: "Compelte the Wawku Shrine", types: ["Story"] },
- { name: "Obtain 50 Stray Beads", types: ["straybead"] }
+ { name: "Complete the Wawku Shrine", types: ["Story"] },
+ { name: "Obtain 50 Stray Beads", types: ["straybead"] },
+ { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] }
 ];
 bingoList[22] = [
  { name: "Learn Holy Falcon", types: ["dojo"] },
  { name: "Learn Bead String", types: ["dojo"] },
- { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] }
+ { name: "Obtain all the Stray Beads in Wep\'keer", types: ["straybead"] },
+ { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] }
 ];
 bingoList[23] = [
  { name: "Obtain the Sun Fragment from Wawku Shrine", types: ["item"] },
- { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] }
+ { name: "Bloom all the clovers in Shinshu Field (100 years ago)", types: ["clover"] },
+ { name: "Obtain all the Stray Beads in Catcall Tower", types: ["straybead"] }
 ];
 bingoList[24] = [
  { name: "", types: ["boss"] },
@@ -158,9 +161,6 @@ bingoList[25] = [
   { name: "Defeat Orochi (100 years ago)", types: ["story"] },
   { name: "Obtain Blizzard", types: ["brush"] },
   { name: "Obtain all the Stray Beads in Kamui", types: ["straybead"] },
-  { name: "Obtain all the Stray Beads in Ponc\'tan", types: ["straybead"] },
-  { name: "Obtain all the Stray Beads in Inner Yoshpet", types: ["straybead"] },
-  { name: "Obtain all the Stray Beads in Catcall Tower", types: ["straybead"] },
   { name: "Defeat Yami", types: ["story"] }
 ];
 
