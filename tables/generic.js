@@ -161,6 +161,7 @@ bingoList[25] = [
   { name: "Defeat Orochi (100 years ago)", types: ["story"] },
   { name: "Obtain Blizzard", types: ["brush"] },
   { name: "Obtain all the Stray Beads in Kamui", types: ["straybead"] },
+  { name: "obtain all the Stray Beads in the Gale Shrine", types: ["straybead"] },
   { name: "Defeat Yami", types: ["story"] }
 ];
 
