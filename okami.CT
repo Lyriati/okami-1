@@ -814,7 +814,7 @@
       <ID>97</ID>
       <Description>"Unknown"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
     </CheatEntry>
   </CheatEntries>
