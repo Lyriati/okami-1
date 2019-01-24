@@ -1,7 +1,7 @@
 //Focused on NG, restricting Cutscene skipping
 var bingoList = [];
 bingoList[0] = [
-  {name: "Shinshu Turnip Digging", types: ["sidequest"] },
+  { name: "Shinshu Turnip Digging", types: ["sidequest"] },
  ];
 bingoList[1] = [
   { name: "Rejuveinate Mrs. Orange\'s Laundry Poles", types: ["sidequest"] },
