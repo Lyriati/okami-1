@@ -20,4 +20,4 @@ Regarding Event Flags: More in-depth info at https://docs.google.com/spreadsheet
 [Lyriati](https://www.twitch.tv/lyriati)  
 [rekyuu](https://www.twitch.tv/rekyuus)  
 [Shintensu](https://www.twitch.tv/Shintensu)  
-[whataboutclyde](http://www.twitch.tv/whataboutclyde)
+[whataboutclyde](https://www.twitch.tv/whataboutclyde)
