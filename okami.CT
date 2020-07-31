@@ -1955,6 +1955,36 @@
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
+              <ID>710</ID>
+              <Description>"Double Jump ability"</Description>
+              <LastState Value="1" RealAddress="7FFCEAE7B2B9"/>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>Binary</VariableType>
+              <BitStart>2</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>main.dll+B6B2B9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>426</ID>
+              <Description>"Weapon visible"</Description>
+              <LastState Value="1" RealAddress="7FFCEAE7B2B9"/>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>Binary</VariableType>
+              <BitStart>5</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>main.dll+B6B2B9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>449</ID>
+              <Description>"Address | Set to FFFFFFFF for all abilities except double jump"</Description>
+              <LastState Value="7A950000" RealAddress="7FFCEAE5DFA0"/>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>main.dll+B4DFA0</Address>
+            </CheatEntry>
+            <CheatEntry>
               <ID>738</ID>
               <Description>"Holy Falcon"</Description>
               <LastState Value="0" RealAddress="7FFCEAE5DFA1"/>
@@ -2173,36 +2203,6 @@
               <BitLength>1</BitLength>
               <ShowAsBinary>0</ShowAsBinary>
               <Address>main.dll+B4DFA3</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>449</ID>
-              <Description>"Address | Set to FFFFFFFF for all abilities except double jump"</Description>
-              <LastState Value="7A950000" RealAddress="7FFCEAE5DFA0"/>
-              <ShowAsHex>1</ShowAsHex>
-              <VariableType>4 Bytes</VariableType>
-              <Address>main.dll+B4DFA0</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>710</ID>
-              <Description>"Double Jump ability"</Description>
-              <LastState Value="1" RealAddress="7FFCEAE7B2B9"/>
-              <ShowAsHex>1</ShowAsHex>
-              <VariableType>Binary</VariableType>
-              <BitStart>2</BitStart>
-              <BitLength>1</BitLength>
-              <ShowAsBinary>0</ShowAsBinary>
-              <Address>main.dll+B6B2B9</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>426</ID>
-              <Description>"Weapon visible"</Description>
-              <LastState Value="1" RealAddress="7FFCEAE7B2B9"/>
-              <ShowAsHex>1</ShowAsHex>
-              <VariableType>Binary</VariableType>
-              <BitStart>5</BitStart>
-              <BitLength>1</BitLength>
-              <ShowAsBinary>0</ShowAsBinary>
-              <Address>main.dll+B6B2B9</Address>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -2571,67 +2571,12 @@
                   <Address>main.dll+B20601</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>955</ID>
-                  <Description>"God Technique: Sword Dance"</Description>
+                  <ID>966</ID>
+                  <Description>"God Technique: Hard Head"</Description>
                   <LastState Value="0" RealAddress="7FFCEAE30602"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
-                  <BitStart>7</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20602</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>972</ID>
-                  <Description>"God Technique: Fleetfoot"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30602"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>6</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20602</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>971</ID>
-                  <Description>"God Technique: Counter Dodge"</Description>
-                  <LastState Value="0" RealAddress="7FFCEAE30602"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>5</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20602</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>970</ID>
-                  <Description>"God Technique: Digging Champ"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30602"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>4</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20602</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>969</ID>
-                  <Description>"God Technique: Holy Eagle"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30602"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>3</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20602</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>968</ID>
-                  <Description>"God Technique: Golden Fury"</Description>
-                  <LastState Value="0" RealAddress="7FFCEAE30602"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>2</BitStart>
+                  <BitStart>0</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>main.dll+B20602</Address>
@@ -2648,78 +2593,78 @@
                   <Address>main.dll+B20602</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>966</ID>
-                  <Description>"God Technique: Hard Head"</Description>
+                  <ID>968</ID>
+                  <Description>"God Technique: Golden Fury"</Description>
                   <LastState Value="0" RealAddress="7FFCEAE30602"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
-                  <BitStart>0</BitStart>
+                  <BitStart>2</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>main.dll+B20602</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>957</ID>
-                  <Description>"Reflector Technique: 4 Winds"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>7</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20603</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>965</ID>
-                  <Description>"Reflector Technique: 5 Winds"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>6</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20603</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>964</ID>
-                  <Description>"Rosary Technique: Spirit Storm"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>5</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20603</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>963</ID>
-                  <Description>"Rosary Technique: Spirit Armageddon"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>4</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20603</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>962</ID>
-                  <Description>"Glaive Technique: 3 Shears"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
+                  <ID>969</ID>
+                  <Description>"God Technique: Holy Eagle"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30602"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20603</Address>
+                  <Address>main.dll+B20602</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>961</ID>
-                  <Description>"Glaive Technique: 4 Shears"</Description>
+                  <ID>970</ID>
+                  <Description>"God Technique: Digging Champ"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30602"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20602</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>971</ID>
+                  <Description>"God Technique: Counter Dodge"</Description>
+                  <LastState Value="0" RealAddress="7FFCEAE30602"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20602</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>972</ID>
+                  <Description>"God Technique: Fleetfoot"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30602"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20602</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>955</ID>
+                  <Description>"God Technique: Sword Dance"</Description>
+                  <LastState Value="0" RealAddress="7FFCEAE30602"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20602</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>959</ID>
+                  <Description>"God Technique: Bead String"</Description>
                   <LastState Value="0" RealAddress="7FFCEAE30603"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
-                  <BitStart>2</BitStart>
+                  <BitStart>0</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>main.dll+B20603</Address>
@@ -2736,12 +2681,67 @@
                   <Address>main.dll+B20603</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>959</ID>
-                  <Description>"God Technique: Bead String"</Description>
+                  <ID>961</ID>
+                  <Description>"Glaive Technique: 4 Shears"</Description>
                   <LastState Value="0" RealAddress="7FFCEAE30603"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
-                  <BitStart>0</BitStart>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20603</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>962</ID>
+                  <Description>"Glaive Technique: 3 Shears"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20603</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>963</ID>
+                  <Description>"Rosary Technique: Spirit Armageddon"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20603</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>964</ID>
+                  <Description>"Rosary Technique: Spirit Storm"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20603</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>965</ID>
+                  <Description>"Reflector Technique: 5 Winds"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20603</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>957</ID>
+                  <Description>"Reflector Technique: 4 Winds"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30603"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>main.dll+B20603</Address>
@@ -2750,319 +2750,18 @@
             </CheatEntry>
             <CheatEntry>
               <ID>977</ID>
-              <Description>"Animals"</Description>
+              <Description>"Animal Log Toggles"</Description>
               <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
               <LastState Value="" RealAddress="00000000"/>
               <GroupHeader>1</GroupHeader>
               <CheatEntries>
                 <CheatEntry>
-                  <ID>976</ID>
-                  <Description>"Sparrow"</Description>
-                  <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>7</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>1241</ID>
-                      <Description>"Sparrow Counter (Doesn't affect anything.)"</Description>
-                      <LastState Value="0A" RealAddress="7FFCEAE313CC"/>
-                      <ShowAsHex>1</ShowAsHex>
-                      <VariableType>Byte</VariableType>
-                      <Address>main.dll+B213CC</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1250</ID>
-                      <Description>"Kamiki Behind Susano's House"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AE"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>6</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AE</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1249</ID>
-                      <Description>"Kamiki Turnip Field"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AE"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>7</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AE</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1245</ID>
-                      <Description>"Kamiki Sunrise Platform"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AF"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>0</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AF</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1246</ID>
-                      <Description>"Kamiki Hill Crossroads"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AF"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>1</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AF</Address>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>986</ID>
-                  <Description>"Chicken"</Description>
-                  <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>6</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>1243</ID>
-                      <Description>"Chicken Counter (Doesn't affect anything.)"</Description>
-                      <LastState Value="04" RealAddress="7FFCEAE313CE"/>
-                      <ShowAsHex>1</ShowAsHex>
-                      <VariableType>Byte</VariableType>
-                      <Address>main.dll+B213CE</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1247</ID>
-                      <Description>"Kamiki Mushi House Chickens"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AF"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>4</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AF</Address>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>985</ID>
-                  <Description>"Dog"</Description>
-                  <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>5</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>1244</ID>
-                      <Description>"Dog Counter (Doesn't affect anything.)"</Description>
-                      <LastState Value="0C" RealAddress="7FFCEAE313D0"/>
-                      <ShowAsHex>1</ShowAsHex>
-                      <VariableType>Byte</VariableType>
-                      <Address>main.dll+B213D0</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1248</ID>
-                      <Description>"Kamiki Hayabusa"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AF"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>2</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AF</Address>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>984</ID>
-                  <Description>"Rabbit"</Description>
-                  <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>4</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>1259</ID>
-                      <Description>"Rabbit Counter (Doesn't affect anything.)"</Description>
-                      <LastState Value="0D" RealAddress="7FFCEAE313D2"/>
-                      <ShowAsHex>1</ShowAsHex>
-                      <VariableType>Byte</VariableType>
-                      <Address>main.dll+B213D2</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1260</ID>
-                      <Description>"Kamiki Near Origin Mirror"</Description>
-                      <LastState Value="1" RealAddress="7FFCEAE313AF"/>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>3</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B213AF</Address>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>983</ID>
-                  <Description>"Boar"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>3</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>982</ID>
-                  <Description>"Boar Piglet"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>2</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>981</ID>
-                  <Description>"Monkey"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>1</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>980</ID>
-                  <Description>"Pig"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>0</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061B</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>978</ID>
-                  <Description>"Deer"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>7</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>993</ID>
-                  <Description>"Nightingale"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>6</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>992</ID>
-                  <Description>"Fox"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>5</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>991</ID>
-                  <Description>"Raccoon"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>4</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>990</ID>
-                  <Description>"Horse"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>3</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>989</ID>
-                  <Description>"Tiger"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>2</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>988</ID>
-                  <Description>"Mouse"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>1</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>987</ID>
-                  <Description>"Cat"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>0</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B2061A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>979</ID>
-                  <Description>"Cow"</Description>
-                  <LastState Value="1" RealAddress="7FFCEAE30619"/>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>7</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20619</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>996</ID>
-                  <Description>"Bear"</Description>
+                  <ID>994</ID>
+                  <Description>"Crane"</Description>
                   <LastState Value="0" RealAddress="7FFCEAE30619"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
-                  <BitStart>6</BitStart>
+                  <BitStart>4</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>main.dll+B20619</Address>
@@ -3079,15 +2778,318 @@
                   <Address>main.dll+B20619</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>994</ID>
-                  <Description>"Crane"</Description>
+                  <ID>996</ID>
+                  <Description>"Bear"</Description>
                   <LastState Value="0" RealAddress="7FFCEAE30619"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20619</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>979</ID>
+                  <Description>"Cow"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE30619"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B20619</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>987</ID>
+                  <Description>"Cat"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>988</ID>
+                  <Description>"Mouse"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>989</ID>
+                  <Description>"Tiger"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>990</ID>
+                  <Description>"Horse"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>991</ID>
+                  <Description>"Raccoon"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
                   <BitLength>1</BitLength>
                   <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B20619</Address>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>992</ID>
+                  <Description>"Fox"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>993</ID>
+                  <Description>"Nightingale"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>978</ID>
+                  <Description>"Deer"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061A"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>980</ID>
+                  <Description>"Pig"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>981</ID>
+                  <Description>"Monkey"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>982</ID>
+                  <Description>"Boar Piglet"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>983</ID>
+                  <Description>"Boar"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1267</ID>
+                  <Description>"Rabbit"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1266</ID>
+                  <Description>"Dog"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1265</ID>
+                  <Description>"Chicken"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1264</ID>
+                  <Description>"Sparrow"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE3061B"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>10</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B2061B</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1263</ID>
+              <Description>"Animal Group Fed Flags"</Description>
+              <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1250</ID>
+                  <Description>"Kamiki Sparrows behind Susano's House"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AE"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AE</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1249</ID>
+                  <Description>"Kamiki Sparrows in Turnip Field"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AE"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AE</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1245</ID>
+                  <Description>"Kamiki Sparrows near Sunrise Platform"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AF"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AF</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1246</ID>
+                  <Description>"Kamiki Sparrows at Hill Crossroads"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AF"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AF</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1248</ID>
+                  <Description>"Kamiki Hayabusa"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AF"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AF</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1260</ID>
+                  <Description>"Kamiki Rabbits Near Origin Mirror"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AF"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AF</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1247</ID>
+                  <Description>"Kamiki Chickens next to Mushi's House"</Description>
+                  <LastState Value="1" RealAddress="7FFCEAE313AF"/>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B213AF</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1262</ID>
+              <Description>"Animals Fed Counters (Don't seem to affect anything.)"</Description>
+              <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1241</ID>
+                  <Description>"Sparrow Counter"</Description>
+                  <LastState Value="0A" RealAddress="7FFCEAE313CC"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Byte</VariableType>
+                  <Address>main.dll+B213CC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1243</ID>
+                  <Description>"Chicken Counter"</Description>
+                  <LastState Value="04" RealAddress="7FFCEAE313CE"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Byte</VariableType>
+                  <Address>main.dll+B213CE</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1244</ID>
+                  <Description>"Dog Counter"</Description>
+                  <LastState Value="0C" RealAddress="7FFCEAE313D0"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Byte</VariableType>
+                  <Address>main.dll+B213D0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1259</ID>
+                  <Description>"Rabbit Counter"</Description>
+                  <LastState Value="0D" RealAddress="7FFCEAE313D2"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Byte</VariableType>
+                  <Address>main.dll+B213D2</Address>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
@@ -5228,7 +5230,7 @@
             <CheatEntry>
               <ID>2</ID>
               <Description>"Time played (60 ticks =1 second)"</Description>
-              <LastState Value="5664254" RealAddress="7FFCEAE317FC"/>
+              <LastState Value="5742504" RealAddress="7FFCEAE317FC"/>
               <VariableType>4 Bytes</VariableType>
               <Address>main.dll+B217FC</Address>
             </CheatEntry>
