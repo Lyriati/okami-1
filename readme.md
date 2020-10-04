@@ -7,8 +7,6 @@ Everything in this repo is a work in progress!
 `okami.CT` - Table for Ōkami on PC  
 `okami.asl` - Autosplitter for LiveSplit
 
-Regarding Event Flags: More in-depth info at https://docs.google.com/spreadsheets/d/1wALaXGkG4rJXYC2Ey1IJ5XawZPxa14JTSoWuq2OAow0/edit#gid=1775848588
-
 ## Resources
 
 [Okami Leaderboard](https://www.speedrun.com/Okami)  
