@@ -18,4 +18,4 @@ Everything in this repo is a work in progress!
 [Lyriati](https://www.twitch.tv/lyriati)  
 [rekyuu](https://www.twitch.tv/rekyuus)  
 [Shintensu](https://www.twitch.tv/Shintensu) updated Cheat Table   
-[whataboutclyde](https://www.twitch.tv/whataboutclyde)
+[whataboutclyde](https://www.twitch.tv/whataboutclyde) Cheat Table contribution and binary analysis 
