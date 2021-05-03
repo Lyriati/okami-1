@@ -6699,7 +6699,7 @@ mov [rdi+00000E34],00050201
             </CheatEntry>
             <CheatEntry>
               <ID>1061</ID>
-              <Description>"Velocity"</Description>
+              <Description>"Horizontal Speed"</Description>
               <VariableType>Float</VariableType>
               <Address>main.dll+B6B2D0</Address>
               <Offsets>
@@ -6707,10 +6707,13 @@ mov [rdi+00000E34],00050201
               </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>1050</ID>
-              <Description>"Vertical Velocity"</Description>
+              <ID>1735</ID>
+              <Description>"Vertical Speed (Auride)"</Description>
               <VariableType>Float</VariableType>
-              <Address>29396D86F18</Address>
+              <Address>"main.dll"+00B6B2D0</Address>
+              <Offsets>
+                <Offset>E54</Offset>
+              </Offsets>
             </CheatEntry>
             <CheatEntry>
               <ID>1065</ID>
@@ -9057,6 +9060,108 @@ mov [rdi+00000E34],00050201
                   <ByteLength>4</ByteLength>
                   <Address>main.dll+B65E74</Address>
                 </CheatEntry>
+                <CheatEntry>
+                  <ID>1577</ID>
+                  <Description>"Attempt at making teleport"</Description>
+                  <LastState Value="" RealAddress="00000000"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>1578</ID>
+                      <Description>"Respawn X"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>"main.dll" +B6B2D0</Address>
+                      <Offsets>
+                        <Offset>1000</Offset>
+                        <Offset>000000A8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1579</ID>
+                      <Description>"Respawn Y"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>"main.dll" +B6B2D0</Address>
+                      <Offsets>
+                        <Offset>1004</Offset>
+                        <Offset>000000A8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1580</ID>
+                      <Description>"Respawn Z"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>"main.dll" + B6B2D0</Address>
+                      <Offsets>
+                        <Offset>1008</Offset>
+                        <Offset>000000A8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1606</ID>
+                      <Description>"Animation Stage Address"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>main.dll+B6B2D0</Address>
+                      <Offsets>
+                        <Offset>E34</Offset>
+                      </Offsets>
+                      <Hotkeys>
+                        <Hotkey>
+                          <Action>Set Value</Action>
+                          <Keys>
+                            <Key>187</Key>
+                          </Keys>
+                          <Value>34601</Value>
+                          <ID>0</ID>
+                        </Hotkey>
+                        <Hotkey>
+                          <Action>Set Value</Action>
+                          <Keys>
+                            <Key>191</Key>
+                          </Keys>
+                          <Value>0</Value>
+                          <ID>1</ID>
+                        </Hotkey>
+                        <Hotkey>
+                          <Action>Set Value</Action>
+                          <Keys>
+                            <Key>80</Key>
+                          </Keys>
+                          <Value>10402</Value>
+                          <ID>2</ID>
+                        </Hotkey>
+                      </Hotkeys>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1607</ID>
+                      <Description>"Current Animation ID"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>main.dll+B6B2D0</Address>
+                      <Offsets>
+                        <Offset>F38</Offset>
+                      </Offsets>
+                      <Hotkeys>
+                        <Hotkey>
+                          <Action>Set Value</Action>
+                          <Keys>
+                            <Key>192</Key>
+                          </Keys>
+                          <Value>3997C180</Value>
+                          <ID>0</ID>
+                        </Hotkey>
+                        <Hotkey>
+                          <Action>Set Value</Action>
+                          <Keys>
+                            <Key>191</Key>
+                          </Keys>
+                          <Value>F102F540</Value>
+                          <ID>1</ID>
+                        </Hotkey>
+                      </Hotkeys>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>
@@ -9360,104 +9465,1025 @@ mov [rdi+00000E34],00050201
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>1577</ID>
-          <Description>"Attempt at making teleport"</Description>
+          <ID>1723</ID>
+          <Description>"Vertical Speed (Auride)"</Description>
+          <VariableType>Float</VariableType>
+          <Address>"main.dll"+00B6B2D0</Address>
+          <Offsets>
+            <Offset>E54</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1624</ID>
+          <Description>"Gold Dash Max Speed (6.9 by default) (Auride)"</Description>
+          <DropDownList DisplayValueAsItem="1">6.9:Default
+13:SuperSpeed
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>main.dll+6AF03C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1589</ID>
+          <Description>"Overlay Map (Auride WIP)"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <Address>0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1724</ID>
+              <Description>"Overlay Map Image Filename (Also holds other values when the map isn't up)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>100</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>"main.dll"+00B76AF0</Address>
+              <Offsets>
+                <Offset>4E0</Offset>
+                <Offset>A0</Offset>
+                <Offset>68</Offset>
+                <Offset>288</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1725</ID>
+              <Description>"128 when Overlay Map is rendering. 0 Otherwise"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>main.dll+B6B2AE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1726</ID>
+              <Description>"1 when Overlay Map Image appears (takes a moment after pressing the map button) 0 otherwise"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>main.dll+B1D1A6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1727</ID>
+              <Description>"Counter increments every time map button is pressed and several times across loading zones"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+79B77C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1728</ID>
+              <Description>"Ammy Icon X Position (Positive = Right)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>main.dll+B1EF18</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1729</ID>
+              <Description>"Ammy Icon Y Position (Positive = Down)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>main.dll+B1EF1C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1609</ID>
+              <Description>"1 If fan menu map tab legend is open. 0 otherwise"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>"main.dll"+007A90B8</Address>
+              <Offsets>
+                <Offset>3C7</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1730</ID>
+              <Description>"Overlay Map Ammy Icon Opacity (Cycles from 0 to 3. 1.5 is full opacity. 0 and 3 are invisible)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>"main.dll"+007A90B8</Address>
+              <Offsets>
+                <Offset>348</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1731</ID>
+              <Description>"Related to dungeon map room visibility/highlighting?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>16</ByteLength>
+              <Address>7FFC359FEF48</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1640</ID>
+          <Description>"Controller Data (Auride WIP)"</Description>
+          <Options moManualExpandCollapse="1"/>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>1578</ID>
-              <Description>"Respawn X"</Description>
-              <VariableType>Float</VariableType>
-              <Address>"main.dll" +B6B2D0</Address>
-              <Offsets>
-                <Offset>1000</Offset>
-                <Offset>000000A8</Offset>
-              </Offsets>
+              <ID>1638</ID>
+              <Description>"Controller Data (Context Sensitive. Seems to be read only. Writing/freezing has no affect)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>100</ByteLength>
+              <Address>main.dll+B6B0A0</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1579</ID>
-              <Description>"Respawn Y"</Description>
-              <VariableType>Float</VariableType>
-              <Address>"main.dll" +B6B2D0</Address>
-              <Offsets>
-                <Offset>1004</Offset>
-                <Offset>000000A8</Offset>
-              </Offsets>
+              <ID>1641</ID>
+              <Description>"Byte 4: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1645</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1673</ID>
+                  <Description>"Keyboard Up or W (Move forward)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1643</ID>
+                  <Description>"Keyboard Down or S (Move toward camera)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1639</ID>
+                  <Description>"Keyboard Left or A (Move left)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1642</ID>
+                  <Description>"Keyboard Right or D (Move right)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1648</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1647</ID>
+                  <Description>"Keyboard Q (Unbound?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1644</ID>
+                  <Description>"Keyboard E (Unbound?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A4</Address>
+                </CheatEntry>
+              </CheatEntries>
             </CheatEntry>
             <CheatEntry>
-              <ID>1580</ID>
-              <Description>"Respawn Z"</Description>
-              <VariableType>Float</VariableType>
-              <Address>"main.dll" + B6B2D0</Address>
-              <Offsets>
-                <Offset>1008</Offset>
-                <Offset>000000A8</Offset>
-              </Offsets>
+              <ID>1657</ID>
+              <Description>"Byte 12: Keyboard (Overworld only except bit 3)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1658</ID>
+                  <Description>"Keyboard F (Bark)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1722</ID>
+                  <Description>"Keyboard Spacebar (Jump)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1659</ID>
+                  <Description>"Mouse Right Click (Dig)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1660</ID>
+                  <Description>"Left Mouse Click (Tackle) or Enter (Works in all contexts?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1661</ID>
+                  <Description>"Mouse Right Click (Dig)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1662</ID>
+                  <Description>"Mouse Right Click (Dig)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1663</ID>
+                  <Description>"Keyboard Shift (Unbound?) (Doesn't distinguish left/right shift)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1664</ID>
+                  <Description>"Keyboard V (Overlay Map)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AC</Address>
+                </CheatEntry>
+              </CheatEntries>
             </CheatEntry>
             <CheatEntry>
-              <ID>1606</ID>
-              <Description>"Animation Stage Address"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <VariableType>4 Bytes</VariableType>
+              <ID>1665</ID>
+              <Description>"Byte 5: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1666</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1674</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1667</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1668</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1669</ID>
+                  <Description>"Keyboard W (Move forward)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1670</ID>
+                  <Description>"Keyboard S (Move toward camera)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1671</ID>
+                  <Description>"Keyboard A (Move left)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1685</ID>
+                  <Description>"Keyboard D (Move right)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A5</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1676</ID>
+              <Description>"Byte 6: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1677</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1678</ID>
+                  <Description>"Keyboard Spacebar (Jump)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1679</ID>
+                  <Description>"Mouse Left Click (Tackle)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1680</ID>
+                  <Description>"Mouse Right Click (Dig)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1681</ID>
+                  <Description>"Mouse Right Click (Dig) (Ibid)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1682</ID>
+                  <Description>"Mouse Right Click (Dig) (Ibid)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1683</ID>
+                  <Description>"Keyboard F (Bark)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1684</ID>
+                  <Description>"Keyboard F (Bark) (Ibid)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A6</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1686</ID>
+              <Description>"Byte 7: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1687</ID>
+                  <Description>"Keyboard Shift (Unbound?) (Doesn't distinguish left/right shift)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1688</ID>
+                  <Description>"Keyboard Control (Brush) (Doesn't distinguish left/right control)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1689</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1690</ID>
+                  <Description>"Mouse Left or Right Click"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1691</ID>
+                  <Description>"Mouse Right Click (Dig)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1692</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1693</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1694</ID>
+                  <Description>"Mouse Middle Click (Snap camera behind Ammy)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A7</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1649</ID>
+              <Description>"Byte 8: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1675</ID>
+                  <Description>"Keyboard C (Camera Button)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1650</ID>
+                  <Description>"Keyboard ESC (Settings)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1651</ID>
+                  <Description>"Keyboard F1 (Fan Menu)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1652</ID>
+                  <Description>"Keyboard V (Overlay Map)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1653</ID>
+                  <Description>"Keyboard V (Overlay Map) (Same as above?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1654</ID>
+                  <Description>"Keyboard C (Camera Button)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1655</ID>
+                  <Description>"Unused?"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1656</ID>
+                  <Description>"Left Mouse Click (Tackle) or Enter (Weirdly...)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A8</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1695</ID>
+              <Description>"Byte 9: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1696</ID>
+                  <Description>"Mouse Right Click (Dig)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1697</ID>
+                  <Description>"Left Mouse Click (Tackle) or Enter"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1698</ID>
+                  <Description>"Keyboard F (Bark) or Enter"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1699</ID>
+                  <Description>"Keyboard Backspace (Unbound?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1700</ID>
+                  <Description>"Keyboard Up or W (Move forward)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1701</ID>
+                  <Description>"Keyboard Down or S (Move toward camera)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1702</ID>
+                  <Description>"Keyboard Left or A (Move left)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1703</ID>
+                  <Description>"Keyboard Right or D (Move right)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0A9</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1704</ID>
+              <Description>"Byte 10: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1705</ID>
+                  <Description>"Keyboard Q (Unbound?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1706</ID>
+                  <Description>"Keyboard E (Unbound?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1707</ID>
+                  <Description>"Keyboard V (Overlay Map)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1708</ID>
+                  <Description>"Keyboard ESC (Settings)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1709</ID>
+                  <Description>"Keyboard Enter (Unbound?)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1710</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1711</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1712</ID>
+                  <Description>"Keyboard F1 (Fan Menu)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AA</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1713</ID>
+              <Description>"Byte 11: Keyboard (Overworld only)"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1714</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1715</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1716</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1717</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>3</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1718</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1719</ID>
+                  <Description>"Unknown"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1720</ID>
+                  <Description>"Keyboard Control (Brush) (Doesn't distinguish left/right control)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1721</ID>
+                  <Description>"Left Mouse Click (Tackle)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B0AB</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1732</ID>
+          <Description>"Misc (Auride WIP)"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1636</ID>
+              <Description>"Affects movement speed, camera sensitivity and possibly other things? 1 by default"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>main.dll+B6AC38</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1733</ID>
+              <Description>"Hold Spacebar to ignore gravity"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+3AB596) 
+label(returnhere)
+label(originalcode)
+label(exit)
+label(skip)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+test [main.dll+B6B0A6], 2
+jnz skip
+
+originalcode:
+subss xmm1,xmm0
+
+skip:
+addss xmm1,[rsi+00000E4C]
+
+exit:
+jmp returnhere
+
+"main.dll"+3AB596:
+jmp newmem
+nop 7
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+3AB596:
+subss xmm1,xmm0
+addss xmm1,[rsi+00000E4C]
+//Alt: db F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1620</ID>
+              <Description>"Walking Velocity Friction ? If negative, Ammy accelerates exponentially but only while walking (not dashing)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>main.dll+7A8340</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1734</ID>
+              <Description>"Related to Ammy's Tail Physics?"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+9C87C2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1621</ID>
+              <Description>"Related to gold dash. Turning acceleration? or something. Setting it very high (10000) results in like 3x speed when turning. Setting it very low (-10000) causes ammy to stop in place after dashing a short distance."</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>main.m2::SystemConfig::`vftable'+4F34</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1622</ID>
+              <Description>"Initial Walk Speed? 1.1 by default"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>main.m2::SystemConfig::`vftable'+8340</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1632</ID>
+              <Description>"Speed to Ammy's right when ground tackling ?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
               <Address>main.dll+B6B2D0</Address>
               <Offsets>
-                <Offset>E34</Offset>
+                <Offset>EB0</Offset>
               </Offsets>
-              <Hotkeys>
-                <Hotkey>
-                  <Action>Set Value</Action>
-                  <Keys>
-                    <Key>187</Key>
-                  </Keys>
-                  <Value>34601</Value>
-                  <ID>0</ID>
-                </Hotkey>
-                <Hotkey>
-                  <Action>Set Value</Action>
-                  <Keys>
-                    <Key>191</Key>
-                  </Keys>
-                  <Value>0</Value>
-                  <ID>1</ID>
-                </Hotkey>
-                <Hotkey>
-                  <Action>Set Value</Action>
-                  <Keys>
-                    <Key>80</Key>
-                  </Keys>
-                  <Value>10402</Value>
-                  <ID>2</ID>
-                </Hotkey>
-              </Hotkeys>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1607</ID>
-              <Description>"Current Animation ID"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <VariableType>4 Bytes</VariableType>
-              <Address>main.dll+B6B2D0</Address>
-              <Offsets>
-                <Offset>F38</Offset>
-              </Offsets>
-              <Hotkeys>
-                <Hotkey>
-                  <Action>Set Value</Action>
-                  <Keys>
-                    <Key>192</Key>
-                  </Keys>
-                  <Value>3997C180</Value>
-                  <ID>0</ID>
-                </Hotkey>
-                <Hotkey>
-                  <Action>Set Value</Action>
-                  <Keys>
-                    <Key>191</Key>
-                  </Keys>
-                  <Value>F102F540</Value>
-                  <ID>1</ID>
-                </Hotkey>
-              </Hotkeys>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -9673,8 +10699,9 @@ mov [rdi+00000E34],00050201
         <Element Offset="502" Vartype="2 Bytes" Bytesize="2" RLECount="3" OffsetHex="000001F6" Description="???" DisplayMethod="Unsigned Integer"/>
         <Element Offset="508" Vartype="2 Bytes" Bytesize="2" OffsetHex="000001FC" Description="Whopper" DisplayMethod="Unsigned Integer"/>
         <Element Offset="510" Vartype="2 Bytes" Bytesize="2" OffsetHex="000001FE" Description="Cutlass Fish" DisplayMethod="Unsigned Integer"/>
+        <Element Offset="512" Vartype="Byte" Bytesize="1" OffsetHex="00000200" DisplayMethod="Unsigned Integer"/>
         <Element Offset="512" Vartype="8 Bytes" Bytesize="8" OffsetHex="00000200" Description="Day Night cycle (all 8 bytes)" DisplayMethod="Unsigned Integer"/>
-        <Element Offset="512" Vartype="Byte" Bytesize="1" RLECount="8" OffsetHex="00000200" DisplayMethod="Unsigned Integer"/>
+        <Element Offset="513" Vartype="Byte" Bytesize="1" RLECount="7" OffsetHex="00000201" DisplayMethod="Unsigned Integer"/>
         <Element Offset="520" Vartype="2 Bytes" Bytesize="2" RLECount="59" OffsetHex="00000208" DisplayMethod="Unsigned Integer"/>
       </Elements>
     </Structure>
