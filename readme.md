@@ -20,9 +20,9 @@ Regarding Event Flags: More in-depth info at https://docs.google.com/spreadsheet
 [Lyriati](https://www.twitch.tv/lyriati)  
 [rekyuu](https://www.twitch.tv/rekyuus)  
 [Shintensu](https://www.twitch.tv/Shintensu) updated Cheat Table   
-[whataboutclyde](https://www.twitch.tv/whataboutclyde) Cheat Table contribution and binary analysis 
-[Auride](https://www.twitch.tv/loveauride) Cheat Table contribution
-[zysim](https://github.com/zysim) Cheat Table contribution
-xNyu Cheat Table contribution
+[whataboutclyde](https://www.twitch.tv/whataboutclyde) Cheat Table contribution and binary analysis   
+[Auride](https://www.twitch.tv/loveauride) Cheat Table contribution   
+[zysim](https://github.com/zysim) Cheat Table contribution   
+xNyu Cheat Table contribution   
 
 
