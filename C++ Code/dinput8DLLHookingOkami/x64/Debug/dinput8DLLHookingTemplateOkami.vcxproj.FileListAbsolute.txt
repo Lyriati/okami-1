@@ -1,0 +1,1 @@
+D:\Documents\Reverse Engineering\Trainer Code\dinput8DLLHookingOkami\x64\Debug\dinput8DLLHookTemplate.dll
