@@ -55,9 +55,1598 @@ HelpForm.Hide()
 </AssemblerScript>
         </CheatEntry>
         <CheatEntry>
+          <ID>800</ID>
+          <Description>"Scripts"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1047</ID>
+              <Description>"Always Gold Dash"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+
+/////////////////////////////////AFTER DASH/////////////////////////////////////
+aobscanmodule(AlwaysGoldDash,main.dll,C6 87 36 0E 00 00 05 74) // should be unique
+alloc(newmem,$1000,AlwaysGoldDash)
+registersymbol(AlwaysGoldDash)
+
+AlwaysGoldDash:
+mov byte ptr [rdi+00000E36],09
+/////////////////////////////////AFTER JUMP/////////////////////////////////////
+aobscanmodule(GoldDashJump,main.dll,C7 87 34 0E 00 00 01 02 05 00) // should be unique
+alloc(newmem2,$1000,GoldDashJump)
+registersymbol(GoldDashJump)
+
+GoldDashJump:
+  mov [rdi+00000E34],00090201
+////////////////////////////////////////////////////////////////////////////////
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+
+
+/////////////////////////////////AFTER DASH/////////////////////////////////////
+AlwaysGoldDash:
+  db C6 87 36 0E 00 00 05
+
+unregistersymbol(AlwaysGoldDash)
+dealloc(newmem)
+/////////////////////////////////AFTER JUMP/////////////////////////////////////
+
+GoldDashJump:
+  db C7 87 34 0E 00 00 01 02 05 00
+
+unregistersymbol(GoldDashJump)
+dealloc(newmem2)
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87755</ID>
+              <Description>"Always Gold Dash when Dashing"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(AlwaysGoldDash,main.dll,C6 87 36 0E 00 00 05 74) // should be unique
+alloc(newmem,$1000,AlwaysGoldDash)
+registersymbol(AlwaysGoldDash)
+
+AlwaysGoldDash:
+  mov byte ptr [rdi+00000E36],09
+
+[DISABLE]
+
+AlwaysGoldDash:
+  db C6 87 36 0E 00 00 05
+
+unregistersymbol(AlwaysGoldDash)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+3B33D1
+
+main.dll+3B33A2: 66 89 74 24 30        - mov [rsp+30],si
+main.dll+3B33A7: 45 33 C0              - xor r8d,r8d
+main.dll+3B33AA: F3 44 0F 11 44 24 28  - movss [rsp+28],xmm8
+main.dll+3B33B1: F3 44 0F 11 4C 24 20  - movss [rsp+20],xmm9
+main.dll+3B33B8: 8B 02                 - mov eax,[rdx]
+main.dll+3B33BA: 8B 0C 82              - mov ecx,[rdx+rax*4]
+main.dll+3B33BD: 48 03 54 11 70        - add rdx,[rcx+rdx+70]
+main.dll+3B33C2: 48 8B CF              - mov rcx,rdi
+main.dll+3B33C5: E8 B6 6C 10 00        - call main.flower_tick+3CD0
+main.dll+3B33CA: F6 87 E0 10 00 00 10  - test byte ptr [rdi+000010E0],10
+// ---------- INJECTING HERE ----------
+main.dll+3B33D1: C6 87 36 0E 00 00 05  - mov byte ptr [rdi+00000E36],05
+// ---------- DONE INJECTING  ----------
+main.dll+3B33D8: 74 14                 - je main.dll+3B33EE
+main.dll+3B33DA: 48 8B CF              - mov rcx,rdi
+main.dll+3B33DD: 40 88 B7 36 0E 00 00  - mov [rdi+00000E36],sil
+main.dll+3B33E4: E8 97 68 10 00        - call main.flower_tick+38D0
+main.dll+3B33E9: E9 B1 05 00 00        - jmp main.dll+3B399F
+main.dll+3B33EE: 8B 9F 14 10 00 00     - mov ebx,[rdi+00001014]
+main.dll+3B33F4: 83 E3 1F              - and ebx,1F
+main.dll+3B33F7: E8 84 A0 E0 FF        - call main.dll+1BD480
+main.dll+3B33FC: 24 03                 - and al,03
+main.dll+3B33FE: 4C 8B C7              - mov r8,rdi
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87754</ID>
+              <Description>"Always Gold Dash after a jump in Dash State"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(GoldDashJump,main.dll,C7 87 34 0E 00 00 01 02 05 00) // should be unique
+alloc(newmem,$1000,GoldDashJump)
+registersymbol(GoldDashJump)
+
+GoldDashJump:
+  mov [rdi+00000E34],00090201
+
+[DISABLE]
+
+GoldDashJump:
+  db C7 87 34 0E 00 00 01 02 05 00
+
+unregistersymbol(GoldDashJump)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+3B52F2
+
+main.dll+3B52B4: 48 8B CF                       - mov rcx,rdi
+main.dll+3B52B7: C7 87 34 0E 00 00 01 01 00 00  - mov [rdi+00000E34],00000101
+main.dll+3B52C1: E8 9A 9A FF FF                 - call main.dll+3AED60
+main.dll+3B52C6: 0F BF 87 74 11 00 00           - movsx eax,word ptr [rdi+00001174]
+main.dll+3B52CD: 3B 05 81 30 3F 00              - cmp eax,[main.dll+7A8354]
+main.dll+3B52D3: 0F 8E 9A 00 00 00              - jng main.dll+3B5373
+main.dll+3B52D9: 48 8B 97 80 0E 00 00           - mov rdx,[rdi+00000E80]
+main.dll+3B52E0: B9 96 00 00 00                 - mov ecx,00000096
+main.dll+3B52E5: C6 87 71 11 00 00 02           - mov byte ptr [rdi+00001171],02
+main.dll+3B52EC: 41 B9 05 00 00 00              - mov r9d,00000005
+// ---------- INJECTING HERE ----------
+main.dll+3B52F2: C7 87 34 0E 00 00 01 02 05 00  - mov [rdi+00000E34],00050201
+// ---------- DONE INJECTING  ----------
+main.dll+3B52FC: 45 33 C0                       - xor r8d,r8d
+main.dll+3B52FF: 0F B7 05 4E 30 3F 00           - movzx eax,word ptr [main.dll+7A8354]
+main.dll+3B5306: 66 03 C1                       - add ax,cx
+main.dll+3B5309: 66 44 89 7C 24 30              - mov [rsp+30],r15w
+main.dll+3B530F: 66 89 87 3C 0E 00 00           - mov [rdi+00000E3C],ax
+main.dll+3B5316: 8B 02                          - mov eax,[rdx]
+main.dll+3B5318: F3 0F 11 7C 24 28              - movss [rsp+28],xmm7
+main.dll+3B531E: F3 44 0F 11 44 24 20           - movss [rsp+20],xmm8
+main.dll+3B5325: 8B 0C 82                       - mov ecx,[rdx+rax*4]
+main.dll+3B5328: 48 03 54 11 70                 - add rdx,[rcx+rdx+70]
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87756</ID>
+              <Description>"Hold Jump to ignore gravity"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(GravityJump,main.dll,F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00) // should be unique
+alloc(newmem,$1000,GravityJump)
+
+label(return)
+label(code)
+label(exit)
+label(skip)
+
+newmem:
+  test [main.dll+B6B0A6], 2
+  jnz skip
+
+code:
+  subss xmm1,xmm0
+
+skip:
+  addss xmm1,[rsi+00000E4C]
+
+exit:
+  jmp return
+
+GravityJump:
+  jmp newmem
+  nop 7
+
+return:
+registersymbol(GravityJump)
+
+[DISABLE]
+
+GravityJump:
+  db F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00
+
+unregistersymbol(GravityJump)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+3AB646
+
+main.dll+3AB60C: 41 8D 51 30              - lea edx,[r9+30]
+main.dll+3AB610: 48 89 44 24 20           - mov [rsp+20],rax
+main.dll+3AB615: 8D 4A D8                 - lea ecx,[rdx-28]
+main.dll+3AB618: E8 73 0D DE FF           - call main.cPad::updateMoveSphre+42B0
+main.dll+3AB61D: F6 86 30 0E 00 00 02     - test byte ptr [rsi+00000E30],02
+main.dll+3AB624: F3 0F 10 8E 54 0E 00 00  - movss xmm1,[rsi+00000E54]
+main.dll+3AB62C: F3 0F 11 8E 24 10 00 00  - movss [rsi+00001024],xmm1
+main.dll+3AB634: 75 24                    - jne main.dll+3AB65A
+main.dll+3AB636: F3 0F 10 05 FA F5 7B 00  - movss xmm0,[main.dll+B6AC38]
+main.dll+3AB63E: F3 0F 59 05 CA 67 2C 00  - mulss xmm0,[main.hx::hxPadAssign::`vftable'+250]
+// ---------- INJECTING HERE ----------
+main.dll+3AB646: F3 0F 5C C8              - subss xmm1,xmm0
+// ---------- DONE INJECTING  ----------
+main.dll+3AB64A: F3 0F 58 8E 4C 0E 00 00  - addss xmm1,[rsi+00000E4C]
+main.dll+3AB652: F3 0F 11 8E 54 0E 00 00  - movss [rsi+00000E54],xmm1
+main.dll+3AB65A: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3AB661: 45 33 F6                 - xor r14d,r14d
+main.dll+3AB664: 44 89 B6 4C 0E 00 00     - mov [rsi+00000E4C],r14d
+main.dll+3AB66B: F3 0F 10 05 C5 F5 7B 00  - movss xmm0,[main.dll+B6AC38]
+main.dll+3AB673: F3 0F 59 86 54 0E 00 00  - mulss xmm0,[rsi+00000E54]
+main.dll+3AB67B: F3 41 0F 59 C2           - mulss xmm0,xmm10
+main.dll+3AB680: F3 0F 58 40 04           - addss xmm0,[rax+04]
+main.dll+3AB685: F3 0F 11 40 04           - movss [rax+04],xmm0
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87759</ID>
+              <Description>"Ignore Jump Barriers"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(IgnoreJumpBarriers,main.dll,41 89 86 14 10 00 00 F3 0F 10 35 * * * * EB) // should be unique
+alloc(newmem,$1000,IgnoreJumpBarriers)
+
+label(code)
+label(return)
+
+newmem:
+  jmp return
+
+code:
+  mov [r14+00001014],eax
+
+IgnoreJumpBarriers:
+  jmp newmem
+  nop 2
+
+return:
+registersymbol(IgnoreJumpBarriers)
+
+[DISABLE]
+
+IgnoreJumpBarriers:
+  db 41 89 86 14 10 00 00
+
+unregistersymbol(IgnoreJumpBarriers)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+4602FB
+
+main.dll+4602CE: 8B 7C 24 30              - mov edi,[rsp+30]
+main.dll+4602D2: 83 CF 01                 - or edi,01
+main.dll+4602D5: 0F 2F 35 84 58 70 00     - comiss xmm6,[main.dll+B65B60]
+main.dll+4602DC: 89 7C 24 30              - mov [rsp+30],edi
+main.dll+4602E0: 76 2E                    - jna main.dll+460310
+main.dll+4602E2: 8B 43 08                 - mov eax,[rbx+08]
+main.dll+4602E5: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
+main.dll+4602EB: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
+main.dll+4602F1: 41 89 86 10 10 00 00     - mov [r14+00001010],eax
+main.dll+4602F8: 8B 43 0C                 - mov eax,[rbx+0C]
+// ---------- INJECTING HERE ----------
+main.dll+4602FB: 41 89 86 14 10 00 00     - mov [r14+00001014],eax
+// ---------- DONE INJECTING  ----------
+main.dll+460302: F3 0F 10 35 56 58 70 00  - movss xmm6,[main.dll+B65B60]
+main.dll+46030A: EB 16                    - jmp main.dll+460322
+main.dll+46030C: 8B 7C 24 30              - mov edi,[rsp+30]
+main.dll+460310: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
+main.dll+460316: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
+main.dll+46031C: EB 04                    - jmp main.dll+460322
+main.dll+46031E: 8B 7C 24 30              - mov edi,[rsp+30]
+main.dll+460322: 8B 85 F0 01 00 00        - mov eax,[rbp+000001F0]
+main.dll+460328: 49 83 C7 02              - add r15,02
+main.dll+46032C: BB FF FF 00 00           - mov ebx,0000FFFF
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87760</ID>
+              <Description>"No Clip Height Control"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(HeightControl,main.dll,F3 0F 11 40 04 F3 0F 10 86) // should be unique
+alloc(newmem,$1000,HeightControl)
+registersymbol(HeightControl)
+
+
+alloc(ySpeed,4)
+//alloc(accelCounter,2)
+label(return)
+label(code)
+label(fall)
+label(assignHeights)
+//label(dontAssignHeights)
+label(exit)
+
+ySpeed:
+dd (float)10
+
+//accelCounter:
+//dw 0
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+//push r14
+//mov [ySpeed],(float)10
+
+test [main.dll+B6B2BB],2//Check if noclip is active:
+jz code
+
+//If holding fleetfoot button, use reduced value for ySpeed
+push r14
+push r13
+mov r13,(float)2
+mov r14,(float)10
+test [main.dll+B6B0A7],1
+cmovz r13,r14
+mov [ySpeed],r13
+pop r13
+pop r14
+
+test [main.dll+B6B0A6],40//Check if holding bark button
+jz fall
+//mov r14,(float)1
+//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
+//cmovg r14,[ySpeed]
+//mov [ySpeed],r14
+addss xmm0,[ySpeed]
+jmp assignHeights
+
+fall:
+test [main.dll+B6B0A6],10//Check if holding dig button
+jz code
+//mov r14,(float)1
+//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
+//cmovg r14,[ySpeed]
+//mov [ySpeed],r14
+subss xmm0,[ySpeed]
+jmp assignHeights
+
+assignHeights:
+push r14
+//inc [accelCounter]
+mov r14,["main.dll"+00B6B2D0]//address of no clip floor coordinate
+movss [r14+E50],xmm0
+pop r14
+jmp code
+
+//dontAssignHeights:
+//mov [accelCounter],0
+//mov [ySpeed],(float)10
+
+code:
+movss [rax+04],xmm0
+
+exit:
+jmp return
+
+HeightControl:
+jmp newmem
+return:
+
+
+[DISABLE]
+
+HeightControl:
+  db F3 0F 11 40 04
+
+unregistersymbol(HeightControl)
+dealloc(newmem)
+dealloc(ySpeed)
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+3A9EF5
+
+main.dll+3A9EB5: F3 41 0F 58 D9           - addss xmm3,xmm9
+main.dll+3A9EBA: F3 0F 11 96 C0 10 00 00  - movss [rsi+000010C0],xmm2
+main.dll+3A9EC2: F3 0F 11 9E C8 10 00 00  - movss [rsi+000010C8],xmm3
+main.dll+3A9ECA: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9ED1: F3 0F 10 00              - movss xmm0,[rax]
+main.dll+3A9ED5: F3 0F 58 86 C0 10 00 00  - addss xmm0,[rsi+000010C0]
+main.dll+3A9EDD: F3 0F 11 00              - movss [rax],xmm0
+main.dll+3A9EE1: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9EE8: F3 0F 10 86 C4 10 00 00  - movss xmm0,[rsi+000010C4]
+main.dll+3A9EF0: F3 0F 58 40 04           - addss xmm0,[rax+04]
+// ---------- INJECTING HERE ----------
+main.dll+3A9EF5: F3 0F 11 40 04           - movss [rax+04],xmm0
+// ---------- DONE INJECTING  ----------
+main.dll+3A9EFA: F3 0F 10 86 C8 10 00 00  - movss xmm0,[rsi+000010C8]
+main.dll+3A9F02: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9F09: F3 0F 58 40 08           - addss xmm0,[rax+08]
+main.dll+3A9F0E: F3 0F 11 40 08           - movss [rax+08],xmm0
+main.dll+3A9F13: F3 0F 10 8E C0 10 00 00  - movss xmm1,[rsi+000010C0]
+main.dll+3A9F1B: F3 0F 10 96 C8 10 00 00  - movss xmm2,[rsi+000010C8]
+main.dll+3A9F23: F3 0F 10 86 50 0E 00 00  - movss xmm0,[rsi+00000E50]
+main.dll+3A9F2B: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9F32: F3 41 0F 58 C0           - addss xmm0,xmm8
+main.dll+3A9F37: F3 0F 59 CF              - mulss xmm1,xmm7
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87764</ID>
+              <Description>"Disable Timer Code"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+
+////////////////////////////////////////////////////////////////////////////////
+
+aobscanmodule(DisableTeleportTimer,main.dll,FF 05 3C A4 80 00) // should be unique
+registersymbol(DisableTeleportTimer)
+
+DisableTeleportTimer:
+  nop 6
+
+////////////////////////////////////////////////////////////////////////////////
+
+aobscanmodule(DisableDayNightTimer,main.dll,44 89 05 46 1A 67 00) // should be unique
+registersymbol(DisableDayNightTimer)
+
+
+DisableDayNightTimer:
+  nop 7
+
+////////////////////////////////////////////////////////////////////////////////
+
+aobscanmodule(DisablePlaytimeTimer,main.dll,01 41 7C 8B 0D 8C 22 9B 00) // should be unique
+registersymbol(DisablePlaytimeTimer)
+
+
+DisablePlaytimeTimer:
+  nop 3
+
+////////////////////////////////////////////////////////////////////////////////
+
+[DISABLE]
+
+////////////////////////////////////////////////////////////////////////////////
+
+DisableTeleportTimer:
+  db FF 05 3C A4 80 00
+
+unregistersymbol(DisableTeleportTimer)
+
+////////////////////////////////////////////////////////////////////////////////
+
+DisableDayNightTimer:
+  db 44 89 05 46 1A 67 00
+
+unregistersymbol(DisableDayNightTimer)
+
+////////////////////////////////////////////////////////////////////////////////
+
+DisablePlaytimeTimer:
+  db 01 41 7C 8B 0D 8C 22 9B 00
+
+unregistersymbol(DisablePlaytimeTimer)
+
+////////////////////////////////////////////////////////////////////////////////
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87766</ID>
+              <Description>"Disable all inputs except movement"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(DisableInputsOne,flower_kernel.dll,C3 CC CC CC CC CC CC 48 8B 02 48 89 01 48 8B 42 08) // should be unique
+registersymbol(DisableInputsOne)
+
+DisableInputsOne+0A:
+  nop 3
+  nop 4
+  nop 4
+
+
+[DISABLE]
+
+DisableInputsOne+0A:
+  db 48 89 01 48 8B 42 08 48 89 41 08
+
+unregistersymbol(DisableInputsOne)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: flower_kernel.dll+19023
+
+flower_kernel.dll+19013: 48 89 01     - mov [rcx],rax
+flower_kernel.dll+19016: 48 8B C1     - mov rax,rcx
+flower_kernel.dll+19019: C3           - ret 
+flower_kernel.dll+1901A: CC           - int 3 
+flower_kernel.dll+1901B: CC           - int 3 
+flower_kernel.dll+1901C: CC           - int 3 
+flower_kernel.dll+1901D: CC           - int 3 
+flower_kernel.dll+1901E: CC           - int 3 
+flower_kernel.dll+1901F: CC           - int 3 
+flower_kernel.dll+19020: 48 8B 02     - mov rax,[rdx]
+// ---------- INJECTING HERE ----------
+flower_kernel.dll+19023: 48 89 01     - mov [rcx],rax
+// ---------- DONE INJECTING  ----------
+flower_kernel.dll+19026: 48 8B 42 08  - mov rax,[rdx+08]
+flower_kernel.dll+1902A: 48 89 41 08  - mov [rcx+08],rax
+flower_kernel.dll+1902E: 48 8B C1     - mov rax,rcx
+flower_kernel.dll+19031: C3           - ret 
+flower_kernel.dll+19032: CC           - int 3 
+flower_kernel.dll+19033: CC           - int 3 
+flower_kernel.dll+19034: CC           - int 3 
+flower_kernel.dll+19035: CC           - int 3 
+flower_kernel.dll+19036: CC           - int 3 
+flower_kernel.dll+19037: CC           - int 3 
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87767</ID>
+              <Description>"Disable Camera Movement/Disable Common vec3 mov function"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(DisableCameraMovement,flower_kernel.dll,10 8B 02 89 01 8B 42 04) // should be unique
+registersymbol(DisableCameraMovement)
+
+DisableCameraMovement+01:
+  nop 2
+  nop 2
+  nop 3
+  nop 3
+  nop 3
+  nop 3
+
+[DISABLE]
+
+DisableCameraMovement+01:
+  db 8B 02 89 01 8B 42 04 89 41 04 8B 42 08 89 41 08
+
+unregistersymbol(DisableCameraMovement)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: flower_kernel.dll+1A9D5
+
+flower_kernel.dll+1A9C8: CC        - int 3 
+flower_kernel.dll+1A9C9: CC        - int 3 
+flower_kernel.dll+1A9CA: CC        - int 3 
+flower_kernel.dll+1A9CB: CC        - int 3 
+flower_kernel.dll+1A9CC: CC        - int 3 
+flower_kernel.dll+1A9CD: CC        - int 3 
+flower_kernel.dll+1A9CE: CC        - int 3 
+flower_kernel.dll+1A9CF: CC        - int 3 
+flower_kernel.dll+1A9D0: 48 3B CA  - cmp rcx,rdx
+flower_kernel.dll+1A9D3: 74 10     - je flower_kernel.dll+1A9E5
+// ---------- INJECTING HERE ----------
+flower_kernel.dll+1A9D5: 8B 02     - mov eax,[rdx]
+// ---------- DONE INJECTING  ----------
+flower_kernel.dll+1A9D7: 89 01     - mov [rcx],eax
+flower_kernel.dll+1A9D9: 8B 42 04  - mov eax,[rdx+04]
+flower_kernel.dll+1A9DC: 89 41 04  - mov [rcx+04],eax
+flower_kernel.dll+1A9DF: 8B 42 08  - mov eax,[rdx+08]
+flower_kernel.dll+1A9E2: 89 41 08  - mov [rcx+08],eax
+flower_kernel.dll+1A9E5: 48 8B C1  - mov rax,rcx
+flower_kernel.dll+1A9E8: C3        - ret 
+flower_kernel.dll+1A9E9: CC        - int 3 
+flower_kernel.dll+1A9EA: CC        - int 3 
+flower_kernel.dll+1A9EB: CC        - int 3 
+}
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2496</ID>
+              <Description>"1 Hit Kill Scripts (Multiple needed because enemy health is written in a lot of different places depending on context?)"</Description>
+              <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>2240</ID>
+                  <Description>"1 Hit Kill Enemies"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+238910) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov ebx,[rdi+00000E44]
+
+originalcode:
+sub [rdi+00000E44],ebx
+
+exit:
+jmp returnhere
+
+"main.dll"+238910:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+238910:
+sub [rdi+00000E44],ebx
+//Alt: db 29 9F 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>2241</ID>
+                  <Description>"1 Hit Kill Enemies 2?"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+26E345) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+push edi
+mov edi,[rbx+00000E44]
+
+originalcode:
+sub [rbx+00000E44],edi
+pop edi
+
+exit:
+jmp returnhere
+
+"main.dll"+26E345:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+26E345:
+sub [rbx+00000E44],edi
+//Alt: db 29 BB 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>2242</ID>
+                  <Description>"1 Hit Kill Enemies 3?"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+278D66) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+push edi
+mov edi,[rbx+00000E44]
+
+originalcode:
+sub [rbx+00000E44],edi
+pop edi
+
+exit:
+jmp returnhere
+
+"main.dll"+278D66:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+278D66:
+sub [rbx+00000E44],edi
+//Alt: db 29 BB 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>2491</ID>
+                  <Description>"1 Hit Kill Enemies 4?"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+5EB680) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov eax,[rdi+00000E44]
+
+originalcode:
+sub [rdi+00000E44],eax
+
+exit:
+jmp returnhere
+
+"main.dll"+5EB680:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+5EB680:
+sub [rdi+00000E44],eax
+//Alt: db 29 87 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>2492</ID>
+                  <Description>"1 Hit Kill Enemies 5?"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+5CDF31) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov eax,[rsi+00000E44]
+
+originalcode:
+sub [rsi+00000E44],eax
+
+exit:
+jmp returnhere
+
+"main.dll"+5CDF31:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+5CDF31:
+sub [rsi+00000E44],eax
+//Alt: db 29 86 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>2493</ID>
+                  <Description>"1 Hit Kill Enemies 6?"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+5D4F8C) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov eax,[rdi+00000E44]
+
+originalcode:
+sub [rdi+00000E44],eax
+
+exit:
+jmp returnhere
+
+"main.dll"+5D4F8C:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+5D4F8C:
+sub [rdi+00000E44],eax
+//Alt: db 29 87 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>2494</ID>
+                  <Description>"1 Hit Kill Enemies 7?"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"main.dll"+5DED61) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+mov eax,[rsi+00000E44]
+
+originalcode:
+sub [rsi+00000E44],eax
+
+exit:
+jmp returnhere
+
+"main.dll"+5DED61:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"main.dll"+5DED61:
+sub [rsi+00000E44],eax
+//Alt: db 29 86 44 0E 00 00
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>86736</ID>
+          <Description>"Trainer"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>7885</ID>
+              <Description>"Trainer Values"</Description>
+              <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>7924</ID>
+                  <Description>"Sun Fragment Count"</Description>
+                  <ShowAsSigned>1</ShowAsSigned>
+                  <VariableType>2 Bytes</VariableType>
+                  <Address>main.dll+B2063A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7925</ID>
+                  <Description>"Title Screen Sequence Control Bytes"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000000:On Startup
+00000D00:Capcom
+00001500:Hexadrive
+00001600:????
+00001F00:Criware
+00002000:Transition after Criware
+00000103:Prologue and Demo Movies
+00010103:White Fadeout from Demo to New Game/Continue Screen
+00000105:New Game/Continue/Options Menu
+01000105:Controls/Help/Options Menu
+00000107:File Select
+01000108:Controls
+01010108:Help
+01020108:Options
+00000104:Begin Story before Trademark Stamp
+00000204:Begin Story after Trademark Stamp
+00000304:After Selecting Begin Story, while data is loaded
+00000604:Brief Transition from Begin Story to New Game/Continue
+00000114:Quit Game
+00000306:Gameplay
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>main.dll+B74414</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7916</ID>
+                  <Description>"Holy Eagle acquired from dojo"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B4DFA2</Address>
+                  <Hotkeys>
+                    <Hotkey>
+                      <Action>Toggle Activation</Action>
+                      <Keys/>
+                      <ID>0</ID>
+                    </Hotkey>
+                  </Hotkeys>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7905</ID>
+                  <Description>"Double Jump ability"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B2B9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7904</ID>
+                  <Description>"Number of jumps + air tackles used"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>"main.dll"+00B6B2D0</Address>
+                  <Offsets>
+                    <Offset>1145</Offset>
+                    <Offset>DE0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7894</ID>
+                  <Description>"Air tackle used"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>"main.dll"+00B6B2D0</Address>
+                  <Offsets>
+                    <Offset>1146</Offset>
+                    <Offset>DE0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7917</ID>
+                  <Description>"Dash Meter"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>2 Bytes</VariableType>
+                  <Address>"main.dll"+00B6B2D0</Address>
+                  <Offsets>
+                    <Offset>1174</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7919</ID>
+                  <Description>"Gold Dash Max Speed"</Description>
+                  <DropDownList DisplayValueAsItem="1">6.900000095:Default
+13:SuperSpeed
+</DropDownList>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>main.dll+6AF03C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7926</ID>
+                  <Description>"No Clip Bit"</Description>
+                  <DropDownList DisplayValueAsItem="1">00:Don't show Divine Instrument
+10:Ammy's Facing Angle is Locked except for First Person Camera
+24:Normal Gameplay
+E4:Brush Open
+</DropDownList>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B2BB</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7932</ID>
+                  <Description>"Ammy Coordinates"</Description>
+                  <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                  <LastState Value="" RealAddress="00000000"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>7933</ID>
+                      <Description>"X"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B6B2D0</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                        <Offset>000000A8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>7934</ID>
+                      <Description>"Y"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B6B2D0</Address>
+                      <Offsets>
+                        <Offset>4</Offset>
+                        <Offset>000000A8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>7935</ID>
+                      <Description>"Z"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B6B2D0</Address>
+                      <Offsets>
+                        <Offset>8</Offset>
+                        <Offset>000000A8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>7936</ID>
+                  <Description>"Y Height of floor directly below Ammy"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>"main.dll"+00B6B2D0</Address>
+                  <Offsets>
+                    <Offset>E50</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>87761</ID>
+                  <Description>"Hold Jump to ignore gravity"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(GravityJump,main.dll,F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00) // should be unique
+alloc(newmem,$1000,GravityJump)
+
+label(return)
+label(code)
+label(exit)
+label(skip)
+
+newmem:
+  test [main.dll+B6B0A6], 2
+  jnz skip
+
+code:
+  subss xmm1,xmm0
+
+skip:
+  addss xmm1,[rsi+00000E4C]
+
+exit:
+  jmp return
+
+GravityJump:
+  jmp newmem
+  nop 7
+
+return:
+registersymbol(GravityJump)
+
+[DISABLE]
+
+GravityJump:
+  db F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00
+
+unregistersymbol(GravityJump)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+3AB646
+
+main.dll+3AB60C: 41 8D 51 30              - lea edx,[r9+30]
+main.dll+3AB610: 48 89 44 24 20           - mov [rsp+20],rax
+main.dll+3AB615: 8D 4A D8                 - lea ecx,[rdx-28]
+main.dll+3AB618: E8 73 0D DE FF           - call main.cPad::updateMoveSphre+42B0
+main.dll+3AB61D: F6 86 30 0E 00 00 02     - test byte ptr [rsi+00000E30],02
+main.dll+3AB624: F3 0F 10 8E 54 0E 00 00  - movss xmm1,[rsi+00000E54]
+main.dll+3AB62C: F3 0F 11 8E 24 10 00 00  - movss [rsi+00001024],xmm1
+main.dll+3AB634: 75 24                    - jne main.dll+3AB65A
+main.dll+3AB636: F3 0F 10 05 FA F5 7B 00  - movss xmm0,[main.dll+B6AC38]
+main.dll+3AB63E: F3 0F 59 05 CA 67 2C 00  - mulss xmm0,[main.hx::hxPadAssign::`vftable'+250]
+// ---------- INJECTING HERE ----------
+main.dll+3AB646: F3 0F 5C C8              - subss xmm1,xmm0
+// ---------- DONE INJECTING  ----------
+main.dll+3AB64A: F3 0F 58 8E 4C 0E 00 00  - addss xmm1,[rsi+00000E4C]
+main.dll+3AB652: F3 0F 11 8E 54 0E 00 00  - movss [rsi+00000E54],xmm1
+main.dll+3AB65A: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3AB661: 45 33 F6                 - xor r14d,r14d
+main.dll+3AB664: 44 89 B6 4C 0E 00 00     - mov [rsi+00000E4C],r14d
+main.dll+3AB66B: F3 0F 10 05 C5 F5 7B 00  - movss xmm0,[main.dll+B6AC38]
+main.dll+3AB673: F3 0F 59 86 54 0E 00 00  - mulss xmm0,[rsi+00000E54]
+main.dll+3AB67B: F3 41 0F 59 C2           - mulss xmm0,xmm10
+main.dll+3AB680: F3 0F 58 40 04           - addss xmm0,[rax+04]
+main.dll+3AB685: F3 0F 11 40 04           - movss [rax+04],xmm0
+}
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>87762</ID>
+                  <Description>"Ignore Jump Barriers"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(IgnoreJumpBarriers,main.dll,41 89 86 14 10 00 00 F3 0F 10 35 * * * * EB) // should be unique
+alloc(newmem,$1000,IgnoreJumpBarriers)
+
+label(code)
+label(return)
+
+newmem:
+  jmp return
+
+code:
+  mov [r14+00001014],eax
+
+IgnoreJumpBarriers:
+  jmp newmem
+  nop 2
+
+return:
+registersymbol(IgnoreJumpBarriers)
+
+[DISABLE]
+
+IgnoreJumpBarriers:
+  db 41 89 86 14 10 00 00
+
+unregistersymbol(IgnoreJumpBarriers)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+4602FB
+
+main.dll+4602CE: 8B 7C 24 30              - mov edi,[rsp+30]
+main.dll+4602D2: 83 CF 01                 - or edi,01
+main.dll+4602D5: 0F 2F 35 84 58 70 00     - comiss xmm6,[main.dll+B65B60]
+main.dll+4602DC: 89 7C 24 30              - mov [rsp+30],edi
+main.dll+4602E0: 76 2E                    - jna main.dll+460310
+main.dll+4602E2: 8B 43 08                 - mov eax,[rbx+08]
+main.dll+4602E5: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
+main.dll+4602EB: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
+main.dll+4602F1: 41 89 86 10 10 00 00     - mov [r14+00001010],eax
+main.dll+4602F8: 8B 43 0C                 - mov eax,[rbx+0C]
+// ---------- INJECTING HERE ----------
+main.dll+4602FB: 41 89 86 14 10 00 00     - mov [r14+00001014],eax
+// ---------- DONE INJECTING  ----------
+main.dll+460302: F3 0F 10 35 56 58 70 00  - movss xmm6,[main.dll+B65B60]
+main.dll+46030A: EB 16                    - jmp main.dll+460322
+main.dll+46030C: 8B 7C 24 30              - mov edi,[rsp+30]
+main.dll+460310: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
+main.dll+460316: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
+main.dll+46031C: EB 04                    - jmp main.dll+460322
+main.dll+46031E: 8B 7C 24 30              - mov edi,[rsp+30]
+main.dll+460322: 8B 85 F0 01 00 00        - mov eax,[rbp+000001F0]
+main.dll+460328: 49 83 C7 02              - add r15,02
+main.dll+46032C: BB FF FF 00 00           - mov ebx,0000FFFF
+}
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>87763</ID>
+                  <Description>"No Clip Height Control"</Description>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{ Game   : okami.exe
+  Version: 
+  Date   : 2021-08-20
+  Author : Shintensu
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(HeightControl,main.dll,F3 0F 11 40 04 F3 0F 10 86) // should be unique
+alloc(newmem,$1000,HeightControl)
+registersymbol(HeightControl)
+
+
+alloc(ySpeed,4)
+//alloc(accelCounter,2)
+label(return)
+label(code)
+label(fall)
+label(assignHeights)
+//label(dontAssignHeights)
+label(exit)
+
+ySpeed:
+dd (float)10
+
+//accelCounter:
+//dw 0
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+//push r14
+//mov [ySpeed],(float)10
+
+test [main.dll+B6B2BB],2//Check if noclip is active:
+jz code
+
+//If holding fleetfoot button, use reduced value for ySpeed
+push r14
+push r13
+mov r13,(float)2
+mov r14,(float)10
+test [main.dll+B6B0A7],1
+cmovz r13,r14
+mov [ySpeed],r13
+pop r13
+pop r14
+
+test [main.dll+B6B0A6],40//Check if holding bark button
+jz fall
+//mov r14,(float)1
+//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
+//cmovg r14,[ySpeed]
+//mov [ySpeed],r14
+addss xmm0,[ySpeed]
+jmp assignHeights
+
+fall:
+test [main.dll+B6B0A6],10//Check if holding dig button
+jz code
+//mov r14,(float)1
+//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
+//cmovg r14,[ySpeed]
+//mov [ySpeed],r14
+subss xmm0,[ySpeed]
+jmp assignHeights
+
+assignHeights:
+push r14
+//inc [accelCounter]
+mov r14,["main.dll"+00B6B2D0]//address of no clip floor coordinate
+movss [r14+E50],xmm0
+pop r14
+jmp code
+
+//dontAssignHeights:
+//mov [accelCounter],0
+//mov [ySpeed],(float)10
+
+code:
+movss [rax+04],xmm0
+
+exit:
+jmp return
+
+HeightControl:
+jmp newmem
+return:
+
+
+[DISABLE]
+
+HeightControl:
+  db F3 0F 11 40 04
+
+unregistersymbol(HeightControl)
+dealloc(newmem)
+dealloc(ySpeed)
+{
+// ORIGINAL CODE - INJECTION POINT: main.dll+3A9EF5
+
+main.dll+3A9EB5: F3 41 0F 58 D9           - addss xmm3,xmm9
+main.dll+3A9EBA: F3 0F 11 96 C0 10 00 00  - movss [rsi+000010C0],xmm2
+main.dll+3A9EC2: F3 0F 11 9E C8 10 00 00  - movss [rsi+000010C8],xmm3
+main.dll+3A9ECA: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9ED1: F3 0F 10 00              - movss xmm0,[rax]
+main.dll+3A9ED5: F3 0F 58 86 C0 10 00 00  - addss xmm0,[rsi+000010C0]
+main.dll+3A9EDD: F3 0F 11 00              - movss [rax],xmm0
+main.dll+3A9EE1: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9EE8: F3 0F 10 86 C4 10 00 00  - movss xmm0,[rsi+000010C4]
+main.dll+3A9EF0: F3 0F 58 40 04           - addss xmm0,[rax+04]
+// ---------- INJECTING HERE ----------
+main.dll+3A9EF5: F3 0F 11 40 04           - movss [rax+04],xmm0
+// ---------- DONE INJECTING  ----------
+main.dll+3A9EFA: F3 0F 10 86 C8 10 00 00  - movss xmm0,[rsi+000010C8]
+main.dll+3A9F02: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9F09: F3 0F 58 40 08           - addss xmm0,[rax+08]
+main.dll+3A9F0E: F3 0F 11 40 08           - movss [rax+08],xmm0
+main.dll+3A9F13: F3 0F 10 8E C0 10 00 00  - movss xmm1,[rsi+000010C0]
+main.dll+3A9F1B: F3 0F 10 96 C8 10 00 00  - movss xmm2,[rsi+000010C8]
+main.dll+3A9F23: F3 0F 10 86 50 0E 00 00  - movss xmm0,[rsi+00000E50]
+main.dll+3A9F2B: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
+main.dll+3A9F32: F3 41 0F 58 C0           - addss xmm0,xmm8
+main.dll+3A9F37: F3 0F 59 CF              - mulss xmm1,xmm7
+}
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>86727</ID>
+              <Description>"Open/Close Trainer"</Description>
+              <LastState/>
+              <Color>0000FF</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+addressList = getAddressList()
+function getRec(descr)
+  return addressList.getMemoryRecordByDescription(descr)
+end
+function getChildRec(parent, descr)
+  if (parent == nil) then
+    print("Error: Parent record is nil")
+    return nil
+  end
+  if (parent.Child == nil) then
+    print("Error: Parent record has no Child property.")
+    return nil
+  end
+  for i=0, parent.Count-1 do
+    local child = parent.Child[i]
+    if (child.Description == descr) then
+      return child
+    end
+  end
+  return nil
+end
+getRec("Sun Fragment Count").Value = "254"
+
+function makeChildRecTable(parent)
+  if (parent == nil) then
+    print("Error: Parent record is nil")
+    return nil
+  end
+  if (parent.Child == nil) then
+    print("Error: Parent record has no Child property.")
+    return nil
+  end
+  local childTable = {}
+  for i=0, parent.Count-1 do
+    local child = parent.Child[i]
+    childTable[child.Description] = child
+  end
+  return childTable
+end
+
+
+function freezeAt(entry, value)
+  entry.Value = value
+  entry.Active = true
+end
+
+
+
+tVal = getRec("Trainer Values")
+
+setMovementCheats = (function()
+  local entryNumJumps = getChildRec(tVal, "Number of jumps + air tackles used")
+  local entryAirTackleUsed = getChildRec(tVal, "Air tackle used")
+  local entryDJAbility = getChildRec(tVal, "Double Jump ability")
+  local entryHolyEagleDojo = getChildRec(tVal, "Holy Eagle acquired from dojo")
+  local entryDashMeter = getChildRec(tVal, "Dash Meter")
+  local entryDashSpeed = getChildRec(tVal, "Gold Dash Max Speed")
+  local scriptMoonJump = getChildRec(tVal, "Hold Jump to ignore gravity")
+  local scriptJumpBarr = getChildRec(tVal, "Ignore Jump Barriers")
+
+
+  return function(activate)
+    if activate then
+      freezeAt(entryNumJumps, "0")
+      freezeAt(entryAirTackleUsed, "0")
+      freezeAt(entryDJAbility, "1")
+      freezeAt(entryDashMeter, "351")
+      scriptMoonJump.Active = true
+      entryDashSpeed.Value = "13"
+      scriptJumpBarr.Active = true
+
+    else
+      entryNumJumps.Active = false
+      entryAirTackleUsed.Active = false
+      entryDJAbility.Value = entryHolyEagleDojo.Value ---AAAAHHH I SHOULD'VE JUST USED THIS INSTEAD OF WRITING assignEntry and freezeAt AHHH
+      entryDJAbility.Active = false
+      entryDashMeter.Active = false
+      scriptMoonJump.Active = false
+      entryDashSpeed.Value = "6.900000095"
+      scriptJumpBarr.Active = false
+    end
+  end
+end)()
+function CETrainer_movCheatsChange (sender)
+  return setMovementCheats(sender.checked)
+end
+
+--TRAINERGENERATORSTART--
+--This is autogenerated code. Changing code in this block will
+--get erased and rewritten if you regenerate the trainer code
+
+--Uncomment the following line if this is a Cheat Table format trainer and you don't want CE to show (Tip, save as .CETRAINER alternatively)
+--hideAllCEWindows()
+
+RequiredCEVersion=7.2
+if (getCEVersion==nil) or (getCEVersion()&lt;RequiredCEVersion) then
+  messageDialog('Please install Cheat Engine '..RequiredCEVersion, mtError, mbOK)
+  closeCE()
+end
+
+getAutoAttachList().add("okami.exe")
+openProcess("okami.exe")
+gPlaySoundOnAction=false
+CETrainer.show()
+function AboutClick()
+  showMessage(gAboutText)
+end
+gAboutText=[[This trainer was made by Cheat Engine
+www.cheatengine.org]]
+
+function CloseClick()
+  --called by the close button onClick event, and when closing the form
+  closeCE()
+  return caFree --onClick doesn't care, but onClose would like a result
+end
+
+skipTitleScreen = (function()
+  local entryTitleScreenControl = getChildRec(tVal, "Title Screen Sequence Control Bytes")
+  return function()
+    openProcess("okami.exe")
+    entryTitleScreenControl.Value = "00010103"
+  end
+end)()
+
+function CETrainer_skipTitleClick(sender)
+  skipTitleScreen()
+end
+
+setNoClipCheats = (function()
+  local entryNoClipBit = getChildRec(tVal, "No Clip Bit")
+  local scriptNoClipHeight = getChildRec(tVal, "No Clip Height Control")
+  return function(activate)
+    if activate then
+      entryNoClipBit.Value = "1"
+      scriptNoClipHeight.Active = true
+    else
+      entryNoClipBit.Value = "0"
+      scriptNoClipHeight.Active = false
+    end
+  end
+end)()
+
+function CETrainer_noClipCheatsChange(sender)
+  setNoClipCheats(sender.checked)
+end
+
+teleportToCoords = (function()
+  local entryNoClipBit = getChildRec(tVal, "No Clip Bit")
+  local AmmyCoords = makeChildRecTable(getChildRec(tVal, "Ammy Coordinates"))
+  local entryNoClipFloorHeight = getChildRec(tVal, "Y Height of floor directly below Ammy")
+
+
+  return function(X, Y, Z)
+    entryNoClipBit.Value = "1"
+
+    AmmyCoords.X.Value = X
+    AmmyCoords.Y.Value = Y
+    AmmyCoords.Z.Value = Z
+
+    --In case no-clip is being used, write to this value to ensure Ammy remains
+    --grounded.
+    if CETrainer.noClipCheats.Checked then
+      entryNoClipFloorHeight.Value = Y
+    end
+
+    local timer = createTimer(getMainForm())
+    timer.Interval = 40 --Wait roughly a frame to disable no clip.
+    timer.OnTimer = function(timer)
+      timer.destroy()
+      entryNoClipBit.Value = CETrainer.noClipCheats.Checked and "1" or "0"
+    end
+  end
+end)()
+
+
+
+function CETrainer_teleportCheatClick(sender)
+  local teleText = CETrainer.teleportCoords.Text
+  local fPat = "(-?[%d.]+)"
+  local _Pat = "[_,%s]+"
+  local vec3Pat = fPat.._Pat..fPat.._Pat..fPat
+  local X, Y, Z = string.match(teleText, vec3Pat)
+  teleportToCoords(X, Y, Z)
+end
+
+
+[DISABLE]
+CETrainer.hide()
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>140</ID>
           <Description>"Settings"</Description>
-          <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
@@ -49875,6 +51464,51 @@ HelpForm.Hide()
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
+          <ID>87814</ID>
+          <Description>"Other Flags"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>87815</ID>
+              <Description>"Story flag which determines whether moon cave orochi fight initial cutscene trigger exists"</Description>
+              <VariableType>Binary</VariableType>
+              <BitStart>3</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>main.dll+B20B4F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>86839</ID>
+              <Description>"All story flags?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>2000</ByteLength>
+              <Address>main.dll+B20000</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>86841</ID>
+              <Description>"Story flag for Sleepy standing on the cabbage in Agata"</Description>
+              <VariableType>Binary</VariableType>
+              <BitStart>3</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>main.dll+B2122D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>86842</ID>
+              <Description>"Story flag for the cabbage not spawning in agata"</Description>
+              <VariableType>Binary</VariableType>
+              <BitStart>4</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>main.dll+B2122D</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>263</ID>
           <Description>"Inventory"</Description>
           <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
@@ -52056,6 +53690,66 @@ HelpForm.Hide()
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>
+              <ID>87822</ID>
+              <Description>"Framedata"</Description>
+              <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>87823</ID>
+                  <Description>"Vengeance Slip frames remaining"</Description>
+                  <ShowAsSigned>1</ShowAsSigned>
+                  <VariableType>2 Bytes</VariableType>
+                  <Address>main.dll+B4DFB8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>87826</ID>
+                  <Description>"Ammy animation frame (float for interpolation)"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>"main.dll"+009C6DB0</Address>
+                  <Offsets>
+                    <Offset>F48</Offset>
+                    <Offset>B0</Offset>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>87824</ID>
+              <Description>"Gauges"</Description>
+              <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>86835</ID>
+                  <Description>"Time until health gauge disappears"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>main.dll+B1CD2C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>86836</ID>
+                  <Description>"Time until Astral Pouch gauge disappears"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>main.dll+B1CDCC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>86837</ID>
+                  <Description>"Time until Yen gauge disappears"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>main.dll+B1CFF8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>86838</ID>
+                  <Description>"Ink Gauge?"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>main.dll+B1DECC</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
               <ID>86708</ID>
               <Description>"Divine Instrument Upgrade Levels"</Description>
               <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
@@ -52369,6 +54063,57 @@ HelpForm.Hide()
                     <Offset>1010</Offset>
                     <Offset>000000A8</Offset>
                   </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>86829</ID>
+                  <Description>"Location you spawn at when selecting "Continue" after dying"</Description>
+                  <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                  <LastState Value="" RealAddress="00000000"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>87816</ID>
+                      <Description>"X"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B3DDC0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87817</ID>
+                      <Description>"Y"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B3DDC4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87818</ID>
+                      <Description>"Z"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B3DDC8</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87819</ID>
+                      <Description>"padding?"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B3DDCC</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87820</ID>
+                      <Description>"rotation"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>main.dll+B3DDD0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87821</ID>
+                      <Description>"Map ID"</Description>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>2 Bytes</VariableType>
+                      <Address>main.dll+B381F2</Address>
+                    </CheatEntry>
+                  </CheatEntries>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
@@ -54771,1598 +56516,9 @@ HelpForm.Hide()
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>800</ID>
-          <Description>"Scripts"</Description>
-          <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-          <LastState Value="" RealAddress="00000000"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>1047</ID>
-              <Description>"Always Gold Dash"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-
-
-/////////////////////////////////AFTER DASH/////////////////////////////////////
-aobscanmodule(AlwaysGoldDash,main.dll,C6 87 36 0E 00 00 05 74) // should be unique
-alloc(newmem,$1000,AlwaysGoldDash)
-registersymbol(AlwaysGoldDash)
-
-AlwaysGoldDash:
-mov byte ptr [rdi+00000E36],09
-/////////////////////////////////AFTER JUMP/////////////////////////////////////
-aobscanmodule(GoldDashJump,main.dll,C7 87 34 0E 00 00 01 02 05 00) // should be unique
-alloc(newmem2,$1000,GoldDashJump)
-registersymbol(GoldDashJump)
-
-GoldDashJump:
-  mov [rdi+00000E34],00090201
-////////////////////////////////////////////////////////////////////////////////
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-
-
-/////////////////////////////////AFTER DASH/////////////////////////////////////
-AlwaysGoldDash:
-  db C6 87 36 0E 00 00 05
-
-unregistersymbol(AlwaysGoldDash)
-dealloc(newmem)
-/////////////////////////////////AFTER JUMP/////////////////////////////////////
-
-GoldDashJump:
-  db C7 87 34 0E 00 00 01 02 05 00
-
-unregistersymbol(GoldDashJump)
-dealloc(newmem2)
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87755</ID>
-              <Description>"Always Gold Dash when Dashing"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(AlwaysGoldDash,main.dll,C6 87 36 0E 00 00 05 74) // should be unique
-alloc(newmem,$1000,AlwaysGoldDash)
-registersymbol(AlwaysGoldDash)
-
-AlwaysGoldDash:
-  mov byte ptr [rdi+00000E36],09
-
-[DISABLE]
-
-AlwaysGoldDash:
-  db C6 87 36 0E 00 00 05
-
-unregistersymbol(AlwaysGoldDash)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+3B33D1
-
-main.dll+3B33A2: 66 89 74 24 30        - mov [rsp+30],si
-main.dll+3B33A7: 45 33 C0              - xor r8d,r8d
-main.dll+3B33AA: F3 44 0F 11 44 24 28  - movss [rsp+28],xmm8
-main.dll+3B33B1: F3 44 0F 11 4C 24 20  - movss [rsp+20],xmm9
-main.dll+3B33B8: 8B 02                 - mov eax,[rdx]
-main.dll+3B33BA: 8B 0C 82              - mov ecx,[rdx+rax*4]
-main.dll+3B33BD: 48 03 54 11 70        - add rdx,[rcx+rdx+70]
-main.dll+3B33C2: 48 8B CF              - mov rcx,rdi
-main.dll+3B33C5: E8 B6 6C 10 00        - call main.flower_tick+3CD0
-main.dll+3B33CA: F6 87 E0 10 00 00 10  - test byte ptr [rdi+000010E0],10
-// ---------- INJECTING HERE ----------
-main.dll+3B33D1: C6 87 36 0E 00 00 05  - mov byte ptr [rdi+00000E36],05
-// ---------- DONE INJECTING  ----------
-main.dll+3B33D8: 74 14                 - je main.dll+3B33EE
-main.dll+3B33DA: 48 8B CF              - mov rcx,rdi
-main.dll+3B33DD: 40 88 B7 36 0E 00 00  - mov [rdi+00000E36],sil
-main.dll+3B33E4: E8 97 68 10 00        - call main.flower_tick+38D0
-main.dll+3B33E9: E9 B1 05 00 00        - jmp main.dll+3B399F
-main.dll+3B33EE: 8B 9F 14 10 00 00     - mov ebx,[rdi+00001014]
-main.dll+3B33F4: 83 E3 1F              - and ebx,1F
-main.dll+3B33F7: E8 84 A0 E0 FF        - call main.dll+1BD480
-main.dll+3B33FC: 24 03                 - and al,03
-main.dll+3B33FE: 4C 8B C7              - mov r8,rdi
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87754</ID>
-              <Description>"Always Gold Dash after a jump in Dash State"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(GoldDashJump,main.dll,C7 87 34 0E 00 00 01 02 05 00) // should be unique
-alloc(newmem,$1000,GoldDashJump)
-registersymbol(GoldDashJump)
-
-GoldDashJump:
-  mov [rdi+00000E34],00090201
-
-[DISABLE]
-
-GoldDashJump:
-  db C7 87 34 0E 00 00 01 02 05 00
-
-unregistersymbol(GoldDashJump)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+3B52F2
-
-main.dll+3B52B4: 48 8B CF                       - mov rcx,rdi
-main.dll+3B52B7: C7 87 34 0E 00 00 01 01 00 00  - mov [rdi+00000E34],00000101
-main.dll+3B52C1: E8 9A 9A FF FF                 - call main.dll+3AED60
-main.dll+3B52C6: 0F BF 87 74 11 00 00           - movsx eax,word ptr [rdi+00001174]
-main.dll+3B52CD: 3B 05 81 30 3F 00              - cmp eax,[main.dll+7A8354]
-main.dll+3B52D3: 0F 8E 9A 00 00 00              - jng main.dll+3B5373
-main.dll+3B52D9: 48 8B 97 80 0E 00 00           - mov rdx,[rdi+00000E80]
-main.dll+3B52E0: B9 96 00 00 00                 - mov ecx,00000096
-main.dll+3B52E5: C6 87 71 11 00 00 02           - mov byte ptr [rdi+00001171],02
-main.dll+3B52EC: 41 B9 05 00 00 00              - mov r9d,00000005
-// ---------- INJECTING HERE ----------
-main.dll+3B52F2: C7 87 34 0E 00 00 01 02 05 00  - mov [rdi+00000E34],00050201
-// ---------- DONE INJECTING  ----------
-main.dll+3B52FC: 45 33 C0                       - xor r8d,r8d
-main.dll+3B52FF: 0F B7 05 4E 30 3F 00           - movzx eax,word ptr [main.dll+7A8354]
-main.dll+3B5306: 66 03 C1                       - add ax,cx
-main.dll+3B5309: 66 44 89 7C 24 30              - mov [rsp+30],r15w
-main.dll+3B530F: 66 89 87 3C 0E 00 00           - mov [rdi+00000E3C],ax
-main.dll+3B5316: 8B 02                          - mov eax,[rdx]
-main.dll+3B5318: F3 0F 11 7C 24 28              - movss [rsp+28],xmm7
-main.dll+3B531E: F3 44 0F 11 44 24 20           - movss [rsp+20],xmm8
-main.dll+3B5325: 8B 0C 82                       - mov ecx,[rdx+rax*4]
-main.dll+3B5328: 48 03 54 11 70                 - add rdx,[rcx+rdx+70]
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87756</ID>
-              <Description>"Hold Jump to ignore gravity"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(GravityJump,main.dll,F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00) // should be unique
-alloc(newmem,$1000,GravityJump)
-
-label(return)
-label(code)
-label(exit)
-label(skip)
-
-newmem:
-  test [main.dll+B6B0A6], 2
-  jnz skip
-
-code:
-  subss xmm1,xmm0
-
-skip:
-  addss xmm1,[rsi+00000E4C]
-
-exit:
-  jmp return
-
-GravityJump:
-  jmp newmem
-  nop 7
-
-return:
-registersymbol(GravityJump)
-
-[DISABLE]
-
-GravityJump:
-  db F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00
-
-unregistersymbol(GravityJump)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+3AB646
-
-main.dll+3AB60C: 41 8D 51 30              - lea edx,[r9+30]
-main.dll+3AB610: 48 89 44 24 20           - mov [rsp+20],rax
-main.dll+3AB615: 8D 4A D8                 - lea ecx,[rdx-28]
-main.dll+3AB618: E8 73 0D DE FF           - call main.cPad::updateMoveSphre+42B0
-main.dll+3AB61D: F6 86 30 0E 00 00 02     - test byte ptr [rsi+00000E30],02
-main.dll+3AB624: F3 0F 10 8E 54 0E 00 00  - movss xmm1,[rsi+00000E54]
-main.dll+3AB62C: F3 0F 11 8E 24 10 00 00  - movss [rsi+00001024],xmm1
-main.dll+3AB634: 75 24                    - jne main.dll+3AB65A
-main.dll+3AB636: F3 0F 10 05 FA F5 7B 00  - movss xmm0,[main.dll+B6AC38]
-main.dll+3AB63E: F3 0F 59 05 CA 67 2C 00  - mulss xmm0,[main.hx::hxPadAssign::`vftable'+250]
-// ---------- INJECTING HERE ----------
-main.dll+3AB646: F3 0F 5C C8              - subss xmm1,xmm0
-// ---------- DONE INJECTING  ----------
-main.dll+3AB64A: F3 0F 58 8E 4C 0E 00 00  - addss xmm1,[rsi+00000E4C]
-main.dll+3AB652: F3 0F 11 8E 54 0E 00 00  - movss [rsi+00000E54],xmm1
-main.dll+3AB65A: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3AB661: 45 33 F6                 - xor r14d,r14d
-main.dll+3AB664: 44 89 B6 4C 0E 00 00     - mov [rsi+00000E4C],r14d
-main.dll+3AB66B: F3 0F 10 05 C5 F5 7B 00  - movss xmm0,[main.dll+B6AC38]
-main.dll+3AB673: F3 0F 59 86 54 0E 00 00  - mulss xmm0,[rsi+00000E54]
-main.dll+3AB67B: F3 41 0F 59 C2           - mulss xmm0,xmm10
-main.dll+3AB680: F3 0F 58 40 04           - addss xmm0,[rax+04]
-main.dll+3AB685: F3 0F 11 40 04           - movss [rax+04],xmm0
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87759</ID>
-              <Description>"Ignore Jump Barriers"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(IgnoreJumpBarriers,main.dll,41 89 86 14 10 00 00 F3 0F 10 35 * * * * EB) // should be unique
-alloc(newmem,$1000,IgnoreJumpBarriers)
-
-label(code)
-label(return)
-
-newmem:
-  jmp return
-
-code:
-  mov [r14+00001014],eax
-
-IgnoreJumpBarriers:
-  jmp newmem
-  nop 2
-
-return:
-registersymbol(IgnoreJumpBarriers)
-
-[DISABLE]
-
-IgnoreJumpBarriers:
-  db 41 89 86 14 10 00 00
-
-unregistersymbol(IgnoreJumpBarriers)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+4602FB
-
-main.dll+4602CE: 8B 7C 24 30              - mov edi,[rsp+30]
-main.dll+4602D2: 83 CF 01                 - or edi,01
-main.dll+4602D5: 0F 2F 35 84 58 70 00     - comiss xmm6,[main.dll+B65B60]
-main.dll+4602DC: 89 7C 24 30              - mov [rsp+30],edi
-main.dll+4602E0: 76 2E                    - jna main.dll+460310
-main.dll+4602E2: 8B 43 08                 - mov eax,[rbx+08]
-main.dll+4602E5: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
-main.dll+4602EB: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
-main.dll+4602F1: 41 89 86 10 10 00 00     - mov [r14+00001010],eax
-main.dll+4602F8: 8B 43 0C                 - mov eax,[rbx+0C]
-// ---------- INJECTING HERE ----------
-main.dll+4602FB: 41 89 86 14 10 00 00     - mov [r14+00001014],eax
-// ---------- DONE INJECTING  ----------
-main.dll+460302: F3 0F 10 35 56 58 70 00  - movss xmm6,[main.dll+B65B60]
-main.dll+46030A: EB 16                    - jmp main.dll+460322
-main.dll+46030C: 8B 7C 24 30              - mov edi,[rsp+30]
-main.dll+460310: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
-main.dll+460316: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
-main.dll+46031C: EB 04                    - jmp main.dll+460322
-main.dll+46031E: 8B 7C 24 30              - mov edi,[rsp+30]
-main.dll+460322: 8B 85 F0 01 00 00        - mov eax,[rbp+000001F0]
-main.dll+460328: 49 83 C7 02              - add r15,02
-main.dll+46032C: BB FF FF 00 00           - mov ebx,0000FFFF
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87760</ID>
-              <Description>"No Clip Height Control"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(HeightControl,main.dll,F3 0F 11 40 04 F3 0F 10 86) // should be unique
-alloc(newmem,$1000,HeightControl)
-registersymbol(HeightControl)
-
-
-alloc(ySpeed,4)
-//alloc(accelCounter,2)
-label(return)
-label(code)
-label(fall)
-label(assignHeights)
-//label(dontAssignHeights)
-label(exit)
-
-ySpeed:
-dd (float)10
-
-//accelCounter:
-//dw 0
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-//push r14
-//mov [ySpeed],(float)10
-
-test [main.dll+B6B2BB],2//Check if noclip is active:
-jz code
-
-//If holding fleetfoot button, use reduced value for ySpeed
-push r14
-push r13
-mov r13,(float)2
-mov r14,(float)10
-test [main.dll+B6B0A7],1
-cmovz r13,r14
-mov [ySpeed],r13
-pop r13
-pop r14
-
-test [main.dll+B6B0A6],40//Check if holding bark button
-jz fall
-//mov r14,(float)1
-//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
-//cmovg r14,[ySpeed]
-//mov [ySpeed],r14
-addss xmm0,[ySpeed]
-jmp assignHeights
-
-fall:
-test [main.dll+B6B0A6],10//Check if holding dig button
-jz code
-//mov r14,(float)1
-//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
-//cmovg r14,[ySpeed]
-//mov [ySpeed],r14
-subss xmm0,[ySpeed]
-jmp assignHeights
-
-assignHeights:
-push r14
-//inc [accelCounter]
-mov r14,["main.dll"+00B6B2D0]//address of no clip floor coordinate
-movss [r14+E50],xmm0
-pop r14
-jmp code
-
-//dontAssignHeights:
-//mov [accelCounter],0
-//mov [ySpeed],(float)10
-
-code:
-movss [rax+04],xmm0
-
-exit:
-jmp return
-
-HeightControl:
-jmp newmem
-return:
-
-
-[DISABLE]
-
-HeightControl:
-  db F3 0F 11 40 04
-
-unregistersymbol(HeightControl)
-dealloc(newmem)
-dealloc(ySpeed)
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+3A9EF5
-
-main.dll+3A9EB5: F3 41 0F 58 D9           - addss xmm3,xmm9
-main.dll+3A9EBA: F3 0F 11 96 C0 10 00 00  - movss [rsi+000010C0],xmm2
-main.dll+3A9EC2: F3 0F 11 9E C8 10 00 00  - movss [rsi+000010C8],xmm3
-main.dll+3A9ECA: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9ED1: F3 0F 10 00              - movss xmm0,[rax]
-main.dll+3A9ED5: F3 0F 58 86 C0 10 00 00  - addss xmm0,[rsi+000010C0]
-main.dll+3A9EDD: F3 0F 11 00              - movss [rax],xmm0
-main.dll+3A9EE1: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9EE8: F3 0F 10 86 C4 10 00 00  - movss xmm0,[rsi+000010C4]
-main.dll+3A9EF0: F3 0F 58 40 04           - addss xmm0,[rax+04]
-// ---------- INJECTING HERE ----------
-main.dll+3A9EF5: F3 0F 11 40 04           - movss [rax+04],xmm0
-// ---------- DONE INJECTING  ----------
-main.dll+3A9EFA: F3 0F 10 86 C8 10 00 00  - movss xmm0,[rsi+000010C8]
-main.dll+3A9F02: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9F09: F3 0F 58 40 08           - addss xmm0,[rax+08]
-main.dll+3A9F0E: F3 0F 11 40 08           - movss [rax+08],xmm0
-main.dll+3A9F13: F3 0F 10 8E C0 10 00 00  - movss xmm1,[rsi+000010C0]
-main.dll+3A9F1B: F3 0F 10 96 C8 10 00 00  - movss xmm2,[rsi+000010C8]
-main.dll+3A9F23: F3 0F 10 86 50 0E 00 00  - movss xmm0,[rsi+00000E50]
-main.dll+3A9F2B: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9F32: F3 41 0F 58 C0           - addss xmm0,xmm8
-main.dll+3A9F37: F3 0F 59 CF              - mulss xmm1,xmm7
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87764</ID>
-              <Description>"Disable Timer Code"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>[ENABLE]
-
-////////////////////////////////////////////////////////////////////////////////
-
-aobscanmodule(DisableTeleportTimer,main.dll,FF 05 3C A4 80 00) // should be unique
-registersymbol(DisableTeleportTimer)
-
-DisableTeleportTimer:
-  nop 6
-
-////////////////////////////////////////////////////////////////////////////////
-
-aobscanmodule(DisableDayNightTimer,main.dll,44 89 05 46 1A 67 00) // should be unique
-registersymbol(DisableDayNightTimer)
-
-
-DisableDayNightTimer:
-  nop 7
-
-////////////////////////////////////////////////////////////////////////////////
-
-aobscanmodule(DisablePlaytimeTimer,main.dll,01 41 7C 8B 0D 8C 22 9B 00) // should be unique
-registersymbol(DisablePlaytimeTimer)
-
-
-DisablePlaytimeTimer:
-  nop 3
-
-////////////////////////////////////////////////////////////////////////////////
-
-[DISABLE]
-
-////////////////////////////////////////////////////////////////////////////////
-
-DisableTeleportTimer:
-  db FF 05 3C A4 80 00
-
-unregistersymbol(DisableTeleportTimer)
-
-////////////////////////////////////////////////////////////////////////////////
-
-DisableDayNightTimer:
-  db 44 89 05 46 1A 67 00
-
-unregistersymbol(DisableDayNightTimer)
-
-////////////////////////////////////////////////////////////////////////////////
-
-DisablePlaytimeTimer:
-  db 01 41 7C 8B 0D 8C 22 9B 00
-
-unregistersymbol(DisablePlaytimeTimer)
-
-////////////////////////////////////////////////////////////////////////////////
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87766</ID>
-              <Description>"Disable all inputs except movement"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(DisableInputsOne,flower_kernel.dll,C3 CC CC CC CC CC CC 48 8B 02 48 89 01 48 8B 42 08) // should be unique
-registersymbol(DisableInputsOne)
-
-DisableInputsOne+0A:
-  nop 3
-  nop 4
-  nop 4
-
-
-[DISABLE]
-
-DisableInputsOne+0A:
-  db 48 89 01 48 8B 42 08 48 89 41 08
-
-unregistersymbol(DisableInputsOne)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: flower_kernel.dll+19023
-
-flower_kernel.dll+19013: 48 89 01     - mov [rcx],rax
-flower_kernel.dll+19016: 48 8B C1     - mov rax,rcx
-flower_kernel.dll+19019: C3           - ret 
-flower_kernel.dll+1901A: CC           - int 3 
-flower_kernel.dll+1901B: CC           - int 3 
-flower_kernel.dll+1901C: CC           - int 3 
-flower_kernel.dll+1901D: CC           - int 3 
-flower_kernel.dll+1901E: CC           - int 3 
-flower_kernel.dll+1901F: CC           - int 3 
-flower_kernel.dll+19020: 48 8B 02     - mov rax,[rdx]
-// ---------- INJECTING HERE ----------
-flower_kernel.dll+19023: 48 89 01     - mov [rcx],rax
-// ---------- DONE INJECTING  ----------
-flower_kernel.dll+19026: 48 8B 42 08  - mov rax,[rdx+08]
-flower_kernel.dll+1902A: 48 89 41 08  - mov [rcx+08],rax
-flower_kernel.dll+1902E: 48 8B C1     - mov rax,rcx
-flower_kernel.dll+19031: C3           - ret 
-flower_kernel.dll+19032: CC           - int 3 
-flower_kernel.dll+19033: CC           - int 3 
-flower_kernel.dll+19034: CC           - int 3 
-flower_kernel.dll+19035: CC           - int 3 
-flower_kernel.dll+19036: CC           - int 3 
-flower_kernel.dll+19037: CC           - int 3 
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>87767</ID>
-              <Description>"Disable Camera Movement/Disable Common vec3 mov function"</Description>
-              <LastState/>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(DisableCameraMovement,flower_kernel.dll,10 8B 02 89 01 8B 42 04) // should be unique
-registersymbol(DisableCameraMovement)
-
-DisableCameraMovement+01:
-  nop 2
-  nop 2
-  nop 3
-  nop 3
-  nop 3
-  nop 3
-
-[DISABLE]
-
-DisableCameraMovement+01:
-  db 8B 02 89 01 8B 42 04 89 41 04 8B 42 08 89 41 08
-
-unregistersymbol(DisableCameraMovement)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: flower_kernel.dll+1A9D5
-
-flower_kernel.dll+1A9C8: CC        - int 3 
-flower_kernel.dll+1A9C9: CC        - int 3 
-flower_kernel.dll+1A9CA: CC        - int 3 
-flower_kernel.dll+1A9CB: CC        - int 3 
-flower_kernel.dll+1A9CC: CC        - int 3 
-flower_kernel.dll+1A9CD: CC        - int 3 
-flower_kernel.dll+1A9CE: CC        - int 3 
-flower_kernel.dll+1A9CF: CC        - int 3 
-flower_kernel.dll+1A9D0: 48 3B CA  - cmp rcx,rdx
-flower_kernel.dll+1A9D3: 74 10     - je flower_kernel.dll+1A9E5
-// ---------- INJECTING HERE ----------
-flower_kernel.dll+1A9D5: 8B 02     - mov eax,[rdx]
-// ---------- DONE INJECTING  ----------
-flower_kernel.dll+1A9D7: 89 01     - mov [rcx],eax
-flower_kernel.dll+1A9D9: 8B 42 04  - mov eax,[rdx+04]
-flower_kernel.dll+1A9DC: 89 41 04  - mov [rcx+04],eax
-flower_kernel.dll+1A9DF: 8B 42 08  - mov eax,[rdx+08]
-flower_kernel.dll+1A9E2: 89 41 08  - mov [rcx+08],eax
-flower_kernel.dll+1A9E5: 48 8B C1  - mov rax,rcx
-flower_kernel.dll+1A9E8: C3        - ret 
-flower_kernel.dll+1A9E9: CC        - int 3 
-flower_kernel.dll+1A9EA: CC        - int 3 
-flower_kernel.dll+1A9EB: CC        - int 3 
-}
-</AssemblerScript>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>2496</ID>
-              <Description>"1 Hit Kill Scripts (Multiple needed because enemy health is written in a lot of different places depending on context?)"</Description>
-              <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
-              <LastState Value="" RealAddress="00000000"/>
-              <GroupHeader>1</GroupHeader>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>2240</ID>
-                  <Description>"1 Hit Kill Enemies"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+238910) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-mov ebx,[rdi+00000E44]
-
-originalcode:
-sub [rdi+00000E44],ebx
-
-exit:
-jmp returnhere
-
-"main.dll"+238910:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+238910:
-sub [rdi+00000E44],ebx
-//Alt: db 29 9F 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>2241</ID>
-                  <Description>"1 Hit Kill Enemies 2?"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+26E345) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-push edi
-mov edi,[rbx+00000E44]
-
-originalcode:
-sub [rbx+00000E44],edi
-pop edi
-
-exit:
-jmp returnhere
-
-"main.dll"+26E345:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+26E345:
-sub [rbx+00000E44],edi
-//Alt: db 29 BB 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>2242</ID>
-                  <Description>"1 Hit Kill Enemies 3?"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+278D66) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-push edi
-mov edi,[rbx+00000E44]
-
-originalcode:
-sub [rbx+00000E44],edi
-pop edi
-
-exit:
-jmp returnhere
-
-"main.dll"+278D66:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+278D66:
-sub [rbx+00000E44],edi
-//Alt: db 29 BB 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>2491</ID>
-                  <Description>"1 Hit Kill Enemies 4?"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+5EB680) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-mov eax,[rdi+00000E44]
-
-originalcode:
-sub [rdi+00000E44],eax
-
-exit:
-jmp returnhere
-
-"main.dll"+5EB680:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+5EB680:
-sub [rdi+00000E44],eax
-//Alt: db 29 87 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>2492</ID>
-                  <Description>"1 Hit Kill Enemies 5?"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+5CDF31) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-mov eax,[rsi+00000E44]
-
-originalcode:
-sub [rsi+00000E44],eax
-
-exit:
-jmp returnhere
-
-"main.dll"+5CDF31:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+5CDF31:
-sub [rsi+00000E44],eax
-//Alt: db 29 86 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>2493</ID>
-                  <Description>"1 Hit Kill Enemies 6?"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+5D4F8C) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-mov eax,[rdi+00000E44]
-
-originalcode:
-sub [rdi+00000E44],eax
-
-exit:
-jmp returnhere
-
-"main.dll"+5D4F8C:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+5D4F8C:
-sub [rdi+00000E44],eax
-//Alt: db 29 87 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>2494</ID>
-                  <Description>"1 Hit Kill Enemies 7?"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>[ENABLE]
-//code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,"main.dll"+5DED61) 
-label(returnhere)
-label(originalcode)
-label(exit)
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-mov eax,[rsi+00000E44]
-
-originalcode:
-sub [rsi+00000E44],eax
-
-exit:
-jmp returnhere
-
-"main.dll"+5DED61:
-jmp newmem
-nop
-returnhere:
-
-
- 
- 
-[DISABLE]
-//code from here till the end of the code will be used to disable the cheat
-dealloc(newmem)
-"main.dll"+5DED61:
-sub [rsi+00000E44],eax
-//Alt: db 29 86 44 0E 00 00
-</AssemblerScript>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>86736</ID>
-          <Description>"Trainer"</Description>
-          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-          <LastState Value="" RealAddress="00000000"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>7885</ID>
-              <Description>"Trainer Values"</Description>
-              <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-              <LastState Value="" RealAddress="00000000"/>
-              <GroupHeader>1</GroupHeader>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>7924</ID>
-                  <Description>"Sun Fragment Count"</Description>
-                  <ShowAsSigned>1</ShowAsSigned>
-                  <VariableType>2 Bytes</VariableType>
-                  <Address>main.dll+B2063A</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7925</ID>
-                  <Description>"Title Screen Sequence Control Bytes"</Description>
-                  <DropDownList DisplayValueAsItem="1">00000000:On Startup
-00000D00:Capcom
-00001500:Hexadrive
-00001600:????
-00001F00:Criware
-00002000:Transition after Criware
-00000103:Prologue and Demo Movies
-00010103:White Fadeout from Demo to New Game/Continue Screen
-00000105:New Game/Continue/Options Menu
-01000105:Controls/Help/Options Menu
-00000107:File Select
-01000108:Controls
-01010108:Help
-01020108:Options
-00000104:Begin Story before Trademark Stamp
-00000204:Begin Story after Trademark Stamp
-00000304:After Selecting Begin Story, while data is loaded
-00000604:Brief Transition from Begin Story to New Game/Continue
-00000114:Quit Game
-00000306:Gameplay
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>main.dll+B74414</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7916</ID>
-                  <Description>"Holy Eagle acquired from dojo"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>0</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B4DFA2</Address>
-                  <Hotkeys>
-                    <Hotkey>
-                      <Action>Toggle Activation</Action>
-                      <Keys/>
-                      <ID>0</ID>
-                    </Hotkey>
-                  </Hotkeys>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7905</ID>
-                  <Description>"Double Jump ability"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>2</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B6B2B9</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7904</ID>
-                  <Description>"Number of jumps + air tackles used"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Byte</VariableType>
-                  <Address>"main.dll"+00B6B2D0</Address>
-                  <Offsets>
-                    <Offset>1145</Offset>
-                    <Offset>DE0</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7894</ID>
-                  <Description>"Air tackle used"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Byte</VariableType>
-                  <Address>"main.dll"+00B6B2D0</Address>
-                  <Offsets>
-                    <Offset>1146</Offset>
-                    <Offset>DE0</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7917</ID>
-                  <Description>"Dash Meter"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>2 Bytes</VariableType>
-                  <Address>"main.dll"+00B6B2D0</Address>
-                  <Offsets>
-                    <Offset>1174</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7919</ID>
-                  <Description>"Gold Dash Max Speed"</Description>
-                  <DropDownList DisplayValueAsItem="1">6.900000095:Default
-13:SuperSpeed
-</DropDownList>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Float</VariableType>
-                  <Address>main.dll+6AF03C</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7926</ID>
-                  <Description>"No Clip Bit"</Description>
-                  <DropDownList DisplayValueAsItem="1">00:Don't show Divine Instrument
-10:Ammy's Facing Angle is Locked except for First Person Camera
-24:Normal Gameplay
-E4:Brush Open
-</DropDownList>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Binary</VariableType>
-                  <BitStart>1</BitStart>
-                  <BitLength>1</BitLength>
-                  <ShowAsBinary>0</ShowAsBinary>
-                  <Address>main.dll+B6B2BB</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7932</ID>
-                  <Description>"Ammy Coordinates"</Description>
-                  <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
-                  <LastState Value="" RealAddress="00000000"/>
-                  <GroupHeader>1</GroupHeader>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>7933</ID>
-                      <Description>"X"</Description>
-                      <VariableType>Float</VariableType>
-                      <Address>main.dll+B6B2D0</Address>
-                      <Offsets>
-                        <Offset>0</Offset>
-                        <Offset>000000A8</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>7934</ID>
-                      <Description>"Y"</Description>
-                      <VariableType>Float</VariableType>
-                      <Address>main.dll+B6B2D0</Address>
-                      <Offsets>
-                        <Offset>4</Offset>
-                        <Offset>000000A8</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>7935</ID>
-                      <Description>"Z"</Description>
-                      <VariableType>Float</VariableType>
-                      <Address>main.dll+B6B2D0</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>000000A8</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>7936</ID>
-                  <Description>"Y Height of floor directly below Ammy"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>"main.dll"+00B6B2D0</Address>
-                  <Offsets>
-                    <Offset>E50</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>87761</ID>
-                  <Description>"Hold Jump to ignore gravity"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(GravityJump,main.dll,F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00) // should be unique
-alloc(newmem,$1000,GravityJump)
-
-label(return)
-label(code)
-label(exit)
-label(skip)
-
-newmem:
-  test [main.dll+B6B0A6], 2
-  jnz skip
-
-code:
-  subss xmm1,xmm0
-
-skip:
-  addss xmm1,[rsi+00000E4C]
-
-exit:
-  jmp return
-
-GravityJump:
-  jmp newmem
-  nop 7
-
-return:
-registersymbol(GravityJump)
-
-[DISABLE]
-
-GravityJump:
-  db F3 0F 5C C8 F3 0F 58 8E 4C 0E 00 00
-
-unregistersymbol(GravityJump)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+3AB646
-
-main.dll+3AB60C: 41 8D 51 30              - lea edx,[r9+30]
-main.dll+3AB610: 48 89 44 24 20           - mov [rsp+20],rax
-main.dll+3AB615: 8D 4A D8                 - lea ecx,[rdx-28]
-main.dll+3AB618: E8 73 0D DE FF           - call main.cPad::updateMoveSphre+42B0
-main.dll+3AB61D: F6 86 30 0E 00 00 02     - test byte ptr [rsi+00000E30],02
-main.dll+3AB624: F3 0F 10 8E 54 0E 00 00  - movss xmm1,[rsi+00000E54]
-main.dll+3AB62C: F3 0F 11 8E 24 10 00 00  - movss [rsi+00001024],xmm1
-main.dll+3AB634: 75 24                    - jne main.dll+3AB65A
-main.dll+3AB636: F3 0F 10 05 FA F5 7B 00  - movss xmm0,[main.dll+B6AC38]
-main.dll+3AB63E: F3 0F 59 05 CA 67 2C 00  - mulss xmm0,[main.hx::hxPadAssign::`vftable'+250]
-// ---------- INJECTING HERE ----------
-main.dll+3AB646: F3 0F 5C C8              - subss xmm1,xmm0
-// ---------- DONE INJECTING  ----------
-main.dll+3AB64A: F3 0F 58 8E 4C 0E 00 00  - addss xmm1,[rsi+00000E4C]
-main.dll+3AB652: F3 0F 11 8E 54 0E 00 00  - movss [rsi+00000E54],xmm1
-main.dll+3AB65A: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3AB661: 45 33 F6                 - xor r14d,r14d
-main.dll+3AB664: 44 89 B6 4C 0E 00 00     - mov [rsi+00000E4C],r14d
-main.dll+3AB66B: F3 0F 10 05 C5 F5 7B 00  - movss xmm0,[main.dll+B6AC38]
-main.dll+3AB673: F3 0F 59 86 54 0E 00 00  - mulss xmm0,[rsi+00000E54]
-main.dll+3AB67B: F3 41 0F 59 C2           - mulss xmm0,xmm10
-main.dll+3AB680: F3 0F 58 40 04           - addss xmm0,[rax+04]
-main.dll+3AB685: F3 0F 11 40 04           - movss [rax+04],xmm0
-}
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>87762</ID>
-                  <Description>"Ignore Jump Barriers"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(IgnoreJumpBarriers,main.dll,41 89 86 14 10 00 00 F3 0F 10 35 * * * * EB) // should be unique
-alloc(newmem,$1000,IgnoreJumpBarriers)
-
-label(code)
-label(return)
-
-newmem:
-  jmp return
-
-code:
-  mov [r14+00001014],eax
-
-IgnoreJumpBarriers:
-  jmp newmem
-  nop 2
-
-return:
-registersymbol(IgnoreJumpBarriers)
-
-[DISABLE]
-
-IgnoreJumpBarriers:
-  db 41 89 86 14 10 00 00
-
-unregistersymbol(IgnoreJumpBarriers)
-dealloc(newmem)
-
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+4602FB
-
-main.dll+4602CE: 8B 7C 24 30              - mov edi,[rsp+30]
-main.dll+4602D2: 83 CF 01                 - or edi,01
-main.dll+4602D5: 0F 2F 35 84 58 70 00     - comiss xmm6,[main.dll+B65B60]
-main.dll+4602DC: 89 7C 24 30              - mov [rsp+30],edi
-main.dll+4602E0: 76 2E                    - jna main.dll+460310
-main.dll+4602E2: 8B 43 08                 - mov eax,[rbx+08]
-main.dll+4602E5: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
-main.dll+4602EB: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
-main.dll+4602F1: 41 89 86 10 10 00 00     - mov [r14+00001010],eax
-main.dll+4602F8: 8B 43 0C                 - mov eax,[rbx+0C]
-// ---------- INJECTING HERE ----------
-main.dll+4602FB: 41 89 86 14 10 00 00     - mov [r14+00001014],eax
-// ---------- DONE INJECTING  ----------
-main.dll+460302: F3 0F 10 35 56 58 70 00  - movss xmm6,[main.dll+B65B60]
-main.dll+46030A: EB 16                    - jmp main.dll+460322
-main.dll+46030C: 8B 7C 24 30              - mov edi,[rsp+30]
-main.dll+460310: F3 0F 10 6C 24 58        - movss xmm5,[rsp+58]
-main.dll+460316: F3 0F 10 64 24 50        - movss xmm4,[rsp+50]
-main.dll+46031C: EB 04                    - jmp main.dll+460322
-main.dll+46031E: 8B 7C 24 30              - mov edi,[rsp+30]
-main.dll+460322: 8B 85 F0 01 00 00        - mov eax,[rbp+000001F0]
-main.dll+460328: 49 83 C7 02              - add r15,02
-main.dll+46032C: BB FF FF 00 00           - mov ebx,0000FFFF
-}
-</AssemblerScript>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>87763</ID>
-                  <Description>"No Clip Height Control"</Description>
-                  <LastState/>
-                  <VariableType>Auto Assembler Script</VariableType>
-                  <AssemblerScript>{ Game   : okami.exe
-  Version: 
-  Date   : 2021-08-20
-  Author : Shintensu
-
-  This script does blah blah blah
-}
-
-[ENABLE]
-
-aobscanmodule(HeightControl,main.dll,F3 0F 11 40 04 F3 0F 10 86) // should be unique
-alloc(newmem,$1000,HeightControl)
-registersymbol(HeightControl)
-
-
-alloc(ySpeed,4)
-//alloc(accelCounter,2)
-label(return)
-label(code)
-label(fall)
-label(assignHeights)
-//label(dontAssignHeights)
-label(exit)
-
-ySpeed:
-dd (float)10
-
-//accelCounter:
-//dw 0
-
-newmem: //this is allocated memory, you have read,write,execute access
-//place your code here
-//push r14
-//mov [ySpeed],(float)10
-
-test [main.dll+B6B2BB],2//Check if noclip is active:
-jz code
-
-//If holding fleetfoot button, use reduced value for ySpeed
-push r14
-push r13
-mov r13,(float)2
-mov r14,(float)10
-test [main.dll+B6B0A7],1
-cmovz r13,r14
-mov [ySpeed],r13
-pop r13
-pop r14
-
-test [main.dll+B6B0A6],40//Check if holding bark button
-jz fall
-//mov r14,(float)1
-//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
-//cmovg r14,[ySpeed]
-//mov [ySpeed],r14
-addss xmm0,[ySpeed]
-jmp assignHeights
-
-fall:
-test [main.dll+B6B0A6],10//Check if holding dig button
-jz code
-//mov r14,(float)1
-//cmp [accelCounter],30//Check if we've been holding button for over 30 frames
-//cmovg r14,[ySpeed]
-//mov [ySpeed],r14
-subss xmm0,[ySpeed]
-jmp assignHeights
-
-assignHeights:
-push r14
-//inc [accelCounter]
-mov r14,["main.dll"+00B6B2D0]//address of no clip floor coordinate
-movss [r14+E50],xmm0
-pop r14
-jmp code
-
-//dontAssignHeights:
-//mov [accelCounter],0
-//mov [ySpeed],(float)10
-
-code:
-movss [rax+04],xmm0
-
-exit:
-jmp return
-
-HeightControl:
-jmp newmem
-return:
-
-
-[DISABLE]
-
-HeightControl:
-  db F3 0F 11 40 04
-
-unregistersymbol(HeightControl)
-dealloc(newmem)
-dealloc(ySpeed)
-{
-// ORIGINAL CODE - INJECTION POINT: main.dll+3A9EF5
-
-main.dll+3A9EB5: F3 41 0F 58 D9           - addss xmm3,xmm9
-main.dll+3A9EBA: F3 0F 11 96 C0 10 00 00  - movss [rsi+000010C0],xmm2
-main.dll+3A9EC2: F3 0F 11 9E C8 10 00 00  - movss [rsi+000010C8],xmm3
-main.dll+3A9ECA: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9ED1: F3 0F 10 00              - movss xmm0,[rax]
-main.dll+3A9ED5: F3 0F 58 86 C0 10 00 00  - addss xmm0,[rsi+000010C0]
-main.dll+3A9EDD: F3 0F 11 00              - movss [rax],xmm0
-main.dll+3A9EE1: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9EE8: F3 0F 10 86 C4 10 00 00  - movss xmm0,[rsi+000010C4]
-main.dll+3A9EF0: F3 0F 58 40 04           - addss xmm0,[rax+04]
-// ---------- INJECTING HERE ----------
-main.dll+3A9EF5: F3 0F 11 40 04           - movss [rax+04],xmm0
-// ---------- DONE INJECTING  ----------
-main.dll+3A9EFA: F3 0F 10 86 C8 10 00 00  - movss xmm0,[rsi+000010C8]
-main.dll+3A9F02: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9F09: F3 0F 58 40 08           - addss xmm0,[rax+08]
-main.dll+3A9F0E: F3 0F 11 40 08           - movss [rax+08],xmm0
-main.dll+3A9F13: F3 0F 10 8E C0 10 00 00  - movss xmm1,[rsi+000010C0]
-main.dll+3A9F1B: F3 0F 10 96 C8 10 00 00  - movss xmm2,[rsi+000010C8]
-main.dll+3A9F23: F3 0F 10 86 50 0E 00 00  - movss xmm0,[rsi+00000E50]
-main.dll+3A9F2B: 48 8B 86 A8 00 00 00     - mov rax,[rsi+000000A8]
-main.dll+3A9F32: F3 41 0F 58 C0           - addss xmm0,xmm8
-main.dll+3A9F37: F3 0F 59 CF              - mulss xmm1,xmm7
-}
-</AssemblerScript>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>86727</ID>
-              <Description>"Open/Close Trainer"</Description>
-              <LastState/>
-              <Color>0000FF</Color>
-              <VariableType>Auto Assembler Script</VariableType>
-              <AssemblerScript>{$lua}
-if syntaxcheck then return end
-
-[ENABLE]
-addressList = getAddressList()
-function getRec(descr)
-  return addressList.getMemoryRecordByDescription(descr)
-end
-function getChildRec(parent, descr)
-  if (parent == nil) then
-    print("Error: Parent record is nil")
-    return nil
-  end
-  if (parent.Child == nil) then
-    print("Error: Parent record has no Child property.")
-    return nil
-  end
-  for i=0, parent.Count-1 do
-    local child = parent.Child[i]
-    if (child.Description == descr) then
-      return child
-    end
-  end
-  return nil
-end
-getRec("Sun Fragment Count").Value = "254"
-
-function makeChildRecTable(parent)
-  if (parent == nil) then
-    print("Error: Parent record is nil")
-    return nil
-  end
-  if (parent.Child == nil) then
-    print("Error: Parent record has no Child property.")
-    return nil
-  end
-  local childTable = {}
-  for i=0, parent.Count-1 do
-    local child = parent.Child[i]
-    childTable[child.Description] = child
-  end
-  return childTable
-end
-
-
-function freezeAt(entry, value)
-  entry.Value = value
-  entry.Active = true
-end
-
-
-
-tVal = getRec("Trainer Values")
-
-setMovementCheats = (function()
-  local entryNumJumps = getChildRec(tVal, "Number of jumps + air tackles used")
-  local entryAirTackleUsed = getChildRec(tVal, "Air tackle used")
-  local entryDJAbility = getChildRec(tVal, "Double Jump ability")
-  local entryHolyEagleDojo = getChildRec(tVal, "Holy Eagle acquired from dojo")
-  local entryDashMeter = getChildRec(tVal, "Dash Meter")
-  local entryDashSpeed = getChildRec(tVal, "Gold Dash Max Speed")
-  local scriptMoonJump = getChildRec(tVal, "Hold Jump to ignore gravity")
-  local scriptJumpBarr = getChildRec(tVal, "Ignore Jump Barriers")
-
-
-  return function(activate)
-    if activate then
-      freezeAt(entryNumJumps, "0")
-      freezeAt(entryAirTackleUsed, "0")
-      freezeAt(entryDJAbility, "1")
-      freezeAt(entryDashMeter, "351")
-      scriptMoonJump.Active = true
-      entryDashSpeed.Value = "13"
-      scriptJumpBarr.Active = true
-
-    else
-      entryNumJumps.Active = false
-      entryAirTackleUsed.Active = false
-      entryDJAbility.Value = entryHolyEagleDojo.Value ---AAAAHHH I SHOULD'VE JUST USED THIS INSTEAD OF WRITING assignEntry and freezeAt AHHH
-      entryDJAbility.Active = false
-      entryDashMeter.Active = false
-      scriptMoonJump.Active = false
-      entryDashSpeed.Value = "6.900000095"
-      scriptJumpBarr.Active = false
-    end
-  end
-end)()
-function CETrainer_movCheatsChange (sender)
-  return setMovementCheats(sender.checked)
-end
-
---TRAINERGENERATORSTART--
---This is autogenerated code. Changing code in this block will
---get erased and rewritten if you regenerate the trainer code
-
---Uncomment the following line if this is a Cheat Table format trainer and you don't want CE to show (Tip, save as .CETRAINER alternatively)
---hideAllCEWindows()
-
-RequiredCEVersion=7.2
-if (getCEVersion==nil) or (getCEVersion()&lt;RequiredCEVersion) then
-  messageDialog('Please install Cheat Engine '..RequiredCEVersion, mtError, mbOK)
-  closeCE()
-end
-
-getAutoAttachList().add("okami.exe")
-openProcess("okami.exe")
-gPlaySoundOnAction=false
-CETrainer.show()
-function AboutClick()
-  showMessage(gAboutText)
-end
-gAboutText=[[This trainer was made by Cheat Engine
-www.cheatengine.org]]
-
-function CloseClick()
-  --called by the close button onClick event, and when closing the form
-  closeCE()
-  return caFree --onClick doesn't care, but onClose would like a result
-end
-
-skipTitleScreen = (function()
-  local entryTitleScreenControl = getChildRec(tVal, "Title Screen Sequence Control Bytes")
-  return function()
-    openProcess("okami.exe")
-    entryTitleScreenControl.Value = "00010103"
-  end
-end)()
-
-function CETrainer_skipTitleClick(sender)
-  skipTitleScreen()
-end
-
-setNoClipCheats = (function()
-  local entryNoClipBit = getChildRec(tVal, "No Clip Bit")
-  local scriptNoClipHeight = getChildRec(tVal, "No Clip Height Control")
-  return function(activate)
-    if activate then
-      entryNoClipBit.Value = "1"
-      scriptNoClipHeight.Active = true
-    else
-      entryNoClipBit.Value = "0"
-      scriptNoClipHeight.Active = false
-    end
-  end
-end)()
-
-function CETrainer_noClipCheatsChange(sender)
-  setNoClipCheats(sender.checked)
-end
-
-teleportToCoords = (function()
-  local entryNoClipBit = getChildRec(tVal, "No Clip Bit")
-  local AmmyCoords = makeChildRecTable(getChildRec(tVal, "Ammy Coordinates"))
-  local entryNoClipFloorHeight = getChildRec(tVal, "Y Height of floor directly below Ammy")
-
-
-  return function(X, Y, Z)
-    entryNoClipBit.Value = "1"
-
-    AmmyCoords.X.Value = X
-    AmmyCoords.Y.Value = Y
-    AmmyCoords.Z.Value = Z
-
-    --In case no-clip is being used, write to this value to ensure Ammy remains
-    --grounded.
-    if CETrainer.noClipCheats.Checked then
-      entryNoClipFloorHeight.Value = Y
-    end
-
-    local timer = createTimer(getMainForm())
-    timer.Interval = 40 --Wait roughly a frame to disable no clip.
-    timer.OnTimer = function(timer)
-      timer.destroy()
-      entryNoClipBit.Value = CETrainer.noClipCheats.Checked and "1" or "0"
-    end
-  end
-end)()
-
-
-
-function CETrainer_teleportCheatClick(sender)
-  local teleText = CETrainer.teleportCoords.Text
-  local fPat = "(-?[%d.]+)"
-  local _Pat = "[_,%s]+"
-  local vec3Pat = fPat.._Pat..fPat.._Pat..fPat
-  local X, Y, Z = string.match(teleText, vec3Pat)
-  teleportToCoords(X, Y, Z)
-end
-
-
-[DISABLE]
-CETrainer.hide()
-</AssemblerScript>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
           <ID>86728</ID>
           <Description>"Area Teleport"</Description>
-          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
@@ -56598,16 +56754,6 @@ E1 7A 3A C3 00 00 00 00 52 78 01 C3 DB 0F C9 BF 01 03 FF 00:Wep'keer from Mist W
               <BitLength>1</BitLength>
               <ShowAsBinary>0</ShowAsBinary>
               <Address>main.dll+B6B2AF</Address>
-              <Hotkeys>
-                <Hotkey>
-                  <Action>Set Value</Action>
-                  <Keys>
-                    <Key>186</Key>
-                  </Keys>
-                  <Value>1</Value>
-                  <ID>0</ID>
-                </Hotkey>
-              </Hotkeys>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
