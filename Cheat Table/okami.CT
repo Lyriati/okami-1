@@ -58352,28 +58352,718 @@ E1 7A 3A C3 00 00 00 00 52 78 01 C3 DB 0F C9 BF 01 03 FF 00:Wep'keer from Mist W
                 </CheatEntry>
                 <CheatEntry>
                   <ID>1081</ID>
-                  <Description>"Enemy Health"</Description>
+                  <Description>"Enemy Pointers"</Description>
                   <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
                   <LastState Value="" RealAddress="00000000"/>
                   <GroupHeader>1</GroupHeader>
                   <CheatEntries>
                     <CheatEntry>
-                      <ID>1078</ID>
-                      <Description>"Closest Enemy Health"</Description>
-                      <VariableType>4 Bytes</VariableType>
-                      <Address>main.dll+9C2058</Address>
-                      <Offsets>
-                        <Offset>E44</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1080</ID>
-                      <Description>"Target Enemy Health"</Description>
-                      <VariableType>4 Bytes</VariableType>
+                      <ID>87919</ID>
+                      <Description>"Targeted Enemy"</Description>
+                      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <GroupHeader>1</GroupHeader>
                       <Address>main.dll+B1D9A0</Address>
                       <Offsets>
-                        <Offset>E44</Offset>
+                        <Offset>0</Offset>
                       </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>1080</ID>
+                          <Description>"Health"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>main.dll+B1D9A0</Address>
+                          <Offsets>
+                            <Offset>E44</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87920</ID>
+                          <Description>"X"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>main.dll+B1D9A0</Address>
+                          <Offsets>
+                            <Offset>80</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87921</ID>
+                          <Description>"Y"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>main.dll+B1D9A0</Address>
+                          <Offsets>
+                            <Offset>84</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87922</ID>
+                          <Description>"Z"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>main.dll+B1D9A0</Address>
+                          <Offsets>
+                            <Offset>88</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87893</ID>
+                      <Description>"Enemies by Distance?"</Description>
+                      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>87882</ID>
+                          <Description>"Enemy 1"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C2058</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>1078</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C2058</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87879</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2058</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87880</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2058</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87881</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2058</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87894</ID>
+                          <Description>"Enemy 2"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C2060</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87895</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C2060</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87896</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2060</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87897</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2060</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87898</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2060</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87899</ID>
+                          <Description>"Enemy 3"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C2068</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87900</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C2068</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87901</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2068</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87902</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2068</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87903</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2068</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87904</ID>
+                          <Description>"Enemy 4"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C2070</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87905</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C2070</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87906</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2070</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87907</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2070</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87908</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2070</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87909</ID>
+                          <Description>"Enemy 5"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C2078</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87910</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C2078</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87911</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2078</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87912</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2078</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87913</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2078</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87914</ID>
+                          <Description>"Enemy 6"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C2080</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87915</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C2080</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87916</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2080</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87917</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2080</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87918</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C2080</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>87923</ID>
+                      <Description>"Static enemy list"</Description>
+                      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                      <LastState Value="" RealAddress="00000000"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>87924</ID>
+                          <Description>"Enemy 1"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C1F58</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87925</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C1F58</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87926</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F58</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87927</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F58</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87928</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F58</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87929</ID>
+                          <Description>"Enemy 2"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C1F60</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87930</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C1F60</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87931</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F60</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87932</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F60</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87933</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F60</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87934</ID>
+                          <Description>"Enemy 3"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C1F68</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87935</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C1F68</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87936</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F68</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87937</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F68</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87938</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F68</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87939</ID>
+                          <Description>"Enemy 4"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C1F70</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87940</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C1F70</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87941</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F70</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87942</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F70</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87943</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F70</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87944</ID>
+                          <Description>"Enemy 5"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C1F78</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87945</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C1F78</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87946</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F78</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87947</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F78</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87948</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F78</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>87949</ID>
+                          <Description>"Enemy 6"</Description>
+                          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+                          <LastState Value="" RealAddress="00000000"/>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <GroupHeader>1</GroupHeader>
+                          <Address>main.dll+9C1F80</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                          <CheatEntries>
+                            <CheatEntry>
+                              <ID>87950</ID>
+                              <Description>"Health"</Description>
+                              <VariableType>4 Bytes</VariableType>
+                              <Address>main.dll+9C1F80</Address>
+                              <Offsets>
+                                <Offset>E44</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87951</ID>
+                              <Description>"X"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F80</Address>
+                              <Offsets>
+                                <Offset>80</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87952</ID>
+                              <Description>"Y"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F80</Address>
+                              <Offsets>
+                                <Offset>84</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                            <CheatEntry>
+                              <ID>87953</ID>
+                              <Description>"Z"</Description>
+                              <ShowAsSigned>0</ShowAsSigned>
+                              <VariableType>Float</VariableType>
+                              <Address>main.dll+9C1F80</Address>
+                              <Offsets>
+                                <Offset>88</Offset>
+                              </Offsets>
+                            </CheatEntry>
+                          </CheatEntries>
+                        </CheatEntry>
+                      </CheatEntries>
                     </CheatEntry>
                     <CheatEntry>
                       <ID>1077</ID>
@@ -58393,22 +59083,22 @@ E1 7A 3A C3 00 00 00 00 52 78 01 C3 DB 0F C9 BF 01 03 FF 00:Wep'keer from Mist W
                         <Offset>E44</Offset>
                       </Offsets>
                     </CheatEntry>
-                    <CheatEntry>
-                      <ID>86732</ID>
-                      <Description>"If set, enemies die instantly"</Description>
-                      <DropDownList DisplayValueAsItem="1">00:Don't show Divine Instrument
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>86732</ID>
+                  <Description>"If set, enemies die instantly"</Description>
+                  <DropDownList DisplayValueAsItem="1">00:Don't show Divine Instrument
 10:Ammy's Facing Angle is Locked except for First Person Camera
 24:Normal Gameplay
 E4:Brush Open
 </DropDownList>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>Binary</VariableType>
-                      <BitStart>4</BitStart>
-                      <BitLength>1</BitLength>
-                      <ShowAsBinary>0</ShowAsBinary>
-                      <Address>main.dll+B6B2BE</Address>
-                    </CheatEntry>
-                  </CheatEntries>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>4</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>main.dll+B6B2BE</Address>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
